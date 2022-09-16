@@ -1,0 +1,24 @@
+{
+  "name": "monocart-reporter-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --config=tests/playwright.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cenfun/monocart-reporter-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cenfun/monocart-reporter-test/issues"
+  },
+  "homepage": "https://github.com/cenfun/monocart-reporter-test#readme",
+  "dependencies": {
+    "@playwright/test": "^1.25.2",
+    "monocart-reporter": "^1.0.3",
+    "playwright": "^1.25.2"
+  }
+}
