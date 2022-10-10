@@ -21,5 +21,9 @@
         "monocart-reporter": "^1.0.6",
         "playwright": "^1.26.1"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "eslint": "^8.25.0",
+        "eslint-config-plus": "^1.0.3",
+        "eslint-plugin-html": "^7.1.0"
+    }
 }
