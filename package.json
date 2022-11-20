@@ -6,24 +6,24 @@
     "scripts": {
         "test": "npx playwright test --config=tests/playwright.config.js"
     },
+    "license": "ISC",
+    "author": "",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/cenfun/monocart-reporter-test.git"
     },
-    "author": "",
-    "license": "ISC",
+    "homepage": "https://github.com/cenfun/monocart-reporter-test#readme",
     "bugs": {
         "url": "https://github.com/cenfun/monocart-reporter-test/issues"
     },
-    "homepage": "https://github.com/cenfun/monocart-reporter-test#readme",
     "dependencies": {
-        "@playwright/test": "^1.26.1",
-        "monocart-reporter": "^1.0.6",
-        "playwright": "^1.26.1"
+        "@playwright/test": "^1.28.0",
+        "monocart-reporter": "^1.0.9",
+        "playwright": "^1.28.0"
     },
     "devDependencies": {
-        "eslint": "^8.25.0",
-        "eslint-config-plus": "^1.0.3",
+        "eslint": "^8.28.0",
+        "eslint-config-plus": "^1.0.5",
         "eslint-plugin-html": "^7.1.0"
     }
 }
