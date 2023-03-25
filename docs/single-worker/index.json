@@ -1,10 +1,10 @@
 {
     "use": {},
     "name": "single-worker",
-    "date": 1679715232293,
-    "dateH": "2023/3/25 11:33:52",
-    "duration": 7022,
-    "durationH": "7.022 s",
+    "date": 1679721673829,
+    "dateH": "2023/3/25 13:21:13",
+    "duration": 6417,
+    "durationH": "6.417 s",
     "version": "1.32.0",
     "workers": 1,
     "system": {
@@ -23,52 +23,52 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 355966.39,
+        "uptime": 362407.906,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 12040,
+        "pid": 11068,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679715232293,
+        "timestampStart": 1679721673829,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 88.92
+                    "percent": 99.8
                 },
                 "mem": {
-                    "free": 16383733760
+                    "free": 16331309056
                 },
-                "timestamp": 1679715234367
+                "timestamp": 1679721675863
             },
             {
                 "cpu": {
-                    "percent": 82.03
+                    "percent": 48.42
                 },
                 "mem": {
-                    "free": 16828227584
+                    "free": 17036075008
                 },
-                "timestamp": 1679715236379
+                "timestamp": 1679721677878
             },
             {
                 "cpu": {
-                    "percent": 33.11
+                    "percent": 15.58
                 },
                 "mem": {
-                    "free": 17109585920
+                    "free": 17290416128
                 },
-                "timestamp": 1679715238405
+                "timestamp": 1679721679893
             },
             {
                 "cpu": {
-                    "percent": 2.88
+                    "percent": 8.84
                 },
                 "mem": {
-                    "free": 17197948928
+                    "free": 17300418560
                 },
-                "timestamp": 1679715239311
+                "timestamp": 1679721680242
             }
         ],
-        "timestampEnd": 1679715239315
+        "timestampEnd": 1679721680246
     },
     "columns": [
         {
@@ -197,10 +197,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example1.spec.js:3:1",
                             "timestamps": [
-                                1679715233500,
-                                1679715233519
+                                1679721674674,
+                                1679721674706
                             ],
-                            "duration": 19,
+                            "duration": 32,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -208,8 +208,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679715233500,
-                                    "duration": 19
+                                    "timestamp": 1679721674674,
+                                    "duration": 32
                                 }
                             ],
                             "subs": [
@@ -218,7 +218,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 11,
+                                    "duration": 13,
                                     "location": ""
                                 },
                                 {
@@ -226,7 +226,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 0,
+                                    "duration": 1,
                                     "location": "tests/single-worker/example1.spec.js:4:27"
                                 },
                                 {
@@ -234,7 +234,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 4,
+                                    "duration": 3,
                                     "location": ""
                                 }
                             ]
@@ -248,10 +248,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example1.spec.js:7:1",
                             "timestamps": [
-                                1679715233519,
-                                1679715233522
+                                1679721674707,
+                                1679721674717
                             ],
-                            "duration": 3,
+                            "duration": 10,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -259,8 +259,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679715233519,
-                                    "duration": 3
+                                    "timestamp": 1679721674707,
+                                    "duration": 10
                                 }
                             ],
                             "subs": [
@@ -269,7 +269,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 8,
                                     "location": ""
                                 },
                                 {
@@ -299,10 +299,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example1.spec.js:11:1",
                             "timestamps": [
-                                1679715233522,
-                                1679715233525
+                                1679721674717,
+                                1679721674721
                             ],
-                            "duration": 3,
+                            "duration": 4,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -310,8 +310,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679715233522,
-                                    "duration": 3
+                                    "timestamp": 1679721674717,
+                                    "duration": 4
                                 }
                             ],
                             "subs": [
@@ -351,12 +351,12 @@
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example2.spec.js:3:1",
                             "timestamps": [
-                                1679715233533,
-                                1679715233546,
-                                1679715234463,
-                                1679715234537
+                                1679721674727,
+                                1679721674770,
+                                1679721675725,
+                                1679721675758
                             ],
-                            "duration": 1004,
+                            "duration": 1031,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "failed",
@@ -364,14 +364,14 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679715233533,
-                                    "duration": 13
+                                    "timestamp": 1679721674727,
+                                    "duration": 43
                                 },
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 1,
-                                    "timestamp": 1679715234463,
-                                    "duration": 74
+                                    "timestamp": 1679721675725,
+                                    "duration": 33
                                 }
                             ],
                             "subs": [
@@ -380,7 +380,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 4,
+                                    "duration": 7,
                                     "location": ""
                                 },
                                 {
@@ -391,7 +391,7 @@
                                     "duration": 3,
                                     "location": "tests/single-worker/example2.spec.js:4:27",
                                     "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.5084958901834586\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:4:27"
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.8072439894128249\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:4:27"
                                     ],
                                     "numErrors": 1
                                 },
@@ -400,7 +400,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 5,
+                                    "duration": 31,
                                     "location": ""
                                 },
                                 {
@@ -422,10 +422,10 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 14,
+                                    "duration": 4,
                                     "location": "tests/single-worker/example2.spec.js:4:27",
                                     "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.7329580777266238\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:4:27"
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.8508301980116237\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:4:27"
                                     ],
                                     "numErrors": 1
                                 },
@@ -434,7 +434,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 42,
+                                    "duration": 11,
                                     "location": ""
                                 }
                             ],
@@ -449,12 +449,12 @@
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example2.spec.js:7:1",
                             "timestamps": [
-                                1679715235470,
-                                1679715235530,
-                                1679715236337,
-                                1679715236379
+                                1679721676822,
+                                1679721676870,
+                                1679721677326,
+                                1679721677344
                             ],
-                            "duration": 909,
+                            "duration": 522,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "failed",
@@ -462,14 +462,14 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 2,
-                                    "timestamp": 1679715235470,
-                                    "duration": 60
+                                    "timestamp": 1679721676822,
+                                    "duration": 48
                                 },
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 3,
-                                    "timestamp": 1679715236337,
-                                    "duration": 42
+                                    "timestamp": 1679721677326,
+                                    "duration": 18
                                 }
                             ],
                             "subs": [
@@ -478,7 +478,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 18,
+                                    "duration": 11,
                                     "location": ""
                                 },
                                 {
@@ -486,7 +486,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 14,
+                                    "duration": 13,
                                     "location": "tests/single-worker/example2.spec.js:8:31",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  6 |\n  7 | test('@passed or @flaky', () => {\n> 8 |     expect(test.info().retry).toBe(Math.random() > 0.5 ? 1 : 0);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:8:31"
@@ -498,7 +498,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 22,
+                                    "duration": 19,
                                     "location": ""
                                 },
                                 {
@@ -512,7 +512,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 10,
+                                    "duration": 7,
                                     "location": ""
                                 },
                                 {
@@ -520,7 +520,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 19,
+                                    "duration": 3,
                                     "location": "tests/single-worker/example2.spec.js:8:31",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  6 |\n  7 | test('@passed or @flaky', () => {\n> 8 |     expect(test.info().retry).toBe(Math.random() > 0.5 ? 1 : 0);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:8:31"
@@ -532,7 +532,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 8,
+                                    "duration": 6,
                                     "location": ""
                                 }
                             ],
@@ -541,30 +541,25 @@
                         {
                             "title": "@passed or @skipped",
                             "type": "case",
-                            "caseType": "skipped",
+                            "caseType": "passed",
                             "ok": true,
-                            "outcome": "skipped",
-                            "expectedStatus": "skipped",
+                            "outcome": "expected",
+                            "expectedStatus": "passed",
                             "location": "tests/single-worker/example2.spec.js:11:1",
                             "timestamps": [
-                                1679715237176,
-                                1679715237185
+                                1679721677925,
+                                1679721677938
                             ],
-                            "duration": 9,
-                            "annotations": [
-                                {
-                                    "type": "skip"
-                                }
-                            ],
+                            "duration": 13,
                             "timeout": 30000,
                             "retry": 0,
-                            "status": "skipped",
+                            "status": "passed",
                             "workers": [
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 4,
-                                    "timestamp": 1679715237176,
-                                    "duration": 9
+                                    "timestamp": 1679721677925,
+                                    "duration": 13
                                 }
                             ],
                             "subs": [
@@ -573,7 +568,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 7,
+                                    "duration": 12,
                                     "location": ""
                                 },
                                 {
@@ -604,12 +599,12 @@
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example4.spec.js:3:1",
                             "timestamps": [
-                                1679715237191,
-                                1679715237210,
-                                1679715237637,
-                                1679715237658
+                                1679721677944,
+                                1679721677960,
+                                1679721678392,
+                                1679721678416
                             ],
-                            "duration": 467,
+                            "duration": 472,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "failed",
@@ -617,14 +612,14 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 4,
-                                    "timestamp": 1679715237191,
-                                    "duration": 19
+                                    "timestamp": 1679721677944,
+                                    "duration": 16
                                 },
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 5,
-                                    "timestamp": 1679715237637,
-                                    "duration": 21
+                                    "timestamp": 1679721678392,
+                                    "duration": 24
                                 }
                             ],
                             "subs": [
@@ -644,7 +639,105 @@
                                     "duration": 3,
                                     "location": "tests/single-worker/example4.spec.js:4:27",
                                     "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.6325418671678782\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example4.spec.js:4:27"
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.6733433962217512\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example4.spec.js:4:27"
+                                    ],
+                                    "numErrors": 1
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 4,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "Retry #1",
+                                    "type": "step",
+                                    "status": "retry",
+                                    "retry": 1
+                                },
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 12,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBeLessThan",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 3,
+                                    "location": "tests/single-worker/example4.spec.js:4:27",
+                                    "errors": [
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.6344373533086307\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example4.spec.js:4:27"
+                                    ],
+                                    "numErrors": 1
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 4,
+                                    "location": ""
+                                }
+                            ],
+                            "numErrors": 2
+                        },
+                        {
+                            "title": "@passed or @flaky",
+                            "type": "case",
+                            "caseType": "flaky",
+                            "ok": true,
+                            "outcome": "flaky",
+                            "expectedStatus": "passed",
+                            "location": "tests/single-worker/example4.spec.js:7:1",
+                            "timestamps": [
+                                1679721678792,
+                                1679721678810,
+                                1679721679179,
+                                1679721679191
+                            ],
+                            "duration": 399,
+                            "timeout": 30000,
+                            "retry": 1,
+                            "status": "passed",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 6,
+                                    "timestamp": 1679721678792,
+                                    "duration": 18
+                                },
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 7,
+                                    "timestamp": 1679721679179,
+                                    "duration": 12
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 7,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBe",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 4,
+                                    "location": "tests/single-worker/example4.spec.js:8:31",
+                                    "errors": [
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  6 |\n  7 | test('@passed or @flaky', () => {\n> 8 |     expect(test.info().retry).toBe(Math.random() > 0.5 ? 1 : 0);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example4.spec.js:8:31"
                                     ],
                                     "numErrors": 1
                                 },
@@ -671,62 +764,6 @@
                                     "location": ""
                                 },
                                 {
-                                    "title": "expect.toBeLessThan",
-                                    "type": "step",
-                                    "category": "expect",
-                                    "status": "expect",
-                                    "duration": 5,
-                                    "location": "tests/single-worker/example4.spec.js:4:27",
-                                    "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.9358547251508071\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example4.spec.js:4:27"
-                                    ],
-                                    "numErrors": 1
-                                },
-                                {
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 5,
-                                    "location": ""
-                                }
-                            ],
-                            "numErrors": 2
-                        },
-                        {
-                            "title": "@passed or @flaky",
-                            "type": "case",
-                            "caseType": "passed",
-                            "ok": true,
-                            "outcome": "expected",
-                            "expectedStatus": "passed",
-                            "location": "tests/single-worker/example4.spec.js:7:1",
-                            "timestamps": [
-                                1679715238241,
-                                1679715238252
-                            ],
-                            "duration": 11,
-                            "timeout": 30000,
-                            "retry": 0,
-                            "status": "passed",
-                            "workers": [
-                                {
-                                    "parallelIndex": 0,
-                                    "workerIndex": 6,
-                                    "timestamp": 1679715238241,
-                                    "duration": 11
-                                }
-                            ],
-                            "subs": [
-                                {
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 7,
-                                    "location": ""
-                                },
-                                {
                                     "title": "expect.toBe",
                                     "type": "step",
                                     "category": "expect",
@@ -739,10 +776,11 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 1,
+                                    "duration": 2,
                                     "location": ""
                                 }
-                            ]
+                            ],
+                            "numErrors": 1
                         },
                         {
                             "title": "@passed or @skipped",
@@ -753,10 +791,10 @@
                             "expectedStatus": "skipped",
                             "location": "tests/single-worker/example4.spec.js:11:1",
                             "timestamps": [
-                                1679715238252,
-                                1679715238255
+                                1679721679191,
+                                1679721679193
                             ],
-                            "duration": 3,
+                            "duration": 2,
                             "annotations": [
                                 {
                                     "type": "skip"
@@ -768,9 +806,9 @@
                             "workers": [
                                 {
                                     "parallelIndex": 0,
-                                    "workerIndex": 6,
-                                    "timestamp": 1679715238252,
-                                    "duration": 3
+                                    "workerIndex": 7,
+                                    "timestamp": 1679721679191,
+                                    "duration": 2
                                 }
                             ],
                             "subs": [
@@ -779,7 +817,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 1,
                                     "location": ""
                                 },
                                 {
@@ -813,15 +851,15 @@
         },
         "flaky": {
             "name": "Flaky",
-            "value": 0,
+            "value": 1,
             "type": "flaky",
-            "percent": "0.0%"
+            "percent": "11.1%"
         },
         "skipped": {
             "name": "Skipped",
-            "value": 2,
+            "value": 1,
             "type": "skipped",
-            "percent": "22.2%"
+            "percent": "11.1%"
         },
         "failed": {
             "name": "Failed",
@@ -831,11 +869,11 @@
         },
         "steps": {
             "name": "Steps",
-            "value": 36
+            "value": 40
         },
         "retries": {
             "name": "Retries",
-            "value": 3
+            "value": 4
         },
         "suites": {
             "name": "Suites",
@@ -858,7 +896,7 @@
         },
         "errors": {
             "name": "Errors",
-            "value": 6
+            "value": 7
         },
         "logs": {
             "name": "Logs",

@@ -1,10 +1,10 @@
 {
     "use": {},
     "name": "all-flaky",
-    "date": 1679715231908,
-    "dateH": "2023/3/25 11:33:51",
-    "duration": 2891,
-    "durationH": "2.891 s",
+    "date": 1679721673740,
+    "dateH": "2023/3/25 13:21:13",
+    "duration": 3469,
+    "durationH": "3.469 s",
     "version": "1.32.0",
     "workers": 4,
     "system": {
@@ -23,34 +23,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 355965.953,
+        "uptime": 362407.781,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 4216,
+        "pid": 5864,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679715231908,
+        "timestampStart": 1679721673740,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 89.66
+                    "percent": 100
                 },
                 "mem": {
-                    "free": 16260268032
+                    "free": 16367550464
                 },
-                "timestamp": 1679715233922
+                "timestamp": 1679721675753
             },
             {
                 "cpu": {
-                    "percent": 93.28
+                    "percent": 84.98
                 },
                 "mem": {
-                    "free": 16710291456
+                    "free": 16739586048
                 },
-                "timestamp": 1679715234790
+                "timestamp": 1679721677205
             }
         ],
-        "timestampEnd": 1679715234799
+        "timestampEnd": 1679721677209
     },
     "columns": [
         {
@@ -179,12 +179,12 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-flaky/example.spec.js:3:1",
                             "timestamps": [
-                                1679715232906,
-                                1679715232958,
-                                1679715233661,
-                                1679715233679
+                                1679721674714,
+                                1679721674779,
+                                1679721675598,
+                                1679721675621
                             ],
-                            "duration": 773,
+                            "duration": 907,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "passed",
@@ -192,14 +192,14 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679715232906,
-                                    "duration": 52
+                                    "timestamp": 1679721674714,
+                                    "duration": 65
                                 },
                                 {
                                     "parallelIndex": 1,
                                     "workerIndex": 1,
-                                    "timestamp": 1679715233661,
-                                    "duration": 18
+                                    "timestamp": 1679721675598,
+                                    "duration": 23
                                 }
                             ],
                             "subs": [
@@ -216,7 +216,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 5,
+                                    "duration": 6,
                                     "location": "tests/all-flaky/example.spec.js:4:31",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(test.info().retry).toBe(1);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-flaky\\example.spec.js:4:31"
@@ -228,7 +228,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 19,
+                                    "duration": 36,
                                     "location": ""
                                 },
                                 {
@@ -242,7 +242,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 10,
+                                    "duration": 15,
                                     "location": ""
                                 },
                                 {
@@ -250,7 +250,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 0,
+                                    "duration": 1,
                                     "location": "tests/all-flaky/example.spec.js:4:31"
                                 },
                                 {
@@ -258,7 +258,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 1,
+                                    "duration": 2,
                                     "location": ""
                                 }
                             ],
