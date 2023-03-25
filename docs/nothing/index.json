@@ -1,12 +1,14 @@
 {
-    "use": {},
-    "name": "nothing",
-    "date": 1679741852262,
-    "dateH": "2023/3/25 18:57:32",
-    "duration": 1168,
-    "durationH": "1.168 s",
+    "rootDir": "H:\\workspace\\monocart-reporter-test\\tests\\nothing",
+    "configFile": "H:\\workspace\\monocart-reporter-test\\tests\\nothing\\playwright.config.js",
     "version": "1.32.1",
     "workers": 4,
+    "use": {},
+    "name": "nothing",
+    "date": 1679750067166,
+    "dateH": "2023/3/25 21:14:27",
+    "duration": 1341,
+    "durationH": "1.341 s",
     "system": {
         "cpu": {
             "color": "#117DBB",
@@ -23,25 +25,25 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 382586.312,
+        "uptime": 390801.218,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 10532,
+        "pid": 14604,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679741852262,
+        "timestampStart": 1679750067166,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 98.55
+                    "percent": 100
                 },
                 "mem": {
-                    "free": 16050987008
+                    "free": 17175121920
                 },
-                "timestamp": 1679741853424
+                "timestamp": 1679750068488
             }
         ],
-        "timestampEnd": 1679741853430
+        "timestampEnd": 1679750068507
     },
     "columns": [
         {

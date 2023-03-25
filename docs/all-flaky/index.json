@@ -1,12 +1,14 @@
 {
-    "use": {},
-    "name": "all-flaky",
-    "date": 1679741852291,
-    "dateH": "2023/3/25 18:57:32",
-    "duration": 3232,
-    "durationH": "3.232 s",
+    "rootDir": "H:\\workspace\\monocart-reporter-test\\tests\\all-flaky",
+    "configFile": "H:\\workspace\\monocart-reporter-test\\tests\\all-flaky\\playwright.config.js",
     "version": "1.32.1",
     "workers": 4,
+    "use": {},
+    "name": "all-flaky",
+    "date": 1679750067192,
+    "dateH": "2023/3/25 21:14:27",
+    "duration": 3457,
+    "durationH": "3.457 s",
     "system": {
         "cpu": {
             "color": "#117DBB",
@@ -23,34 +25,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 382586.343,
+        "uptime": 390801.234,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 19004,
+        "pid": 20160,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679741852291,
+        "timestampStart": 1679750067192,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 87.6
+                    "percent": 83.31
                 },
                 "mem": {
-                    "free": 16133484544
+                    "free": 17426108416
                 },
-                "timestamp": 1679741854387
+                "timestamp": 1679750069226
             },
             {
                 "cpu": {
-                    "percent": 91.4
+                    "percent": 97.07
                 },
                 "mem": {
-                    "free": 16640753664
+                    "free": 17704402944
                 },
-                "timestamp": 1679741855514
+                "timestamp": 1679750070641
             }
         ],
-        "timestampEnd": 1679741855523
+        "timestampEnd": 1679750070649
     },
     "columns": [
         {
@@ -179,12 +181,12 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-flaky/example.spec.js:3:1",
                             "timestamps": [
-                                1679741853006,
-                                1679741853071,
-                                1679741854039,
-                                1679741854061
+                                1679750068261,
+                                1679750068393,
+                                1679750069039,
+                                1679750069056
                             ],
-                            "duration": 1055,
+                            "duration": 795,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "passed",
@@ -192,14 +194,14 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679741853006,
-                                    "duration": 65
+                                    "timestamp": 1679750068261,
+                                    "duration": 132
                                 },
                                 {
                                     "parallelIndex": 1,
                                     "workerIndex": 1,
-                                    "timestamp": 1679741854039,
-                                    "duration": 22
+                                    "timestamp": 1679750069039,
+                                    "duration": 17
                                 }
                             ],
                             "subs": [
@@ -228,7 +230,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 35,
+                                    "duration": 101,
                                     "location": ""
                                 },
                                 {
@@ -242,7 +244,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 15,
+                                    "duration": 10,
                                     "location": ""
                                 },
                                 {
@@ -250,7 +252,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 1,
+                                    "duration": 0,
                                     "location": "tests/all-flaky/example.spec.js:4:31"
                                 },
                                 {

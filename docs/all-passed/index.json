@@ -1,12 +1,14 @@
 {
-    "use": {},
-    "name": "all-passed",
-    "date": 1679741852364,
-    "dateH": "2023/3/25 18:57:32",
-    "duration": 2155,
-    "durationH": "2.155 s",
+    "rootDir": "H:\\workspace\\monocart-reporter-test\\tests\\all-passed",
+    "configFile": "H:\\workspace\\monocart-reporter-test\\tests\\all-passed\\playwright.config.js",
     "version": "1.32.1",
     "workers": 4,
+    "use": {},
+    "name": "all-passed",
+    "date": 1679750067174,
+    "dateH": "2023/3/25 21:14:27",
+    "duration": 2571,
+    "durationH": "2.571 s",
     "system": {
         "cpu": {
             "color": "#117DBB",
@@ -23,34 +25,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 382586.406,
+        "uptime": 390801.234,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 11596,
+        "pid": 10488,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679741852364,
+        "timestampStart": 1679750067174,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 87.12
+                    "percent": 83.05
                 },
                 "mem": {
-                    "free": 16133484544
+                    "free": 17461882880
                 },
-                "timestamp": 1679741854388
+                "timestamp": 1679750069186
             },
             {
                 "cpu": {
-                    "percent": 82.91
+                    "percent": 84.47
                 },
                 "mem": {
-                    "free": 16411852800
+                    "free": 17358987264
                 },
-                "timestamp": 1679741854507
+                "timestamp": 1679750069736
             }
         ],
-        "timestampEnd": 1679741854519
+        "timestampEnd": 1679750069745
     },
     "columns": [
         {
@@ -179,10 +181,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-passed/example.spec.js:3:1",
                             "timestamps": [
-                                1679741853054,
-                                1679741853086
+                                1679750068184,
+                                1679750068203
                             ],
-                            "duration": 32,
+                            "duration": 19,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -190,8 +192,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679741853054,
-                                    "duration": 32
+                                    "timestamp": 1679750068184,
+                                    "duration": 19
                                 }
                             ],
                             "subs": [
@@ -200,7 +202,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 27,
+                                    "duration": 15,
                                     "location": ""
                                 },
                                 {
@@ -208,7 +210,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 1,
+                                    "duration": 2,
                                     "location": ""
                                 }
                             ]
@@ -222,10 +224,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-passed/example.spec.js:8:1",
                             "timestamps": [
-                                1679741853086,
-                                1679741853091
+                                1679750068204,
+                                1679750068248
                             ],
-                            "duration": 5,
+                            "duration": 44,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -233,8 +235,51 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679741853086,
-                                    "duration": 5
+                                    "timestamp": 1679750068204,
+                                    "duration": 44
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 43,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 1,
+                                    "location": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "three",
+                            "type": "case",
+                            "caseType": "passed",
+                            "ok": true,
+                            "outcome": "expected",
+                            "expectedStatus": "passed",
+                            "location": "tests/all-passed/example.spec.js:12:1",
+                            "timestamps": [
+                                1679750068248,
+                                1679750068267
+                            ],
+                            "duration": 19,
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "passed",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 0,
+                                    "timestamp": 1679750068248,
+                                    "duration": 19
                                 }
                             ],
                             "subs": [
@@ -251,50 +296,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 3,
-                                    "location": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "three",
-                            "type": "case",
-                            "caseType": "passed",
-                            "ok": true,
-                            "outcome": "expected",
-                            "expectedStatus": "passed",
-                            "location": "tests/all-passed/example.spec.js:12:1",
-                            "timestamps": [
-                                1679741853091,
-                                1679741853095
-                            ],
-                            "duration": 4,
-                            "timeout": 30000,
-                            "retry": 0,
-                            "status": "passed",
-                            "workers": [
-                                {
-                                    "parallelIndex": 0,
-                                    "workerIndex": 0,
-                                    "timestamp": 1679741853091,
-                                    "duration": 4
-                                }
-                            ],
-                            "subs": [
-                                {
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 3,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 1,
+                                    "duration": 17,
                                     "location": ""
                                 }
                             ]

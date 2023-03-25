@@ -1,12 +1,14 @@
 {
-    "use": {},
-    "name": "all-failed",
-    "date": 1679741852893,
-    "dateH": "2023/3/25 18:57:32",
-    "duration": 3645,
-    "durationH": "3.645 s",
+    "rootDir": "H:\\workspace\\monocart-reporter-test\\tests\\all-failed",
+    "configFile": "H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\playwright.config.js",
     "version": "1.32.1",
     "workers": 4,
+    "use": {},
+    "name": "all-failed",
+    "date": 1679750067117,
+    "dateH": "2023/3/25 21:14:27",
+    "duration": 4001,
+    "durationH": "4.001 s",
     "system": {
         "cpu": {
             "color": "#117DBB",
@@ -23,34 +25,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 382586.937,
+        "uptime": 390801.171,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 14912,
+        "pid": 19348,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679741852893,
+        "timestampStart": 1679750067117,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 82.63
+                    "percent": 83.05
                 },
                 "mem": {
-                    "free": 16224759808
+                    "free": 17506336768
                 },
-                "timestamp": 1679741854909
+                "timestamp": 1679750069126
             },
             {
                 "cpu": {
-                    "percent": 87.12
+                    "percent": 86.76
                 },
                 "mem": {
-                    "free": 16771837952
+                    "free": 17912455168
                 },
-                "timestamp": 1679741856531
+                "timestamp": 1679750071109
             }
         ],
-        "timestampEnd": 1679741856538
+        "timestampEnd": 1679750071118
     },
     "columns": [
         {
@@ -179,10 +181,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-failed/example.spec.js:3:1",
                             "timestamps": [
-                                1679741853880,
-                                1679741853963
+                                1679750068063,
+                                1679750068122
                             ],
-                            "duration": 83,
+                            "duration": 59,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "failed",
@@ -190,8 +192,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679741853880,
-                                    "duration": 83
+                                    "timestamp": 1679750068063,
+                                    "duration": 59
                                 }
                             ],
                             "subs": [
@@ -200,7 +202,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 14,
+                                    "duration": 12,
                                     "location": ""
                                 },
                                 {
@@ -208,7 +210,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 11,
+                                    "duration": 4,
                                     "location": "tests/all-failed/example.spec.js:4:15",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(1).toBe(2);\n    |               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\example.spec.js:4:15"
@@ -220,7 +222,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 53,
+                                    "duration": 36,
                                     "location": ""
                                 }
                             ],
@@ -235,10 +237,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-failed/example.spec.js:8:1",
                             "timestamps": [
-                                1679741854476,
-                                1679741854523
+                                1679750069019,
+                                1679750069045
                             ],
-                            "duration": 47,
+                            "duration": 26,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "failed",
@@ -246,8 +248,8 @@
                                 {
                                     "parallelIndex": 1,
                                     "workerIndex": 1,
-                                    "timestamp": 1679741854476,
-                                    "duration": 47
+                                    "timestamp": 1679750069019,
+                                    "duration": 26
                                 }
                             ],
                             "subs": [
@@ -256,7 +258,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 19,
+                                    "duration": 10,
                                     "location": ""
                                 },
                                 {
@@ -264,7 +266,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 9,
+                                    "duration": 6,
                                     "location": "tests/all-failed/example.spec.js:9:15",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  7 |\n  8 | test('two', () => {\n> 9 |     expect(1).toBe(2);\n    |               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\example.spec.js:9:15"
@@ -276,7 +278,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 14,
+                                    "duration": 6,
                                     "location": ""
                                 }
                             ],
@@ -291,10 +293,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-failed/example.spec.js:12:1",
                             "timestamps": [
-                                1679741855314,
-                                1679741855357
+                                1679750069937,
+                                1679750069989
                             ],
-                            "duration": 43,
+                            "duration": 52,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "failed",
@@ -302,8 +304,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 2,
-                                    "timestamp": 1679741855314,
-                                    "duration": 43
+                                    "timestamp": 1679750069937,
+                                    "duration": 52
                                 }
                             ],
                             "subs": [
@@ -312,7 +314,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 19,
+                                    "duration": 12,
                                     "location": ""
                                 },
                                 {
@@ -320,7 +322,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 4,
+                                    "duration": 5,
                                     "location": "tests/all-failed/example.spec.js:13:15",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  11 |\n  12 | test('three', () => {\n> 13 |     expect(1).toBe(2);\n     |               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\example.spec.js:13:15"
@@ -332,7 +334,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 16,
+                                    "duration": 31,
                                     "location": ""
                                 }
                             ],
