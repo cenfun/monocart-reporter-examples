@@ -1,11 +1,11 @@
 {
     "use": {},
     "name": "all-skipped",
-    "date": 1679721673776,
-    "dateH": "2023/3/25 13:21:13",
-    "duration": 2184,
-    "durationH": "2.184 s",
-    "version": "1.32.0",
+    "date": 1679732228214,
+    "dateH": "2023/3/25 16:17:08",
+    "duration": 2626,
+    "durationH": "2.626 s",
+    "version": "1.32.1",
     "workers": 4,
     "system": {
         "cpu": {
@@ -23,34 +23,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 362407.828,
+        "uptime": 372962.265,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 7908,
+        "pid": 8216,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679721673776,
+        "timestampStart": 1679732228214,
         "ticks": [
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 16341241856
+                    "free": 15481827328
                 },
-                "timestamp": 1679721675805
+                "timestamp": 1679732230239
             },
             {
                 "cpu": {
-                    "percent": 97.71
+                    "percent": 100
                 },
                 "mem": {
-                    "free": 16315899904
+                    "free": 15474872320
                 },
-                "timestamp": 1679721675953
+                "timestamp": 1679732230831
             }
         ],
-        "timestampEnd": 1679721675960
+        "timestampEnd": 1679732230840
     },
     "columns": [
         {
@@ -179,10 +179,10 @@
                             "expectedStatus": "skipped",
                             "location": "tests/all-skipped/example.spec.js:3:1",
                             "timestamps": [
-                                1679721674784,
-                                1679721674813
+                                1679732229599,
+                                1679732229619
                             ],
-                            "duration": 29,
+                            "duration": 20,
                             "annotations": [
                                 {
                                     "type": "skip"
@@ -195,8 +195,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679721674784,
-                                    "duration": 29
+                                    "timestamp": 1679732229599,
+                                    "duration": 20
                                 }
                             ],
                             "subs": [
@@ -205,7 +205,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 26,
+                                    "duration": 16,
                                     "location": ""
                                 },
                                 {
@@ -227,10 +227,10 @@
                             "expectedStatus": "skipped",
                             "location": "tests/all-skipped/example.spec.js:8:1",
                             "timestamps": [
-                                1679721674814,
-                                1679721674818
+                                1679732229619,
+                                1679732229634
                             ],
-                            "duration": 4,
+                            "duration": 15,
                             "annotations": [
                                 {
                                     "type": "skip"
@@ -243,8 +243,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679721674814,
-                                    "duration": 4
+                                    "timestamp": 1679732229619,
+                                    "duration": 15
                                 }
                             ],
                             "subs": [
@@ -261,7 +261,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 0,
                                     "location": ""
                                 }
                             ]
@@ -275,8 +275,8 @@
                             "expectedStatus": "skipped",
                             "location": "tests/all-skipped/example.spec.js:12:1",
                             "timestamps": [
-                                1679721674818,
-                                1679721674821
+                                1679732229634,
+                                1679732229637
                             ],
                             "duration": 3,
                             "annotations": [
@@ -291,7 +291,7 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679721674818,
+                                    "timestamp": 1679732229634,
                                     "duration": 3
                                 }
                             ],
@@ -301,7 +301,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 1,
                                     "location": ""
                                 },
                                 {

@@ -1,11 +1,11 @@
 {
     "use": {},
     "name": "single-worker",
-    "date": 1679721673829,
-    "dateH": "2023/3/25 13:21:13",
-    "duration": 6417,
-    "durationH": "6.417 s",
-    "version": "1.32.0",
+    "date": 1679732229254,
+    "dateH": "2023/3/25 16:17:09",
+    "duration": 5530,
+    "durationH": "5.53 s",
+    "version": "1.32.1",
     "workers": 1,
     "system": {
         "cpu": {
@@ -23,52 +23,43 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 362407.906,
+        "uptime": 372963.406,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 11068,
+        "pid": 15484,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679721673829,
+        "timestampStart": 1679732229254,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 99.8
+                    "percent": 97.91
                 },
                 "mem": {
-                    "free": 16331309056
+                    "free": 15658266624
                 },
-                "timestamp": 1679721675863
+                "timestamp": 1679732231394
             },
             {
                 "cpu": {
-                    "percent": 48.42
+                    "percent": 82.96
                 },
                 "mem": {
-                    "free": 17036075008
+                    "free": 15969529856
                 },
-                "timestamp": 1679721677878
+                "timestamp": 1679732233425
             },
             {
                 "cpu": {
-                    "percent": 15.58
+                    "percent": 28.2
                 },
                 "mem": {
-                    "free": 17290416128
+                    "free": 16182853632
                 },
-                "timestamp": 1679721679893
-            },
-            {
-                "cpu": {
-                    "percent": 8.84
-                },
-                "mem": {
-                    "free": 17300418560
-                },
-                "timestamp": 1679721680242
+                "timestamp": 1679732234776
             }
         ],
-        "timestampEnd": 1679721680246
+        "timestampEnd": 1679732234784
     },
     "columns": [
         {
@@ -180,7 +171,7 @@
             "title": "project",
             "type": "suite",
             "suiteType": "project",
-            "tests": 9,
+            "tests": 12,
             "subs": [
                 {
                     "title": "example1.spec.js",
@@ -191,25 +182,33 @@
                         {
                             "title": "@passed or @failed or @flaky",
                             "type": "case",
-                            "caseType": "passed",
-                            "ok": true,
-                            "outcome": "expected",
+                            "caseType": "failed",
+                            "ok": false,
+                            "outcome": "unexpected",
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example1.spec.js:3:1",
                             "timestamps": [
-                                1679721674674,
-                                1679721674706
+                                1679732230569,
+                                1679732230644,
+                                1679732231481,
+                                1679732231540
                             ],
-                            "duration": 32,
+                            "duration": 971,
                             "timeout": 30000,
-                            "retry": 0,
-                            "status": "passed",
+                            "retry": 1,
+                            "status": "failed",
                             "workers": [
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679721674674,
-                                    "duration": 32
+                                    "timestamp": 1679732230569,
+                                    "duration": 75
+                                },
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 1,
+                                    "timestamp": 1679732231481,
+                                    "duration": 59
                                 }
                             ],
                             "subs": [
@@ -226,18 +225,57 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 1,
-                                    "location": "tests/single-worker/example1.spec.js:4:27"
+                                    "duration": 10,
+                                    "location": "tests/single-worker/example1.spec.js:4:27",
+                                    "errors": [
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.725814550381606\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example1.spec.js:4:27"
+                                    ],
+                                    "numErrors": 1
                                 },
                                 {
                                     "title": "After Hooks",
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 3,
+                                    "duration": 41,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "Retry #1",
+                                    "type": "step",
+                                    "status": "retry",
+                                    "retry": 1
+                                },
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 22,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBeLessThan",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 6,
+                                    "location": "tests/single-worker/example1.spec.js:4:27",
+                                    "errors": [
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.7083591281521819\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example1.spec.js:4:27"
+                                    ],
+                                    "numErrors": 1
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 20,
                                     "location": ""
                                 }
-                            ]
+                            ],
+                            "numErrors": 2
                         },
                         {
                             "title": "@passed or @flaky",
@@ -248,19 +286,19 @@
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example1.spec.js:7:1",
                             "timestamps": [
-                                1679721674707,
-                                1679721674717
+                                1679732232528,
+                                1679732232550
                             ],
-                            "duration": 10,
+                            "duration": 22,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
                             "workers": [
                                 {
                                     "parallelIndex": 0,
-                                    "workerIndex": 0,
-                                    "timestamp": 1679721674707,
-                                    "duration": 10
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232528,
+                                    "duration": 22
                                 }
                             ],
                             "subs": [
@@ -269,7 +307,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 8,
+                                    "duration": 14,
                                     "location": ""
                                 },
                                 {
@@ -277,7 +315,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 0,
+                                    "duration": 1,
                                     "location": "tests/single-worker/example1.spec.js:8:31"
                                 },
                                 {
@@ -285,7 +323,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 1,
+                                    "duration": 2,
                                     "location": ""
                                 }
                             ]
@@ -299,19 +337,19 @@
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example1.spec.js:11:1",
                             "timestamps": [
-                                1679721674717,
-                                1679721674721
+                                1679732232550,
+                                1679732232555
                             ],
-                            "duration": 4,
+                            "duration": 5,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
                             "workers": [
                                 {
                                     "parallelIndex": 0,
-                                    "workerIndex": 0,
-                                    "timestamp": 1679721674717,
-                                    "duration": 4
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232550,
+                                    "duration": 5
                                 }
                             ],
                             "subs": [
@@ -320,7 +358,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 4,
                                     "location": ""
                                 },
                                 {
@@ -345,281 +383,25 @@
                         {
                             "title": "@passed or @failed or @flaky",
                             "type": "case",
-                            "caseType": "failed",
-                            "ok": false,
-                            "outcome": "unexpected",
-                            "expectedStatus": "passed",
-                            "location": "tests/single-worker/example2.spec.js:3:1",
-                            "timestamps": [
-                                1679721674727,
-                                1679721674770,
-                                1679721675725,
-                                1679721675758
-                            ],
-                            "duration": 1031,
-                            "timeout": 30000,
-                            "retry": 1,
-                            "status": "failed",
-                            "workers": [
-                                {
-                                    "parallelIndex": 0,
-                                    "workerIndex": 0,
-                                    "timestamp": 1679721674727,
-                                    "duration": 43
-                                },
-                                {
-                                    "parallelIndex": 0,
-                                    "workerIndex": 1,
-                                    "timestamp": 1679721675725,
-                                    "duration": 33
-                                }
-                            ],
-                            "subs": [
-                                {
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 7,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "expect.toBeLessThan",
-                                    "type": "step",
-                                    "category": "expect",
-                                    "status": "expect",
-                                    "duration": 3,
-                                    "location": "tests/single-worker/example2.spec.js:4:27",
-                                    "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.8072439894128249\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:4:27"
-                                    ],
-                                    "numErrors": 1
-                                },
-                                {
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 31,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "Retry #1",
-                                    "type": "step",
-                                    "status": "retry",
-                                    "retry": 1
-                                },
-                                {
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 13,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "expect.toBeLessThan",
-                                    "type": "step",
-                                    "category": "expect",
-                                    "status": "expect",
-                                    "duration": 4,
-                                    "location": "tests/single-worker/example2.spec.js:4:27",
-                                    "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.8508301980116237\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:4:27"
-                                    ],
-                                    "numErrors": 1
-                                },
-                                {
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 11,
-                                    "location": ""
-                                }
-                            ],
-                            "numErrors": 2
-                        },
-                        {
-                            "title": "@passed or @flaky",
-                            "type": "case",
-                            "caseType": "failed",
-                            "ok": false,
-                            "outcome": "unexpected",
-                            "expectedStatus": "passed",
-                            "location": "tests/single-worker/example2.spec.js:7:1",
-                            "timestamps": [
-                                1679721676822,
-                                1679721676870,
-                                1679721677326,
-                                1679721677344
-                            ],
-                            "duration": 522,
-                            "timeout": 30000,
-                            "retry": 1,
-                            "status": "failed",
-                            "workers": [
-                                {
-                                    "parallelIndex": 0,
-                                    "workerIndex": 2,
-                                    "timestamp": 1679721676822,
-                                    "duration": 48
-                                },
-                                {
-                                    "parallelIndex": 0,
-                                    "workerIndex": 3,
-                                    "timestamp": 1679721677326,
-                                    "duration": 18
-                                }
-                            ],
-                            "subs": [
-                                {
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 11,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "expect.toBe",
-                                    "type": "step",
-                                    "category": "expect",
-                                    "status": "expect",
-                                    "duration": 13,
-                                    "location": "tests/single-worker/example2.spec.js:8:31",
-                                    "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  6 |\n  7 | test('@passed or @flaky', () => {\n> 8 |     expect(test.info().retry).toBe(Math.random() > 0.5 ? 1 : 0);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:8:31"
-                                    ],
-                                    "numErrors": 1
-                                },
-                                {
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 19,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "Retry #1",
-                                    "type": "step",
-                                    "status": "retry",
-                                    "retry": 1
-                                },
-                                {
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 7,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "expect.toBe",
-                                    "type": "step",
-                                    "category": "expect",
-                                    "status": "expect",
-                                    "duration": 3,
-                                    "location": "tests/single-worker/example2.spec.js:8:31",
-                                    "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  6 |\n  7 | test('@passed or @flaky', () => {\n> 8 |     expect(test.info().retry).toBe(Math.random() > 0.5 ? 1 : 0);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example2.spec.js:8:31"
-                                    ],
-                                    "numErrors": 1
-                                },
-                                {
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 6,
-                                    "location": ""
-                                }
-                            ],
-                            "numErrors": 2
-                        },
-                        {
-                            "title": "@passed or @skipped",
-                            "type": "case",
                             "caseType": "passed",
                             "ok": true,
                             "outcome": "expected",
                             "expectedStatus": "passed",
-                            "location": "tests/single-worker/example2.spec.js:11:1",
+                            "location": "tests/single-worker/example2.spec.js:3:1",
                             "timestamps": [
-                                1679721677925,
-                                1679721677938
+                                1679732232560,
+                                1679732232570
                             ],
-                            "duration": 13,
+                            "duration": 10,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
                             "workers": [
                                 {
                                     "parallelIndex": 0,
-                                    "workerIndex": 4,
-                                    "timestamp": 1679721677925,
-                                    "duration": 13
-                                }
-                            ],
-                            "subs": [
-                                {
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 12,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 1,
-                                    "location": ""
-                                }
-                            ]
-                        }
-                    ],
-                    "location": "tests/single-worker/example2.spec.js:0:0"
-                },
-                {
-                    "title": "example4.spec.js",
-                    "type": "suite",
-                    "suiteType": "file",
-                    "tests": 3,
-                    "subs": [
-                        {
-                            "title": "@passed or @failed or @flaky",
-                            "type": "case",
-                            "caseType": "failed",
-                            "ok": false,
-                            "outcome": "unexpected",
-                            "expectedStatus": "passed",
-                            "location": "tests/single-worker/example4.spec.js:3:1",
-                            "timestamps": [
-                                1679721677944,
-                                1679721677960,
-                                1679721678392,
-                                1679721678416
-                            ],
-                            "duration": 472,
-                            "timeout": 30000,
-                            "retry": 1,
-                            "status": "failed",
-                            "workers": [
-                                {
-                                    "parallelIndex": 0,
-                                    "workerIndex": 4,
-                                    "timestamp": 1679721677944,
-                                    "duration": 16
-                                },
-                                {
-                                    "parallelIndex": 0,
-                                    "workerIndex": 5,
-                                    "timestamp": 1679721678392,
-                                    "duration": 24
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232560,
+                                    "duration": 10
                                 }
                             ],
                             "subs": [
@@ -636,33 +418,158 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 3,
-                                    "location": "tests/single-worker/example4.spec.js:4:27",
-                                    "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.6733433962217512\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example4.spec.js:4:27"
-                                    ],
-                                    "numErrors": 1
+                                    "duration": 0,
+                                    "location": "tests/single-worker/example2.spec.js:4:27"
                                 },
                                 {
                                     "title": "After Hooks",
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 4,
+                                    "duration": 0,
                                     "location": ""
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "title": "@passed or @flaky",
+                            "type": "case",
+                            "caseType": "passed",
+                            "ok": true,
+                            "outcome": "expected",
+                            "expectedStatus": "passed",
+                            "location": "tests/single-worker/example2.spec.js:7:1",
+                            "timestamps": [
+                                1679732232570,
+                                1679732232574
+                            ],
+                            "duration": 4,
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "passed",
+                            "workers": [
                                 {
-                                    "title": "Retry #1",
-                                    "type": "step",
-                                    "status": "retry",
-                                    "retry": 1
-                                },
+                                    "parallelIndex": 0,
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232570,
+                                    "duration": 4
+                                }
+                            ],
+                            "subs": [
                                 {
                                     "title": "Before Hooks",
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 12,
+                                    "duration": 2,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBe",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 0,
+                                    "location": "tests/single-worker/example2.spec.js:8:31"
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 1,
+                                    "location": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "@passed or @skipped",
+                            "type": "case",
+                            "caseType": "skipped",
+                            "ok": true,
+                            "outcome": "skipped",
+                            "expectedStatus": "skipped",
+                            "location": "tests/single-worker/example2.spec.js:11:1",
+                            "timestamps": [
+                                1679732232574,
+                                1679732232578
+                            ],
+                            "duration": 4,
+                            "annotations": [
+                                {
+                                    "type": "skip"
+                                }
+                            ],
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "skipped",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232574,
+                                    "duration": 4
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 2,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 1,
+                                    "location": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "location": "tests/single-worker/example2.spec.js:0:0"
+                },
+                {
+                    "title": "example3.spec.js",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "tests": 3,
+                    "subs": [
+                        {
+                            "title": "@passed or @failed or @flaky",
+                            "type": "case",
+                            "caseType": "passed",
+                            "ok": true,
+                            "outcome": "expected",
+                            "expectedStatus": "passed",
+                            "location": "tests/single-worker/example3.spec.js:3:1",
+                            "timestamps": [
+                                1679732232582,
+                                1679732232586
+                            ],
+                            "duration": 4,
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "passed",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232582,
+                                    "duration": 4
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 2,
                                     "location": ""
                                 },
                                 {
@@ -670,23 +577,177 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 3,
-                                    "location": "tests/single-worker/example4.spec.js:4:27",
-                                    "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0.5\u001b[39m\nReceived:   \u001b[31m0.6344373533086307\u001b[39m\n\n  2 |\n  3 | test('@passed or @failed or @flaky', () => {\n> 4 |     expect(Math.random()).toBeLessThan(0.5);\n    |                           ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\single-worker\\example4.spec.js:4:27"
-                                    ],
-                                    "numErrors": 1
+                                    "duration": 0,
+                                    "location": "tests/single-worker/example3.spec.js:4:27"
                                 },
                                 {
                                     "title": "After Hooks",
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 4,
+                                    "duration": 1,
                                     "location": ""
                                 }
+                            ]
+                        },
+                        {
+                            "title": "@passed or @flaky",
+                            "type": "case",
+                            "caseType": "passed",
+                            "ok": true,
+                            "outcome": "expected",
+                            "expectedStatus": "passed",
+                            "location": "tests/single-worker/example3.spec.js:7:1",
+                            "timestamps": [
+                                1679732232586,
+                                1679732232591
                             ],
-                            "numErrors": 2
+                            "duration": 5,
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "passed",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232586,
+                                    "duration": 5
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 2,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBe",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 0,
+                                    "location": "tests/single-worker/example3.spec.js:8:31"
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 1,
+                                    "location": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "@passed or @skipped",
+                            "type": "case",
+                            "caseType": "skipped",
+                            "ok": true,
+                            "outcome": "skipped",
+                            "expectedStatus": "skipped",
+                            "location": "tests/single-worker/example3.spec.js:11:1",
+                            "timestamps": [
+                                1679732232591,
+                                1679732232594
+                            ],
+                            "duration": 3,
+                            "annotations": [
+                                {
+                                    "type": "skip"
+                                }
+                            ],
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "skipped",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232591,
+                                    "duration": 3
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 2,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 1,
+                                    "location": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "location": "tests/single-worker/example3.spec.js:0:0"
+                },
+                {
+                    "title": "example4.spec.js",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "tests": 3,
+                    "subs": [
+                        {
+                            "title": "@passed or @failed or @flaky",
+                            "type": "case",
+                            "caseType": "passed",
+                            "ok": true,
+                            "outcome": "expected",
+                            "expectedStatus": "passed",
+                            "location": "tests/single-worker/example4.spec.js:3:1",
+                            "timestamps": [
+                                1679732232598,
+                                1679732232602
+                            ],
+                            "duration": 4,
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "passed",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232598,
+                                    "duration": 4
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 2,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBeLessThan",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 0,
+                                    "location": "tests/single-worker/example4.spec.js:4:27"
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 1,
+                                    "location": ""
+                                }
+                            ]
                         },
                         {
                             "title": "@passed or @flaky",
@@ -697,27 +758,27 @@
                             "expectedStatus": "passed",
                             "location": "tests/single-worker/example4.spec.js:7:1",
                             "timestamps": [
-                                1679721678792,
-                                1679721678810,
-                                1679721679179,
-                                1679721679191
+                                1679732232606,
+                                1679732232626,
+                                1679732233332,
+                                1679732233347
                             ],
-                            "duration": 399,
+                            "duration": 741,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "passed",
                             "workers": [
                                 {
                                     "parallelIndex": 0,
-                                    "workerIndex": 6,
-                                    "timestamp": 1679721678792,
-                                    "duration": 18
+                                    "workerIndex": 2,
+                                    "timestamp": 1679732232606,
+                                    "duration": 20
                                 },
                                 {
                                     "parallelIndex": 0,
-                                    "workerIndex": 7,
-                                    "timestamp": 1679721679179,
-                                    "duration": 12
+                                    "workerIndex": 3,
+                                    "timestamp": 1679732233332,
+                                    "duration": 15
                                 }
                             ],
                             "subs": [
@@ -726,7 +787,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 7,
+                                    "duration": 6,
                                     "location": ""
                                 },
                                 {
@@ -746,7 +807,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 5,
+                                    "duration": 9,
                                     "location": ""
                                 },
                                 {
@@ -760,7 +821,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 7,
+                                    "duration": 8,
                                     "location": ""
                                 },
                                 {
@@ -768,7 +829,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 0,
+                                    "duration": 1,
                                     "location": "tests/single-worker/example4.spec.js:8:31"
                                 },
                                 {
@@ -776,7 +837,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 3,
                                     "location": ""
                                 }
                             ],
@@ -791,8 +852,8 @@
                             "expectedStatus": "skipped",
                             "location": "tests/single-worker/example4.spec.js:11:1",
                             "timestamps": [
-                                1679721679191,
-                                1679721679193
+                                1679732233347,
+                                1679732233349
                             ],
                             "duration": 2,
                             "annotations": [
@@ -806,8 +867,8 @@
                             "workers": [
                                 {
                                     "parallelIndex": 0,
-                                    "workerIndex": 7,
-                                    "timestamp": 1679721679191,
+                                    "workerIndex": 3,
+                                    "timestamp": 1679732233347,
                                     "duration": 2
                                 }
                             ],
@@ -817,7 +878,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 1,
+                                    "duration": 2,
                                     "location": ""
                                 },
                                 {
@@ -825,7 +886,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 1,
+                                    "duration": 0,
                                     "location": ""
                                 }
                             ]
@@ -840,32 +901,32 @@
     "summary": {
         "tests": {
             "name": "Tests",
-            "value": 9,
+            "value": 12,
             "type": "tests"
         },
         "passed": {
             "name": "Passed",
-            "value": 4,
+            "value": 7,
             "type": "passed",
-            "percent": "44.4%"
+            "percent": "58.3%"
         },
         "flaky": {
             "name": "Flaky",
             "value": 1,
             "type": "flaky",
-            "percent": "11.1%"
+            "percent": "8.3%"
         },
         "skipped": {
             "name": "Skipped",
-            "value": 1,
+            "value": 3,
             "type": "skipped",
-            "percent": "11.1%"
+            "percent": "25.0%"
         },
         "failed": {
             "name": "Failed",
-            "value": 3,
+            "value": 1,
             "type": "failed",
-            "percent": "33.3%"
+            "percent": "8.3%"
         },
         "steps": {
             "name": "Steps",
@@ -873,11 +934,11 @@
         },
         "retries": {
             "name": "Retries",
-            "value": 4
+            "value": 2
         },
         "suites": {
             "name": "Suites",
-            "value": 4
+            "value": 5
         },
         "projects": {
             "name": "Projects",
@@ -887,7 +948,7 @@
         "files": {
             "name": "Files",
             "description": "Suite type is file",
-            "value": 3
+            "value": 4
         },
         "describes": {
             "name": "Describes",
@@ -896,7 +957,7 @@
         },
         "errors": {
             "name": "Errors",
-            "value": 7
+            "value": 3
         },
         "logs": {
             "name": "Logs",
@@ -912,22 +973,22 @@
             "style": {
                 "background": "green"
             },
-            "value": 9
+            "value": 12
         },
         "failed": {
             "style": {
                 "background": "#d00"
             },
-            "value": 3
+            "value": 4
         },
         "flaky": {
             "style": {
                 "background": "orange"
             },
-            "value": 6
+            "value": 8
         },
         "skipped": {
-            "value": 3
+            "value": 4
         }
     }
 }

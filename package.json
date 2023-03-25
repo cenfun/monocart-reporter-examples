@@ -4,7 +4,7 @@
     "description": "",
     "main": "",
     "scripts": {
-        "link": "sf link ../monocart-reporter",
+        "link": "sf link ../monocart-reporter -f",
         "test": "node ./scripts/test.js",
         "ten": "node ./scripts/random.js && npx playwright test -c tests/ten-minutes"
     },
@@ -14,9 +14,9 @@
         "url": "git+https://github.com/cenfun/monocart-reporter-test.git"
     },
     "dependencies": {
-        "@playwright/test": "^1.32.0",
+        "@playwright/test": "^1.32.1",
         "monocart-reporter": "^1.5.3",
-        "playwright": "^1.32.0"
+        "playwright": "^1.32.1"
     },
     "devDependencies": {
         "eight-colors": "^1.0.3",
