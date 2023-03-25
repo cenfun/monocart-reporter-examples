@@ -1,0 +1,345 @@
+{
+    "use": {},
+    "name": "all-flaky",
+    "date": 1679715231908,
+    "dateH": "2023/3/25 11:33:51",
+    "duration": 2891,
+    "durationH": "2.891 s",
+    "version": "1.32.0",
+    "workers": 4,
+    "system": {
+        "cpu": {
+            "color": "#117DBB",
+            "count": 8,
+            "model": "Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz",
+            "speed": 4008
+        },
+        "mem": {
+            "color": "#8B12AE",
+            "total": 25705492480
+        },
+        "arch": "x64",
+        "platform": "win32",
+        "release": "10.0.19044",
+        "type": "Windows_NT",
+        "version": "Windows 10 Home",
+        "uptime": 355965.953,
+        "hostname": "DESKTOP-7OOOJ8B",
+        "homedir": "C:\\Users\\jinchen",
+        "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
+        "pid": 4216,
+        "cwd": "H:\\workspace\\monocart-reporter-test",
+        "timestampStart": 1679715231908,
+        "ticks": [
+            {
+                "cpu": {
+                    "percent": 89.66
+                },
+                "mem": {
+                    "free": 16260268032
+                },
+                "timestamp": 1679715233922
+            },
+            {
+                "cpu": {
+                    "percent": 93.28
+                },
+                "mem": {
+                    "free": 16710291456
+                },
+                "timestamp": 1679715234790
+            }
+        ],
+        "timestampEnd": 1679715234799
+    },
+    "columns": [
+        {
+            "id": "caseType",
+            "name": "",
+            "width": 36,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconCaseType",
+            "detailed": false
+        },
+        {
+            "id": "title",
+            "name": "Title",
+            "searchable": true,
+            "width": 300,
+            "maxWidth": 1230,
+            "detailed": false
+        },
+        {
+            "id": "type",
+            "name": "Type",
+            "width": 50,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconType",
+            "detailed": false
+        },
+        {
+            "id": "duration",
+            "name": "Duration",
+            "align": "right",
+            "sortAsc": false,
+            "formatter": "duration",
+            "detailed": false
+        },
+        {
+            "id": "errors",
+            "name": "Errors",
+            "width": 60,
+            "align": "center",
+            "comparer": "errors",
+            "formatter": "errors",
+            "detailed": false
+        },
+        {
+            "id": "logs",
+            "name": "Logs",
+            "width": 60,
+            "align": "center",
+            "comparer": "logs",
+            "formatter": "logs",
+            "detailed": false
+        },
+        {
+            "id": "annotations",
+            "name": "Annotations",
+            "width": 100,
+            "markdown": true,
+            "searchable": true,
+            "comparer": "annotations",
+            "formatter": "annotations",
+            "detailed": false
+        },
+        {
+            "id": "attachments",
+            "name": "Attachments",
+            "width": 100,
+            "align": "center",
+            "formatter": "attachments",
+            "detailed": false
+        },
+        {
+            "id": "status",
+            "name": "Status",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "expectedStatus",
+            "name": "Expected",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "outcome",
+            "name": "Outcome",
+            "align": "center",
+            "width": 85,
+            "detailed": false
+        },
+        {
+            "id": "retry",
+            "name": "Retry",
+            "align": "center",
+            "width": 50,
+            "detailed": false
+        },
+        {
+            "id": "location",
+            "name": "Location",
+            "classMap": "mcr-location",
+            "width": 200,
+            "detailed": false
+        }
+    ],
+    "rows": [
+        {
+            "title": "project",
+            "type": "suite",
+            "suiteType": "project",
+            "tests": 1,
+            "subs": [
+                {
+                    "title": "example.spec.js",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "tests": 1,
+                    "subs": [
+                        {
+                            "title": "one",
+                            "type": "case",
+                            "caseType": "flaky",
+                            "ok": true,
+                            "outcome": "flaky",
+                            "expectedStatus": "passed",
+                            "location": "tests/all-flaky/example.spec.js:3:1",
+                            "timestamps": [
+                                1679715232906,
+                                1679715232958,
+                                1679715233661,
+                                1679715233679
+                            ],
+                            "duration": 773,
+                            "timeout": 30000,
+                            "retry": 1,
+                            "status": "passed",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 0,
+                                    "timestamp": 1679715232906,
+                                    "duration": 52
+                                },
+                                {
+                                    "parallelIndex": 1,
+                                    "workerIndex": 1,
+                                    "timestamp": 1679715233661,
+                                    "duration": 18
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 13,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBe",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 5,
+                                    "location": "tests/all-flaky/example.spec.js:4:31",
+                                    "errors": [
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(test.info().retry).toBe(1);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-flaky\\example.spec.js:4:31"
+                                    ],
+                                    "numErrors": 1
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 19,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "Retry #1",
+                                    "type": "step",
+                                    "status": "retry",
+                                    "retry": 1
+                                },
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 10,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBe",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 0,
+                                    "location": "tests/all-flaky/example.spec.js:4:31"
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 1,
+                                    "location": ""
+                                }
+                            ],
+                            "numErrors": 1
+                        }
+                    ],
+                    "location": "tests/all-flaky/example.spec.js:0:0"
+                }
+            ]
+        }
+    ],
+    "formatters": {},
+    "summary": {
+        "tests": {
+            "name": "Tests",
+            "value": 1,
+            "type": "tests"
+        },
+        "passed": {
+            "name": "Passed",
+            "value": 0,
+            "type": "passed",
+            "percent": "0.0%"
+        },
+        "flaky": {
+            "name": "Flaky",
+            "value": 1,
+            "type": "flaky",
+            "percent": "100.0%"
+        },
+        "skipped": {
+            "name": "Skipped",
+            "value": 0,
+            "type": "skipped",
+            "percent": "0.0%"
+        },
+        "failed": {
+            "name": "Failed",
+            "value": 0,
+            "type": "failed",
+            "percent": "0.0%"
+        },
+        "steps": {
+            "name": "Steps",
+            "value": 7
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 1
+        },
+        "suites": {
+            "name": "Suites",
+            "value": 2
+        },
+        "projects": {
+            "name": "Projects",
+            "description": "Suite type is project",
+            "value": 1
+        },
+        "files": {
+            "name": "Files",
+            "description": "Suite type is file",
+            "value": 1
+        },
+        "describes": {
+            "name": "Describes",
+            "description": "Suite type is describe",
+            "value": 0
+        },
+        "errors": {
+            "name": "Errors",
+            "value": 1
+        },
+        "logs": {
+            "name": "Logs",
+            "value": 0
+        },
+        "attachments": {
+            "name": "Attachments",
+            "value": 0
+        }
+    },
+    "tags": {}
+}

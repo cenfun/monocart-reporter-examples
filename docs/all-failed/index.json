@@ -1,0 +1,419 @@
+{
+    "use": {},
+    "name": "all-failed",
+    "date": 1679715231899,
+    "dateH": "2023/3/25 11:33:51",
+    "duration": 3850,
+    "durationH": "3.85 s",
+    "version": "1.32.0",
+    "workers": 4,
+    "system": {
+        "cpu": {
+            "color": "#117DBB",
+            "count": 8,
+            "model": "Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz",
+            "speed": 4008
+        },
+        "mem": {
+            "color": "#8B12AE",
+            "total": 25705492480
+        },
+        "arch": "x64",
+        "platform": "win32",
+        "release": "10.0.19044",
+        "type": "Windows_NT",
+        "version": "Windows 10 Home",
+        "uptime": 355965.953,
+        "hostname": "DESKTOP-7OOOJ8B",
+        "homedir": "C:\\Users\\jinchen",
+        "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
+        "pid": 17220,
+        "cwd": "H:\\workspace\\monocart-reporter-test",
+        "timestampStart": 1679715231899,
+        "ticks": [
+            {
+                "cpu": {
+                    "percent": 89.82
+                },
+                "mem": {
+                    "free": 16260268032
+                },
+                "timestamp": 1679715233922
+            },
+            {
+                "cpu": {
+                    "percent": 84.41
+                },
+                "mem": {
+                    "free": 16865984512
+                },
+                "timestamp": 1679715235738
+            }
+        ],
+        "timestampEnd": 1679715235749
+    },
+    "columns": [
+        {
+            "id": "caseType",
+            "name": "",
+            "width": 36,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconCaseType",
+            "detailed": false
+        },
+        {
+            "id": "title",
+            "name": "Title",
+            "searchable": true,
+            "width": 300,
+            "maxWidth": 1230,
+            "detailed": false
+        },
+        {
+            "id": "type",
+            "name": "Type",
+            "width": 50,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconType",
+            "detailed": false
+        },
+        {
+            "id": "duration",
+            "name": "Duration",
+            "align": "right",
+            "sortAsc": false,
+            "formatter": "duration",
+            "detailed": false
+        },
+        {
+            "id": "errors",
+            "name": "Errors",
+            "width": 60,
+            "align": "center",
+            "comparer": "errors",
+            "formatter": "errors",
+            "detailed": false
+        },
+        {
+            "id": "logs",
+            "name": "Logs",
+            "width": 60,
+            "align": "center",
+            "comparer": "logs",
+            "formatter": "logs",
+            "detailed": false
+        },
+        {
+            "id": "annotations",
+            "name": "Annotations",
+            "width": 100,
+            "markdown": true,
+            "searchable": true,
+            "comparer": "annotations",
+            "formatter": "annotations",
+            "detailed": false
+        },
+        {
+            "id": "attachments",
+            "name": "Attachments",
+            "width": 100,
+            "align": "center",
+            "formatter": "attachments",
+            "detailed": false
+        },
+        {
+            "id": "status",
+            "name": "Status",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "expectedStatus",
+            "name": "Expected",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "outcome",
+            "name": "Outcome",
+            "align": "center",
+            "width": 85,
+            "detailed": false
+        },
+        {
+            "id": "retry",
+            "name": "Retry",
+            "align": "center",
+            "width": 50,
+            "detailed": false
+        },
+        {
+            "id": "location",
+            "name": "Location",
+            "classMap": "mcr-location",
+            "width": 200,
+            "detailed": false
+        }
+    ],
+    "rows": [
+        {
+            "title": "project",
+            "type": "suite",
+            "suiteType": "project",
+            "tests": 3,
+            "subs": [
+                {
+                    "title": "example.spec.js",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "tests": 3,
+                    "subs": [
+                        {
+                            "title": "one",
+                            "type": "case",
+                            "caseType": "failed",
+                            "ok": false,
+                            "outcome": "unexpected",
+                            "expectedStatus": "passed",
+                            "location": "tests/all-failed/example.spec.js:3:1",
+                            "timestamps": [
+                                1679715232910,
+                                1679715232970
+                            ],
+                            "duration": 60,
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "failed",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 0,
+                                    "timestamp": 1679715232910,
+                                    "duration": 60
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 19,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBe",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 6,
+                                    "location": "tests/all-failed/example.spec.js:4:15",
+                                    "errors": [
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(1).toBe(2);\n    |               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\example.spec.js:4:15"
+                                    ],
+                                    "numErrors": 1
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 27,
+                                    "location": ""
+                                }
+                            ],
+                            "numErrors": 1
+                        },
+                        {
+                            "title": "two",
+                            "type": "case",
+                            "caseType": "failed",
+                            "ok": false,
+                            "outcome": "unexpected",
+                            "expectedStatus": "passed",
+                            "location": "tests/all-failed/example.spec.js:8:1",
+                            "timestamps": [
+                                1679715233697,
+                                1679715233750
+                            ],
+                            "duration": 53,
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "failed",
+                            "workers": [
+                                {
+                                    "parallelIndex": 1,
+                                    "workerIndex": 1,
+                                    "timestamp": 1679715233697,
+                                    "duration": 53
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 16,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBe",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 13,
+                                    "location": "tests/all-failed/example.spec.js:9:15",
+                                    "errors": [
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  7 |\n  8 | test('two', () => {\n> 9 |     expect(1).toBe(2);\n    |               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\example.spec.js:9:15"
+                                    ],
+                                    "numErrors": 1
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 21,
+                                    "location": ""
+                                }
+                            ],
+                            "numErrors": 1
+                        },
+                        {
+                            "title": "three",
+                            "type": "case",
+                            "caseType": "failed",
+                            "ok": false,
+                            "outcome": "unexpected",
+                            "expectedStatus": "passed",
+                            "location": "tests/all-failed/example.spec.js:12:1",
+                            "timestamps": [
+                                1679715234450,
+                                1679715234491
+                            ],
+                            "duration": 41,
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "failed",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 2,
+                                    "timestamp": 1679715234450,
+                                    "duration": 41
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 11,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBe",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 10,
+                                    "location": "tests/all-failed/example.spec.js:13:15",
+                                    "errors": [
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  11 |\n  12 | test('three', () => {\n> 13 |     expect(1).toBe(2);\n     |               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\example.spec.js:13:15"
+                                    ],
+                                    "numErrors": 1
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 15,
+                                    "location": ""
+                                }
+                            ],
+                            "numErrors": 1
+                        }
+                    ],
+                    "location": "tests/all-failed/example.spec.js:0:0"
+                }
+            ]
+        }
+    ],
+    "formatters": {},
+    "summary": {
+        "tests": {
+            "name": "Tests",
+            "value": 3,
+            "type": "tests"
+        },
+        "passed": {
+            "name": "Passed",
+            "value": 0,
+            "type": "passed",
+            "percent": "0.0%"
+        },
+        "flaky": {
+            "name": "Flaky",
+            "value": 0,
+            "type": "flaky",
+            "percent": "0.0%"
+        },
+        "skipped": {
+            "name": "Skipped",
+            "value": 0,
+            "type": "skipped",
+            "percent": "0.0%"
+        },
+        "failed": {
+            "name": "Failed",
+            "value": 3,
+            "type": "failed",
+            "percent": "100.0%"
+        },
+        "steps": {
+            "name": "Steps",
+            "value": 9
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 0
+        },
+        "suites": {
+            "name": "Suites",
+            "value": 2
+        },
+        "projects": {
+            "name": "Projects",
+            "description": "Suite type is project",
+            "value": 1
+        },
+        "files": {
+            "name": "Files",
+            "description": "Suite type is file",
+            "value": 1
+        },
+        "describes": {
+            "name": "Describes",
+            "description": "Suite type is describe",
+            "value": 0
+        },
+        "errors": {
+            "name": "Errors",
+            "value": 3
+        },
+        "logs": {
+            "name": "Logs",
+            "value": 0
+        },
+        "attachments": {
+            "name": "Attachments",
+            "value": 0
+        }
+    },
+    "tags": {}
+}

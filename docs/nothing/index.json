@@ -1,0 +1,224 @@
+{
+    "use": {},
+    "name": "nothing",
+    "date": 1679715231987,
+    "dateH": "2023/3/25 11:33:51",
+    "duration": 1208,
+    "durationH": "1.208 s",
+    "version": "1.32.0",
+    "workers": 4,
+    "system": {
+        "cpu": {
+            "color": "#117DBB",
+            "count": 8,
+            "model": "Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz",
+            "speed": 4008
+        },
+        "mem": {
+            "color": "#8B12AE",
+            "total": 25705492480
+        },
+        "arch": "x64",
+        "platform": "win32",
+        "release": "10.0.19044",
+        "type": "Windows_NT",
+        "version": "Windows 10 Home",
+        "uptime": 355966.031,
+        "hostname": "DESKTOP-7OOOJ8B",
+        "homedir": "C:\\Users\\jinchen",
+        "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
+        "pid": 1764,
+        "cwd": "H:\\workspace\\monocart-reporter-test",
+        "timestampStart": 1679715231987,
+        "ticks": [
+            {
+                "cpu": {
+                    "percent": 99.09
+                },
+                "mem": {
+                    "free": 16147546112
+                },
+                "timestamp": 1679715233167
+            }
+        ],
+        "timestampEnd": 1679715233195
+    },
+    "columns": [
+        {
+            "id": "caseType",
+            "name": "",
+            "width": 36,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconCaseType",
+            "detailed": false
+        },
+        {
+            "id": "title",
+            "name": "Title",
+            "searchable": true,
+            "width": 300,
+            "maxWidth": 1230,
+            "detailed": false
+        },
+        {
+            "id": "type",
+            "name": "Type",
+            "width": 50,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconType",
+            "detailed": false
+        },
+        {
+            "id": "duration",
+            "name": "Duration",
+            "align": "right",
+            "sortAsc": false,
+            "formatter": "duration",
+            "detailed": false
+        },
+        {
+            "id": "errors",
+            "name": "Errors",
+            "width": 60,
+            "align": "center",
+            "comparer": "errors",
+            "formatter": "errors",
+            "detailed": false
+        },
+        {
+            "id": "logs",
+            "name": "Logs",
+            "width": 60,
+            "align": "center",
+            "comparer": "logs",
+            "formatter": "logs",
+            "detailed": false
+        },
+        {
+            "id": "annotations",
+            "name": "Annotations",
+            "width": 100,
+            "markdown": true,
+            "searchable": true,
+            "comparer": "annotations",
+            "formatter": "annotations",
+            "detailed": false
+        },
+        {
+            "id": "attachments",
+            "name": "Attachments",
+            "width": 100,
+            "align": "center",
+            "formatter": "attachments",
+            "detailed": false
+        },
+        {
+            "id": "status",
+            "name": "Status",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "expectedStatus",
+            "name": "Expected",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "outcome",
+            "name": "Outcome",
+            "align": "center",
+            "width": 85,
+            "detailed": false
+        },
+        {
+            "id": "retry",
+            "name": "Retry",
+            "align": "center",
+            "width": 50,
+            "detailed": false
+        },
+        {
+            "id": "location",
+            "name": "Location",
+            "classMap": "mcr-location",
+            "width": 200,
+            "detailed": false
+        }
+    ],
+    "rows": [],
+    "formatters": {},
+    "summary": {
+        "tests": {
+            "name": "Tests",
+            "value": 0,
+            "type": "tests"
+        },
+        "passed": {
+            "name": "Passed",
+            "value": 0,
+            "type": "passed",
+            "percent": "0.0%"
+        },
+        "flaky": {
+            "name": "Flaky",
+            "value": 0,
+            "type": "flaky",
+            "percent": "0.0%"
+        },
+        "skipped": {
+            "name": "Skipped",
+            "value": 0,
+            "type": "skipped",
+            "percent": "0.0%"
+        },
+        "failed": {
+            "name": "Failed",
+            "value": 0,
+            "type": "failed",
+            "percent": "0.0%"
+        },
+        "steps": {
+            "name": "Steps",
+            "value": 0
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 0
+        },
+        "suites": {
+            "name": "Suites",
+            "value": 0
+        },
+        "projects": {
+            "name": "Projects",
+            "description": "Suite type is project",
+            "value": 0
+        },
+        "files": {
+            "name": "Files",
+            "description": "Suite type is file",
+            "value": 0
+        },
+        "describes": {
+            "name": "Describes",
+            "description": "Suite type is describe",
+            "value": 0
+        },
+        "errors": {
+            "name": "Errors",
+            "value": 0
+        },
+        "logs": {
+            "name": "Logs",
+            "value": 0
+        },
+        "attachments": {
+            "name": "Attachments",
+            "value": 0
+        }
+    },
+    "tags": {}
+}
