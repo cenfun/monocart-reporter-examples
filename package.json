@@ -6,7 +6,8 @@
     "scripts": {
         "link": "sf link ../monocart-reporter -f",
         "test": "node ./scripts/test.js",
-        "ten": "node ./scripts/random.js && npx playwright test -c tests/ten-minutes"
+        "radom": "node ./scripts/random.js",
+        "ten": "npx playwright test -c tests/ten-minutes"
     },
     "license": "MIT",
     "repository": {

@@ -1,10 +1,10 @@
 {
     "use": {},
     "name": "nothing",
-    "date": 1679732229310,
-    "dateH": "2023/3/25 16:17:09",
-    "duration": 1240,
-    "durationH": "1.24 s",
+    "date": 1679741852262,
+    "dateH": "2023/3/25 18:57:32",
+    "duration": 1168,
+    "durationH": "1.168 s",
     "version": "1.32.1",
     "workers": 4,
     "system": {
@@ -23,25 +23,25 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 372963.359,
+        "uptime": 382586.312,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 16128,
+        "pid": 10532,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679732229310,
+        "timestampStart": 1679741852262,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 100
+                    "percent": 98.55
                 },
                 "mem": {
-                    "free": 15403421696
+                    "free": 16050987008
                 },
-                "timestamp": 1679732230535
+                "timestamp": 1679741853424
             }
         ],
-        "timestampEnd": 1679732230550
+        "timestampEnd": 1679741853430
     },
     "columns": [
         {
