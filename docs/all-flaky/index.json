@@ -5,10 +5,10 @@
     "workers": 4,
     "use": {},
     "name": "all-flaky",
-    "date": 1679750067192,
-    "dateH": "2023/3/25 21:14:27",
-    "duration": 3457,
-    "durationH": "3.457 s",
+    "date": 1679833889743,
+    "dateH": "2023/3/26 20:31:29",
+    "duration": 3013,
+    "durationH": "3.013s",
     "system": {
         "cpu": {
             "color": "#117DBB",
@@ -25,34 +25,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 390801.234,
+        "uptime": 474619.421,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 20160,
+        "pid": 10848,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679750067192,
+        "timestampStart": 1679833889743,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 83.31
+                    "percent": 94.71
                 },
                 "mem": {
-                    "free": 17426108416
+                    "free": 16508018688
                 },
-                "timestamp": 1679750069226
+                "timestamp": 1679833891752
             },
             {
                 "cpu": {
-                    "percent": 97.07
+                    "percent": 89.21
                 },
                 "mem": {
-                    "free": 17704402944
+                    "free": 16741515264
                 },
-                "timestamp": 1679750070641
+                "timestamp": 1679833892748
             }
         ],
-        "timestampEnd": 1679750070649
+        "timestampEnd": 1679833892756
     },
     "columns": [
         {
@@ -181,12 +181,12 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-flaky/example.spec.js:3:1",
                             "timestamps": [
-                                1679750068261,
-                                1679750068393,
-                                1679750069039,
-                                1679750069056
+                                1679833890923,
+                                1679833891000,
+                                1679833891644,
+                                1679833891668
                             ],
-                            "duration": 795,
+                            "duration": 745,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "passed",
@@ -194,14 +194,14 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679750068261,
-                                    "duration": 132
+                                    "timestamp": 1679833890923,
+                                    "duration": 77
                                 },
                                 {
                                     "parallelIndex": 1,
                                     "workerIndex": 1,
-                                    "timestamp": 1679750069039,
-                                    "duration": 17
+                                    "timestamp": 1679833891644,
+                                    "duration": 24
                                 }
                             ],
                             "subs": [
@@ -210,7 +210,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 20,
+                                    "duration": 27,
                                     "location": ""
                                 },
                                 {
@@ -218,7 +218,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 5,
+                                    "duration": 7,
                                     "location": "tests/all-flaky/example.spec.js:4:31",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(test.info().retry).toBe(1);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-flaky\\example.spec.js:4:31"
@@ -230,7 +230,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 101,
+                                    "duration": 35,
                                     "location": ""
                                 },
                                 {
@@ -244,7 +244,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 10,
+                                    "duration": 15,
                                     "location": ""
                                 },
                                 {
@@ -252,7 +252,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 0,
+                                    "duration": 1,
                                     "location": "tests/all-flaky/example.spec.js:4:31"
                                 },
                                 {
@@ -260,7 +260,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 1,
                                     "location": ""
                                 }
                             ],

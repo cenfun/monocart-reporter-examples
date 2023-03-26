@@ -5,10 +5,10 @@
     "workers": 4,
     "use": {},
     "name": "all-passed",
-    "date": 1679750067174,
-    "dateH": "2023/3/25 21:14:27",
-    "duration": 2571,
-    "durationH": "2.571 s",
+    "date": 1679833889747,
+    "dateH": "2023/3/26 20:31:29",
+    "duration": 2830,
+    "durationH": "2.83s",
     "system": {
         "cpu": {
             "color": "#117DBB",
@@ -25,34 +25,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 390801.234,
+        "uptime": 474619.421,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 10488,
+        "pid": 2140,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679750067174,
+        "timestampStart": 1679833889747,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 83.05
+                    "percent": 94.71
                 },
                 "mem": {
-                    "free": 17461882880
+                    "free": 16501465088
                 },
-                "timestamp": 1679750069186
+                "timestamp": 1679833891767
             },
             {
                 "cpu": {
-                    "percent": 84.47
+                    "percent": 97.32
                 },
                 "mem": {
-                    "free": 17358987264
+                    "free": 16380149760
                 },
-                "timestamp": 1679750069736
+                "timestamp": 1679833892571
             }
         ],
-        "timestampEnd": 1679750069745
+        "timestampEnd": 1679833892577
     },
     "columns": [
         {
@@ -181,10 +181,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-passed/example.spec.js:3:1",
                             "timestamps": [
-                                1679750068184,
-                                1679750068203
+                                1679833890957,
+                                1679833890974
                             ],
-                            "duration": 19,
+                            "duration": 17,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -192,8 +192,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679750068184,
-                                    "duration": 19
+                                    "timestamp": 1679833890957,
+                                    "duration": 17
                                 }
                             ],
                             "subs": [
@@ -202,7 +202,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 15,
+                                    "duration": 14,
                                     "location": ""
                                 },
                                 {
@@ -224,10 +224,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-passed/example.spec.js:8:1",
                             "timestamps": [
-                                1679750068204,
-                                1679750068248
+                                1679833890974,
+                                1679833890982
                             ],
-                            "duration": 44,
+                            "duration": 8,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -235,8 +235,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679750068204,
-                                    "duration": 44
+                                    "timestamp": 1679833890974,
+                                    "duration": 8
                                 }
                             ],
                             "subs": [
@@ -245,7 +245,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 43,
+                                    "duration": 6,
                                     "location": ""
                                 },
                                 {
@@ -253,7 +253,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 1,
+                                    "duration": 4,
                                     "location": ""
                                 }
                             ]
@@ -267,10 +267,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-passed/example.spec.js:12:1",
                             "timestamps": [
-                                1679750068248,
-                                1679750068267
+                                1679833890982,
+                                1679833890994
                             ],
-                            "duration": 19,
+                            "duration": 12,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -278,8 +278,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679750068248,
-                                    "duration": 19
+                                    "timestamp": 1679833890982,
+                                    "duration": 12
                                 }
                             ],
                             "subs": [
@@ -288,7 +288,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 11,
                                     "location": ""
                                 },
                                 {
@@ -296,7 +296,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 17,
+                                    "duration": 0,
                                     "location": ""
                                 }
                             ]
