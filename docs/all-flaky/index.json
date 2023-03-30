@@ -5,10 +5,10 @@
     "workers": 4,
     "use": {},
     "name": "all-flaky",
-    "date": 1679833889743,
-    "dateH": "2023/3/26 20:31:29",
-    "duration": 3013,
-    "durationH": "3.013s",
+    "date": 1680174133667,
+    "dateH": "2023/3/30 19:02:13",
+    "duration": 4548,
+    "durationH": "4.548s",
     "system": {
         "cpu": {
             "color": "#117DBB",
@@ -25,34 +25,43 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 474619.421,
+        "uptime": 168245.609,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 10848,
+        "pid": 8444,
         "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1679833889743,
+        "timestampStart": 1680174133667,
         "ticks": [
             {
                 "cpu": {
-                    "percent": 94.71
+                    "percent": 100
                 },
                 "mem": {
-                    "free": 16508018688
+                    "free": 16219623424
                 },
-                "timestamp": 1679833891752
+                "timestamp": 1680174135900
             },
             {
                 "cpu": {
-                    "percent": 89.21
+                    "percent": 100
                 },
                 "mem": {
-                    "free": 16741515264
+                    "free": 16424787968
                 },
-                "timestamp": 1679833892748
+                "timestamp": 1680174138094
+            },
+            {
+                "cpu": {
+                    "percent": 100
+                },
+                "mem": {
+                    "free": 16399937536
+                },
+                "timestamp": 1680174138197
             }
         ],
-        "timestampEnd": 1679833892756
+        "timestampEnd": 1680174138215
     },
     "columns": [
         {
@@ -181,12 +190,12 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-flaky/example.spec.js:3:1",
                             "timestamps": [
-                                1679833890923,
-                                1679833891000,
-                                1679833891644,
-                                1679833891668
+                                1680174134730,
+                                1680174134855,
+                                1680174136387,
+                                1680174136408
                             ],
-                            "duration": 745,
+                            "duration": 1678,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "passed",
@@ -194,14 +203,14 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1679833890923,
-                                    "duration": 77
+                                    "timestamp": 1680174134730,
+                                    "duration": 125
                                 },
                                 {
                                     "parallelIndex": 1,
                                     "workerIndex": 1,
-                                    "timestamp": 1679833891644,
-                                    "duration": 24
+                                    "timestamp": 1680174136387,
+                                    "duration": 21
                                 }
                             ],
                             "subs": [
@@ -210,7 +219,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 27,
+                                    "duration": 15,
                                     "location": ""
                                 },
                                 {
@@ -218,7 +227,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 7,
+                                    "duration": 5,
                                     "location": "tests/all-flaky/example.spec.js:4:31",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(test.info().retry).toBe(1);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-flaky\\example.spec.js:4:31"
@@ -230,7 +239,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 35,
+                                    "duration": 96,
                                     "location": ""
                                 },
                                 {
@@ -244,7 +253,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 15,
+                                    "duration": 12,
                                     "location": ""
                                 },
                                 {
@@ -260,7 +269,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 1,
+                                    "duration": 2,
                                     "location": ""
                                 }
                             ],
