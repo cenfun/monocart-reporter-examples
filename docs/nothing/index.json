@@ -1,14 +1,24 @@
 {
-    "rootDir": "H:\\workspace\\monocart-reporter-test\\tests\\nothing",
-    "configFile": "H:\\workspace\\monocart-reporter-test\\tests\\nothing\\playwright.config.js",
+    "name": "nothing",
+    "date": 1680257389369,
+    "dateH": "2023/3/31 18:09:49",
+    "duration": 1374,
+    "durationH": "1.374s",
+    "cwd": "H:/workspace/monocart-reporter-test",
+    "configFile": "tests/nothing/playwright.config.js",
+    "testDir": "tests/nothing",
+    "outputDir": "docs/nothing",
     "version": "1.32.1",
     "workers": 4,
-    "use": {},
-    "name": "nothing",
-    "date": 1680174133570,
-    "dateH": "2023/3/30 19:02:13",
-    "duration": 1264,
-    "durationH": "1.264s",
+    "metadata": {},
+    "projects": [
+        {
+            "name": "",
+            "use": {},
+            "testDir": "tests/nothing",
+            "outputDir": "docs/nothing"
+        }
+    ],
     "system": {
         "cpu": {
             "color": "#117DBB",
@@ -25,25 +35,25 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 168245.5,
+        "uptime": 251502.64,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 892,
-        "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1680174133570,
+        "pid": 23576,
+        "cwd": "H:/workspace/monocart-reporter-test",
+        "timestampStart": 1680257389369,
         "ticks": [
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 16040992768
+                    "free": 15650185216
                 },
-                "timestamp": 1680174134826
+                "timestamp": 1680257390715
             }
         ],
-        "timestampEnd": 1680174134834
+        "timestampEnd": 1680257390743
     },
     "columns": [
         {

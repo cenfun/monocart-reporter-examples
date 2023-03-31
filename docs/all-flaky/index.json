@@ -1,14 +1,24 @@
 {
-    "rootDir": "H:\\workspace\\monocart-reporter-test\\tests\\all-flaky",
-    "configFile": "H:\\workspace\\monocart-reporter-test\\tests\\all-flaky\\playwright.config.js",
+    "name": "all-flaky",
+    "date": 1680257388539,
+    "dateH": "2023/3/31 18:09:48",
+    "duration": 4286,
+    "durationH": "4.286s",
+    "cwd": "H:/workspace/monocart-reporter-test",
+    "configFile": "tests/all-flaky/playwright.config.js",
+    "testDir": "tests/all-flaky",
+    "outputDir": "docs/all-flaky",
     "version": "1.32.1",
     "workers": 4,
-    "use": {},
-    "name": "all-flaky",
-    "date": 1680174133667,
-    "dateH": "2023/3/30 19:02:13",
-    "duration": 4548,
-    "durationH": "4.548s",
+    "metadata": {},
+    "projects": [
+        {
+            "name": "",
+            "use": {},
+            "testDir": "tests/all-flaky",
+            "outputDir": "docs/all-flaky"
+        }
+    ],
     "system": {
         "cpu": {
             "color": "#117DBB",
@@ -25,43 +35,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 168245.609,
+        "uptime": 251501.796,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 8444,
-        "cwd": "H:\\workspace\\monocart-reporter-test",
-        "timestampStart": 1680174133667,
+        "pid": 12868,
+        "cwd": "H:/workspace/monocart-reporter-test",
+        "timestampStart": 1680257388539,
         "ticks": [
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 16219623424
+                    "free": 15624814592
                 },
-                "timestamp": 1680174135900
+                "timestamp": 1680257390829
             },
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 16424787968
+                    "free": 16000851968
                 },
-                "timestamp": 1680174138094
-            },
-            {
-                "cpu": {
-                    "percent": 100
-                },
-                "mem": {
-                    "free": 16399937536
-                },
-                "timestamp": 1680174138197
+                "timestamp": 1680257392813
             }
         ],
-        "timestampEnd": 1680174138215
+        "timestampEnd": 1680257392825
     },
     "columns": [
         {
@@ -190,12 +191,12 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-flaky/example.spec.js:3:1",
                             "timestamps": [
-                                1680174134730,
-                                1680174134855,
-                                1680174136387,
-                                1680174136408
+                                1680257389405,
+                                1680257389451,
+                                1680257391134,
+                                1680257391199
                             ],
-                            "duration": 1678,
+                            "duration": 1794,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "passed",
@@ -203,51 +204,17 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1680174134730,
-                                    "duration": 125
+                                    "timestamp": 1680257389405,
+                                    "duration": 46
                                 },
                                 {
                                     "parallelIndex": 1,
                                     "workerIndex": 1,
-                                    "timestamp": 1680174136387,
-                                    "duration": 21
+                                    "timestamp": 1680257391134,
+                                    "duration": 65
                                 }
                             ],
                             "subs": [
-                                {
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 15,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "expect.toBe",
-                                    "type": "step",
-                                    "category": "expect",
-                                    "status": "expect",
-                                    "duration": 5,
-                                    "location": "tests/all-flaky/example.spec.js:4:31",
-                                    "errors": [
-                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(test.info().retry).toBe(1);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-flaky\\example.spec.js:4:31"
-                                    ],
-                                    "numErrors": 1
-                                },
-                                {
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 96,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "Retry #1",
-                                    "type": "step",
-                                    "status": "retry",
-                                    "retry": 1
-                                },
                                 {
                                     "title": "Before Hooks",
                                     "type": "step",
@@ -261,7 +228,41 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 1,
+                                    "duration": 8,
+                                    "location": "tests/all-flaky/example.spec.js:4:31",
+                                    "errors": [
+                                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(test.info().retry).toBe(1);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-flaky\\example.spec.js:4:31"
+                                    ],
+                                    "numErrors": 1
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 20,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "Retry #1",
+                                    "type": "step",
+                                    "status": "retry",
+                                    "retry": 1
+                                },
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 33,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "expect.toBe",
+                                    "type": "step",
+                                    "category": "expect",
+                                    "status": "expect",
+                                    "duration": 2,
                                     "location": "tests/all-flaky/example.spec.js:4:31"
                                 },
                                 {
@@ -269,7 +270,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 9,
                                     "location": ""
                                 }
                             ],
