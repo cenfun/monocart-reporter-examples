@@ -1,5 +1,5 @@
 // https://eslint.org/docs/rules/
-module.exports = {
+export default {
     'root': true,
     // system globals
     'env': {

@@ -1,8 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-const child_process = require('child_process');
-
-const EC = require('eight-colors');
+import fs from 'fs';
+import path from 'path';
+import child_process from 'child_process';
+import EC from 'eight-colors';
 
 const run = (dirname) => {
 
@@ -31,7 +30,8 @@ const run = (dirname) => {
 };
 
 const test = () => {
-    const list = fs.readdirSync(path.resolve(__dirname, '../tests'));
+    const dir = path.resolve('tests');
+    const list = fs.readdirSync(dir);
     for (const dirname of list) {
         if (dirname === 'ten-minutes') {
             continue;

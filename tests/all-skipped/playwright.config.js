@@ -1,6 +1,6 @@
 const name = 'all-skipped';
 
-module.exports = {
+export default {
     testDir: `../../tests/${name}`,
     outputDir: `../../docs/${name}`,
     reporter: [

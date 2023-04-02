@@ -1,7 +1,7 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-const testsPath = path.resolve(__dirname, '../tests/ten-minutes');
+const testsPath = path.resolve( 'tests/ten-minutes');
 
 const list = fs.readdirSync(testsPath).filter((it) => it !== 'playwright.config.js');
 
@@ -10,7 +10,7 @@ list.forEach((it) => {
 });
 
 const template = `
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 const delay = function(ms) {
     return new Promise((resolve) => {
         if (ms) {

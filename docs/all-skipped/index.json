@@ -1,9 +1,9 @@
 {
     "name": "all-skipped",
-    "date": 1680257389284,
-    "dateH": "2023/3/31 18:09:49",
-    "duration": 2976,
-    "durationH": "2.976s",
+    "date": 1680429766698,
+    "dateH": "2023/4/2 18:02:46",
+    "duration": 4192,
+    "durationH": "4.192s",
     "cwd": "H:/workspace/monocart-reporter-test",
     "configFile": "tests/all-skipped/playwright.config.js",
     "testDir": "tests/all-skipped",
@@ -35,34 +35,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 251502.546,
+        "uptime": 423877.203,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 14184,
+        "pid": 20144,
         "cwd": "H:/workspace/monocart-reporter-test",
-        "timestampStart": 1680257389284,
+        "timestampStart": 1680429766698,
         "ticks": [
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 15740592128
+                    "free": 13786017792
                 },
-                "timestamp": 1680257391433
+                "timestamp": 1680429769131
             },
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 15989805056
+                    "free": 13821448192
                 },
-                "timestamp": 1680257392240
+                "timestamp": 1680429770881
             }
         ],
-        "timestampEnd": 1680257392260
+        "timestampEnd": 1680429770890
     },
     "columns": [
         {
@@ -191,10 +191,10 @@
                             "expectedStatus": "skipped",
                             "location": "tests/all-skipped/example.spec.js:3:1",
                             "timestamps": [
-                                1680257390384,
-                                1680257390410
+                                1680429769132,
+                                1680429769139
                             ],
-                            "duration": 26,
+                            "duration": 7,
                             "annotations": [
                                 {
                                     "type": "skip"
@@ -207,8 +207,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1680257390384,
-                                    "duration": 26
+                                    "timestamp": 1680429769132,
+                                    "duration": 7
                                 }
                             ],
                             "subs": [
@@ -217,7 +217,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 21,
+                                    "duration": 27,
                                     "location": ""
                                 },
                                 {
@@ -239,56 +239,8 @@
                             "expectedStatus": "skipped",
                             "location": "tests/all-skipped/example.spec.js:8:1",
                             "timestamps": [
-                                1680257390411,
-                                1680257390418
-                            ],
-                            "duration": 7,
-                            "annotations": [
-                                {
-                                    "type": "skip"
-                                }
-                            ],
-                            "timeout": 30000,
-                            "retry": 0,
-                            "status": "skipped",
-                            "workers": [
-                                {
-                                    "parallelIndex": 0,
-                                    "workerIndex": 0,
-                                    "timestamp": 1680257390411,
-                                    "duration": 7
-                                }
-                            ],
-                            "subs": [
-                                {
-                                    "title": "Before Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 5,
-                                    "location": ""
-                                },
-                                {
-                                    "title": "After Hooks",
-                                    "type": "step",
-                                    "category": "hook",
-                                    "status": "hook",
-                                    "duration": 1,
-                                    "location": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "three",
-                            "type": "case",
-                            "caseType": "skipped",
-                            "ok": true,
-                            "outcome": "skipped",
-                            "expectedStatus": "skipped",
-                            "location": "tests/all-skipped/example.spec.js:12:1",
-                            "timestamps": [
-                                1680257390418,
-                                1680257390421
+                                1680429769139,
+                                1680429769142
                             ],
                             "duration": 3,
                             "annotations": [
@@ -303,7 +255,7 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1680257390418,
+                                    "timestamp": 1680429769139,
                                     "duration": 3
                                 }
                             ],
@@ -325,6 +277,54 @@
                                     "location": ""
                                 }
                             ]
+                        },
+                        {
+                            "title": "three",
+                            "type": "case",
+                            "caseType": "skipped",
+                            "ok": true,
+                            "outcome": "skipped",
+                            "expectedStatus": "skipped",
+                            "location": "tests/all-skipped/example.spec.js:12:1",
+                            "timestamps": [
+                                1680429769142,
+                                1680429769147
+                            ],
+                            "duration": 5,
+                            "annotations": [
+                                {
+                                    "type": "skip"
+                                }
+                            ],
+                            "timeout": 30000,
+                            "retry": 0,
+                            "status": "skipped",
+                            "workers": [
+                                {
+                                    "parallelIndex": 0,
+                                    "workerIndex": 0,
+                                    "timestamp": 1680429769142,
+                                    "duration": 5
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "title": "Before Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 3,
+                                    "location": ""
+                                },
+                                {
+                                    "title": "After Hooks",
+                                    "type": "step",
+                                    "category": "hook",
+                                    "status": "hook",
+                                    "duration": 2,
+                                    "location": ""
+                                }
+                            ]
                         }
                     ],
                     "location": "tests/all-skipped/example.spec.js:0:0"
@@ -333,75 +333,105 @@
         }
     ],
     "formatters": {},
+    "suiteTypes": [
+        "project",
+        "file",
+        "describe"
+    ],
+    "caseTypes": [
+        "passed",
+        "flaky",
+        "skipped",
+        "failed"
+    ],
     "summary": {
         "tests": {
             "name": "Tests",
             "value": 3,
-            "type": "tests"
+            "nav": true,
+            "id": "tests"
         },
         "passed": {
             "name": "Passed",
             "value": 0,
-            "type": "passed",
+            "color": "green",
+            "nav": true,
+            "id": "passed",
             "percent": "0.0%"
         },
         "flaky": {
             "name": "Flaky",
             "value": 0,
-            "type": "flaky",
+            "color": "orange",
+            "nav": true,
+            "id": "flaky",
             "percent": "0.0%"
         },
         "skipped": {
             "name": "Skipped",
             "value": 3,
-            "type": "skipped",
+            "color": "gray",
+            "nav": true,
+            "id": "skipped",
             "percent": "100.0%"
         },
         "failed": {
             "name": "Failed",
             "value": 0,
-            "type": "failed",
+            "color": "#d00",
+            "nav": true,
+            "id": "failed",
             "percent": "0.0%"
         },
         "steps": {
             "name": "Steps",
-            "value": 6
-        },
-        "retries": {
-            "name": "Retries",
-            "value": 0
+            "value": 6,
+            "id": "steps"
         },
         "suites": {
             "name": "Suites",
-            "value": 2
+            "value": 1,
+            "id": "suites"
         },
         "projects": {
             "name": "Projects",
             "description": "Suite type is project",
-            "value": 1
+            "value": 1,
+            "id": "projects"
         },
         "files": {
             "name": "Files",
             "description": "Suite type is file",
-            "value": 1
+            "value": 1,
+            "id": "files"
         },
         "describes": {
             "name": "Describes",
             "description": "Suite type is describe",
-            "value": 0
+            "value": 0,
+            "id": "describes"
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 0,
+            "id": "retries"
         },
         "errors": {
             "name": "Errors",
-            "value": 0
+            "value": 0,
+            "id": "errors"
         },
         "logs": {
             "name": "Logs",
-            "value": 0
+            "value": 0,
+            "id": "logs"
         },
         "attachments": {
             "name": "Attachments",
-            "value": 0
+            "value": 0,
+            "id": "attachments"
         }
     },
-    "tags": {}
+    "tags": {},
+    "pieChart": "<svg viewBox=\"0 0 360 150\" width=\"360\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-passed\"><path d=\"\" fill=\"green\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"gray\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 10)\"><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"green\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 32)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"orange\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 64)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"gray\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">3</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 96)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"#d00\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g></g></svg>"
 }

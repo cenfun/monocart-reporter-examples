@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 const delay = function(ms) {
     return new Promise((resolve) => {
         if (ms) {

@@ -1,9 +1,9 @@
 {
     "name": "all-failed",
-    "date": 1680257388488,
-    "dateH": "2023/3/31 18:09:48",
-    "duration": 5771,
-    "durationH": "5.771s",
+    "date": 1680429764045,
+    "dateH": "2023/4/2 18:02:44",
+    "duration": 8655,
+    "durationH": "8.655s",
     "cwd": "H:/workspace/monocart-reporter-test",
     "configFile": "tests/all-failed/playwright.config.js",
     "testDir": "tests/all-failed",
@@ -35,43 +35,61 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 251501.75,
+        "uptime": 423874.546,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 8124,
+        "pid": 20136,
         "cwd": "H:/workspace/monocart-reporter-test",
-        "timestampStart": 1680257388488,
+        "timestampStart": 1680429764045,
         "ticks": [
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 15628238848
+                    "free": 14121566208
                 },
-                "timestamp": 1680257390836
+                "timestamp": 1680429766164
             },
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 15979065344
+                    "free": 13820133376
                 },
-                "timestamp": 1680257392955
+                "timestamp": 1680429768180
             },
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 16289382400
+                    "free": 13900144640
                 },
-                "timestamp": 1680257394243
+                "timestamp": 1680429770333
+            },
+            {
+                "cpu": {
+                    "percent": 100
+                },
+                "mem": {
+                    "free": 14182019072
+                },
+                "timestamp": 1680429772405
+            },
+            {
+                "cpu": {
+                    "percent": 100
+                },
+                "mem": {
+                    "free": 14346235904
+                },
+                "timestamp": 1680429772693
             }
         ],
-        "timestampEnd": 1680257394259
+        "timestampEnd": 1680429772700
     },
     "columns": [
         {
@@ -200,10 +218,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-failed/example.spec.js:3:1",
                             "timestamps": [
-                                1680257389456,
-                                1680257389517
+                                1680429765692,
+                                1680429765745
                             ],
-                            "duration": 61,
+                            "duration": 53,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "failed",
@@ -211,8 +229,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1680257389456,
-                                    "duration": 61
+                                    "timestamp": 1680429765692,
+                                    "duration": 53
                                 }
                             ],
                             "subs": [
@@ -221,7 +239,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 16,
+                                    "duration": 15,
                                     "location": ""
                                 },
                                 {
@@ -229,7 +247,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 6,
+                                    "duration": 24,
                                     "location": "tests/all-failed/example.spec.js:4:15",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(1).toBe(2);\n    |               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\example.spec.js:4:15"
@@ -241,7 +259,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 30,
+                                    "duration": 9,
                                     "location": ""
                                 }
                             ],
@@ -256,10 +274,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-failed/example.spec.js:8:1",
                             "timestamps": [
-                                1680257391165,
-                                1680257391251
+                                1680429768159,
+                                1680429768196
                             ],
-                            "duration": 86,
+                            "duration": 37,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "failed",
@@ -267,8 +285,8 @@
                                 {
                                     "parallelIndex": 1,
                                     "workerIndex": 1,
-                                    "timestamp": 1680257391165,
-                                    "duration": 86
+                                    "timestamp": 1680429768159,
+                                    "duration": 37
                                 }
                             ],
                             "subs": [
@@ -277,7 +295,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 17,
+                                    "duration": 20,
                                     "location": ""
                                 },
                                 {
@@ -285,7 +303,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 13,
+                                    "duration": 5,
                                     "location": "tests/all-failed/example.spec.js:9:15",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  7 |\n  8 | test('two', () => {\n> 9 |     expect(1).toBe(2);\n    |               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\example.spec.js:9:15"
@@ -297,7 +315,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 51,
+                                    "duration": 7,
                                     "location": ""
                                 }
                             ],
@@ -312,10 +330,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-failed/example.spec.js:12:1",
                             "timestamps": [
-                                1680257392717,
-                                1680257392865
+                                1680429770754,
+                                1680429770838
                             ],
-                            "duration": 148,
+                            "duration": 84,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "failed",
@@ -323,8 +341,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 2,
-                                    "timestamp": 1680257392717,
-                                    "duration": 148
+                                    "timestamp": 1680429770754,
+                                    "duration": 84
                                 }
                             ],
                             "subs": [
@@ -333,7 +351,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 45,
+                                    "duration": 24,
                                     "location": ""
                                 },
                                 {
@@ -341,7 +359,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 6,
+                                    "duration": 5,
                                     "location": "tests/all-failed/example.spec.js:13:15",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  11 |\n  12 | test('three', () => {\n> 13 |     expect(1).toBe(2);\n     |               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-failed\\example.spec.js:13:15"
@@ -353,7 +371,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 91,
+                                    "duration": 9,
                                     "location": ""
                                 }
                             ],
@@ -366,75 +384,105 @@
         }
     ],
     "formatters": {},
+    "suiteTypes": [
+        "project",
+        "file",
+        "describe"
+    ],
+    "caseTypes": [
+        "passed",
+        "flaky",
+        "skipped",
+        "failed"
+    ],
     "summary": {
         "tests": {
             "name": "Tests",
             "value": 3,
-            "type": "tests"
+            "nav": true,
+            "id": "tests"
         },
         "passed": {
             "name": "Passed",
             "value": 0,
-            "type": "passed",
+            "color": "green",
+            "nav": true,
+            "id": "passed",
             "percent": "0.0%"
         },
         "flaky": {
             "name": "Flaky",
             "value": 0,
-            "type": "flaky",
+            "color": "orange",
+            "nav": true,
+            "id": "flaky",
             "percent": "0.0%"
         },
         "skipped": {
             "name": "Skipped",
             "value": 0,
-            "type": "skipped",
+            "color": "gray",
+            "nav": true,
+            "id": "skipped",
             "percent": "0.0%"
         },
         "failed": {
             "name": "Failed",
             "value": 3,
-            "type": "failed",
+            "color": "#d00",
+            "nav": true,
+            "id": "failed",
             "percent": "100.0%"
         },
         "steps": {
             "name": "Steps",
-            "value": 9
-        },
-        "retries": {
-            "name": "Retries",
-            "value": 0
+            "value": 9,
+            "id": "steps"
         },
         "suites": {
             "name": "Suites",
-            "value": 2
+            "value": 1,
+            "id": "suites"
         },
         "projects": {
             "name": "Projects",
             "description": "Suite type is project",
-            "value": 1
+            "value": 1,
+            "id": "projects"
         },
         "files": {
             "name": "Files",
             "description": "Suite type is file",
-            "value": 1
+            "value": 1,
+            "id": "files"
         },
         "describes": {
             "name": "Describes",
             "description": "Suite type is describe",
-            "value": 0
+            "value": 0,
+            "id": "describes"
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 0,
+            "id": "retries"
         },
         "errors": {
             "name": "Errors",
-            "value": 3
+            "value": 3,
+            "id": "errors"
         },
         "logs": {
             "name": "Logs",
-            "value": 0
+            "value": 0,
+            "id": "logs"
         },
         "attachments": {
             "name": "Attachments",
-            "value": 0
+            "value": 0,
+            "id": "attachments"
         }
     },
-    "tags": {}
+    "tags": {},
+    "pieChart": "<svg viewBox=\"0 0 360 150\" width=\"360\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-passed\"><path d=\"\" fill=\"green\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-failed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"#d00\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 10)\"><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"green\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 32)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"orange\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 64)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"gray\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 96)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"#d00\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">3</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g></g></svg>"
 }

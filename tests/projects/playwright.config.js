@@ -1,8 +1,8 @@
 const name = 'projects';
 
-const { devices } = require('@playwright/test');
+import { devices }from '@playwright/test';
 
-module.exports = {
+export default {
     testDir: `../../tests/${name}`,
     outputDir: `../../docs/${name}`,
 

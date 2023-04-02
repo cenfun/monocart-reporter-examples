@@ -11,7 +11,6 @@
     "editor.formatOnSave": true,
     "eslint.format.enable": true,
     "eslint.validate": [
-        "vue",
         "html",
         "javascript"
     ]

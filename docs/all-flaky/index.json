@@ -1,9 +1,9 @@
 {
     "name": "all-flaky",
-    "date": 1680257388539,
-    "dateH": "2023/3/31 18:09:48",
-    "duration": 4286,
-    "durationH": "4.286s",
+    "date": 1680429767065,
+    "dateH": "2023/4/2 18:02:47",
+    "duration": 6642,
+    "durationH": "6.642s",
     "cwd": "H:/workspace/monocart-reporter-test",
     "configFile": "tests/all-flaky/playwright.config.js",
     "testDir": "tests/all-flaky",
@@ -35,34 +35,43 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 251501.796,
+        "uptime": 423877.578,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 12868,
+        "pid": 11512,
         "cwd": "H:/workspace/monocart-reporter-test",
-        "timestampStart": 1680257388539,
+        "timestampStart": 1680429767065,
         "ticks": [
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 15624814592
+                    "free": 13862805504
                 },
-                "timestamp": 1680257390829
+                "timestamp": 1680429769459
             },
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 16000851968
+                    "free": 14120980480
                 },
-                "timestamp": 1680257392813
+                "timestamp": 1680429771899
+            },
+            {
+                "cpu": {
+                    "percent": 99.07
+                },
+                "mem": {
+                    "free": 14546915328
+                },
+                "timestamp": 1680429773695
             }
         ],
-        "timestampEnd": 1680257392825
+        "timestampEnd": 1680429773707
     },
     "columns": [
         {
@@ -191,12 +200,12 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-flaky/example.spec.js:3:1",
                             "timestamps": [
-                                1680257389405,
-                                1680257389451,
-                                1680257391134,
-                                1680257391199
+                                1680429769848,
+                                1680429769950,
+                                1680429772141,
+                                1680429772166
                             ],
-                            "duration": 1794,
+                            "duration": 2318,
                             "timeout": 30000,
                             "retry": 1,
                             "status": "passed",
@@ -204,14 +213,14 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1680257389405,
-                                    "duration": 46
+                                    "timestamp": 1680429769848,
+                                    "duration": 102
                                 },
                                 {
                                     "parallelIndex": 1,
                                     "workerIndex": 1,
-                                    "timestamp": 1680257391134,
-                                    "duration": 65
+                                    "timestamp": 1680429772141,
+                                    "duration": 25
                                 }
                             ],
                             "subs": [
@@ -220,7 +229,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 12,
+                                    "duration": 46,
                                     "location": ""
                                 },
                                 {
@@ -228,7 +237,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 8,
+                                    "duration": 16,
                                     "location": "tests/all-flaky/example.spec.js:4:31",
                                     "errors": [
                                         "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  2 |\n  3 | test('one', () => {\n> 4 |     expect(test.info().retry).toBe(1);\n    |                               ^\n\n    at H:\\workspace\\monocart-reporter-test\\tests\\all-flaky\\example.spec.js:4:31"
@@ -240,7 +249,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 20,
+                                    "duration": 28,
                                     "location": ""
                                 },
                                 {
@@ -254,7 +263,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 33,
+                                    "duration": 15,
                                     "location": ""
                                 },
                                 {
@@ -262,7 +271,7 @@
                                     "type": "step",
                                     "category": "expect",
                                     "status": "expect",
-                                    "duration": 2,
+                                    "duration": 0,
                                     "location": "tests/all-flaky/example.spec.js:4:31"
                                 },
                                 {
@@ -270,7 +279,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 9,
+                                    "duration": 1,
                                     "location": ""
                                 }
                             ],
@@ -283,75 +292,105 @@
         }
     ],
     "formatters": {},
+    "suiteTypes": [
+        "project",
+        "file",
+        "describe"
+    ],
+    "caseTypes": [
+        "passed",
+        "flaky",
+        "skipped",
+        "failed"
+    ],
     "summary": {
         "tests": {
             "name": "Tests",
             "value": 1,
-            "type": "tests"
+            "nav": true,
+            "id": "tests"
         },
         "passed": {
             "name": "Passed",
             "value": 0,
-            "type": "passed",
+            "color": "green",
+            "nav": true,
+            "id": "passed",
             "percent": "0.0%"
         },
         "flaky": {
             "name": "Flaky",
             "value": 1,
-            "type": "flaky",
+            "color": "orange",
+            "nav": true,
+            "id": "flaky",
             "percent": "100.0%"
         },
         "skipped": {
             "name": "Skipped",
             "value": 0,
-            "type": "skipped",
+            "color": "gray",
+            "nav": true,
+            "id": "skipped",
             "percent": "0.0%"
         },
         "failed": {
             "name": "Failed",
             "value": 0,
-            "type": "failed",
+            "color": "#d00",
+            "nav": true,
+            "id": "failed",
             "percent": "0.0%"
         },
         "steps": {
             "name": "Steps",
-            "value": 7
-        },
-        "retries": {
-            "name": "Retries",
-            "value": 1
+            "value": 7,
+            "id": "steps"
         },
         "suites": {
             "name": "Suites",
-            "value": 2
+            "value": 1,
+            "id": "suites"
         },
         "projects": {
             "name": "Projects",
             "description": "Suite type is project",
-            "value": 1
+            "value": 1,
+            "id": "projects"
         },
         "files": {
             "name": "Files",
             "description": "Suite type is file",
-            "value": 1
+            "value": 1,
+            "id": "files"
         },
         "describes": {
             "name": "Describes",
             "description": "Suite type is describe",
-            "value": 0
+            "value": 0,
+            "id": "describes"
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 1,
+            "id": "retries"
         },
         "errors": {
             "name": "Errors",
-            "value": 1
+            "value": 1,
+            "id": "errors"
         },
         "logs": {
             "name": "Logs",
-            "value": 0
+            "value": 0,
+            "id": "logs"
         },
         "attachments": {
             "name": "Attachments",
-            "value": 0
+            "value": 0,
+            "id": "attachments"
         }
     },
-    "tags": {}
+    "tags": {},
+    "pieChart": "<svg viewBox=\"0 0 360 150\" width=\"360\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-passed\"><path d=\"\" fill=\"green\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"orange\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 10)\"><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"green\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 32)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"orange\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 64)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"gray\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 96)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"#d00\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g></g></svg>"
 }

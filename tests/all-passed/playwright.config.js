@@ -1,6 +1,6 @@
 const name = 'all-passed';
 
-module.exports = {
+export default {
     testDir: `../../tests/${name}`,
     outputDir: `../../docs/${name}`,
     reporter: [

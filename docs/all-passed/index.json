@@ -1,9 +1,9 @@
 {
     "name": "all-passed",
-    "date": 1680257387376,
-    "dateH": "2023/3/31 18:09:47",
-    "duration": 2839,
-    "durationH": "2.839s",
+    "date": 1680429766961,
+    "dateH": "2023/4/2 18:02:46",
+    "duration": 3923,
+    "durationH": "3.923s",
     "cwd": "H:/workspace/monocart-reporter-test",
     "configFile": "tests/all-passed/playwright.config.js",
     "testDir": "tests/all-passed",
@@ -35,34 +35,34 @@
         "release": "10.0.19044",
         "type": "Windows_NT",
         "version": "Windows 10 Home",
-        "uptime": 251500.656,
+        "uptime": 423877.468,
         "hostname": "DESKTOP-7OOOJ8B",
         "homedir": "C:\\Users\\jinchen",
         "tmpdir": "C:\\Users\\jinchen\\AppData\\Local\\Temp",
-        "pid": 23236,
+        "pid": 16212,
         "cwd": "H:/workspace/monocart-reporter-test",
-        "timestampStart": 1680257387376,
+        "timestampStart": 1680429766961,
         "ticks": [
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 16074846208
+                    "free": 13750882304
                 },
-                "timestamp": 1680257389414
+                "timestamp": 1680429769430
             },
             {
                 "cpu": {
                     "percent": 100
                 },
                 "mem": {
-                    "free": 15781306368
+                    "free": 13813719040
                 },
-                "timestamp": 1680257390201
+                "timestamp": 1680429770874
             }
         ],
-        "timestampEnd": 1680257390215
+        "timestampEnd": 1680429770884
     },
     "columns": [
         {
@@ -191,10 +191,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-passed/example.spec.js:3:1",
                             "timestamps": [
-                                1680257388412,
-                                1680257388428
+                                1680429769288,
+                                1680429769343
                             ],
-                            "duration": 16,
+                            "duration": 55,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -202,8 +202,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1680257388412,
-                                    "duration": 16
+                                    "timestamp": 1680429769288,
+                                    "duration": 55
                                 }
                             ],
                             "subs": [
@@ -212,7 +212,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 13,
+                                    "duration": 26,
                                     "location": ""
                                 },
                                 {
@@ -220,7 +220,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 12,
                                     "location": ""
                                 }
                             ]
@@ -234,10 +234,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-passed/example.spec.js:8:1",
                             "timestamps": [
-                                1680257388428,
-                                1680257388432
+                                1680429769344,
+                                1680429769346
                             ],
-                            "duration": 4,
+                            "duration": 2,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -245,8 +245,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1680257388428,
-                                    "duration": 4
+                                    "timestamp": 1680429769344,
+                                    "duration": 2
                                 }
                             ],
                             "subs": [
@@ -255,7 +255,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 3,
+                                    "duration": 2,
                                     "location": ""
                                 },
                                 {
@@ -263,7 +263,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 2,
+                                    "duration": 0,
                                     "location": ""
                                 }
                             ]
@@ -277,10 +277,10 @@
                             "expectedStatus": "passed",
                             "location": "tests/all-passed/example.spec.js:12:1",
                             "timestamps": [
-                                1680257388432,
-                                1680257388447
+                                1680429769346,
+                                1680429769350
                             ],
-                            "duration": 15,
+                            "duration": 4,
                             "timeout": 30000,
                             "retry": 0,
                             "status": "passed",
@@ -288,8 +288,8 @@
                                 {
                                     "parallelIndex": 0,
                                     "workerIndex": 0,
-                                    "timestamp": 1680257388432,
-                                    "duration": 15
+                                    "timestamp": 1680429769346,
+                                    "duration": 4
                                 }
                             ],
                             "subs": [
@@ -306,7 +306,7 @@
                                     "type": "step",
                                     "category": "hook",
                                     "status": "hook",
-                                    "duration": 13,
+                                    "duration": 1,
                                     "location": ""
                                 }
                             ]
@@ -318,75 +318,105 @@
         }
     ],
     "formatters": {},
+    "suiteTypes": [
+        "project",
+        "file",
+        "describe"
+    ],
+    "caseTypes": [
+        "passed",
+        "flaky",
+        "skipped",
+        "failed"
+    ],
     "summary": {
         "tests": {
             "name": "Tests",
             "value": 3,
-            "type": "tests"
+            "nav": true,
+            "id": "tests"
         },
         "passed": {
             "name": "Passed",
             "value": 3,
-            "type": "passed",
+            "color": "green",
+            "nav": true,
+            "id": "passed",
             "percent": "100.0%"
         },
         "flaky": {
             "name": "Flaky",
             "value": 0,
-            "type": "flaky",
+            "color": "orange",
+            "nav": true,
+            "id": "flaky",
             "percent": "0.0%"
         },
         "skipped": {
             "name": "Skipped",
             "value": 0,
-            "type": "skipped",
+            "color": "gray",
+            "nav": true,
+            "id": "skipped",
             "percent": "0.0%"
         },
         "failed": {
             "name": "Failed",
             "value": 0,
-            "type": "failed",
+            "color": "#d00",
+            "nav": true,
+            "id": "failed",
             "percent": "0.0%"
         },
         "steps": {
             "name": "Steps",
-            "value": 6
-        },
-        "retries": {
-            "name": "Retries",
-            "value": 0
+            "value": 6,
+            "id": "steps"
         },
         "suites": {
             "name": "Suites",
-            "value": 2
+            "value": 1,
+            "id": "suites"
         },
         "projects": {
             "name": "Projects",
             "description": "Suite type is project",
-            "value": 1
+            "value": 1,
+            "id": "projects"
         },
         "files": {
             "name": "Files",
             "description": "Suite type is file",
-            "value": 1
+            "value": 1,
+            "id": "files"
         },
         "describes": {
             "name": "Describes",
             "description": "Suite type is describe",
-            "value": 0
+            "value": 0,
+            "id": "describes"
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 0,
+            "id": "retries"
         },
         "errors": {
             "name": "Errors",
-            "value": 0
+            "value": 0,
+            "id": "errors"
         },
         "logs": {
             "name": "Logs",
-            "value": 0
+            "value": 0,
+            "id": "logs"
         },
         "attachments": {
             "name": "Attachments",
-            "value": 0
+            "value": 0,
+            "id": "attachments"
         }
     },
-    "tags": {}
+    "tags": {},
+    "pieChart": "<svg viewBox=\"0 0 360 150\" width=\"360\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 10)\"><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"green\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">3</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 32)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"orange\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 64)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"gray\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 96)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"#d00\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g></g></svg>"
 }

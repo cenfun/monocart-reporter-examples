@@ -1,6 +1,6 @@
 const name = 'nothing';
 
-module.exports = {
+export default {
     testDir: `../../tests/${name}`,
     outputDir: `../../docs/${name}`,
     reporter: [
