@@ -9,13 +9,18 @@ export default {
     retries: 1,
 
     shard: {
-        total: 3, current: 3
+        total: 3,
+        current: 3
     },
 
     projects: [
         {
             name: 'chromium',
             use: devices['Desktop Chrome']
+        },
+        {
+            name: 'firefox',
+            use: devices['Desktop Firefox']
         }
     ],
 

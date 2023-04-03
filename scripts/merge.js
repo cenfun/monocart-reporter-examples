@@ -8,7 +8,7 @@ const main = async () => {
     const reportDataList = [
         'docs/shard1/index.json',
         'docs/shard2/index.json',
-        JSON.parse(fs.readFileSync(path.resolve('docs/shard2/index.json')))
+        JSON.parse(fs.readFileSync(path.resolve('docs/shard3/index.json')))
     ];
 
     //  console.log(reportDataList);
