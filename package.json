@@ -9,7 +9,8 @@
         "test": "node ./scripts/test.js",
         "radom": "node ./scripts/random.js",
         "ten": "npx playwright test -c tests/ten-minutes",
-        "open": "node ./scripts/open.js"
+        "open": "node ./scripts/open.js",
+        "merge": "node ./scripts/merge.js"
     },
     "license": "MIT",
     "repository": {

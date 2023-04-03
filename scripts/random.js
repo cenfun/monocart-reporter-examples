@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const testsPath = path.resolve( 'tests/ten-minutes');
+const testsPath = path.resolve('tests/ten-minutes');
 
 const list = fs.readdirSync(testsPath).filter((it) => it !== 'playwright.config.js');
 

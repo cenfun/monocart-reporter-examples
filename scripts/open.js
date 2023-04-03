@@ -3,9 +3,13 @@ import path from 'path';
 import open from 'open';
 
 const main = async () => {
-    const list = fs.readdirSync(path.resolve('docs'));
+    const list = fs.readdirSync(path.resolve('docs'), {
+        withFileTypes: true
+    });
     for (const item of list) {
-        await open(path.resolve('docs', item, 'index.html'));
+        if (item.isDirectory()) {
+            await open(path.resolve('docs', item.name, 'index.html'));
+        }
     }
 };
 

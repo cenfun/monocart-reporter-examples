@@ -31,14 +31,17 @@ const run = (dirname) => {
 
 const test = () => {
     const dir = path.resolve('tests');
-    const list = fs.readdirSync(dir);
-    for (const dirname of list) {
-        if (dirname === 'ten-minutes') {
-            continue;
+    const list = fs.readdirSync(dir, {
+        withFileTypes: true
+    });
+    for (const item of list) {
+        if (item.isDirectory()) {
+            if (item.name !== 'ten-minutes') {
+                setTimeout(() => {
+                    run(item.name);
+                });
+            }
         }
-        setImmediate(() => {
-            run(dirname);
-        });
     }
 };
 

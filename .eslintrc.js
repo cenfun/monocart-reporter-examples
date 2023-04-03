@@ -1,5 +1,5 @@
 // https://eslint.org/docs/rules/
-export default {
+module.exports = {
     'root': true,
     // system globals
     'env': {
@@ -13,9 +13,7 @@ export default {
     },
     // other globals
     'globals': {
-        'assert': true,
-        'delay': true,
-        'page': true
+
     },
 
     'plugins': [
