@@ -13,14 +13,22 @@ const main = async () => {
 
     //  console.log(reportDataList);
 
-    const code = await MonocartReporter.merge(reportDataList, {
+    await MonocartReporter.merge(reportDataList, {
         name: 'My Merged Report',
         outputFile: 'docs/merged/index.html'
     });
 
-    if (code !== 0) {
-        process.exit(code);
+    // remove all json file
+
+    const list = fs.readdirSync(path.resolve('docs'), {
+        withFileTypes: true
+    });
+    for (const item of list) {
+        if (item.isDirectory()) {
+            fs.rmSync(path.resolve('docs', item.name, 'index.json'));
+        }
     }
+
 
 };
 
