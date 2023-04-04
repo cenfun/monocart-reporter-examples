@@ -18,9 +18,13 @@ const main = async () => {
     await MonocartReporter.merge(reportDataList, {
         name: 'My Merged Report',
         outputFile: 'docs/merged/index.html',
-        attachmentPath: (relativePath, outputDir) => {
-            console.log(relativePath, outputDir);
-            return `https://cenfun.github.io/monocart-reporter/${relativePath}`;
+        attachmentPath: (currentPath, extras) => {
+            const prevPath = path.resolve(extras.cwd, extras.outputDir, currentPath);
+            const newDir = path.resolve('docs/merged');
+            // console.log(prevPath, newDir);
+            const newPath = path.relative(newDir, prevPath);
+            // console.log(newPath);
+            return newPath;
         },
         onEnd: async (reportData, capacity) => {
 
