@@ -6,11 +6,11 @@
     "type": "module",
     "scripts": {
         "link": "sf link ../monocart-reporter -f",
-        "test": "node ./scripts/test.js",
         "radom": "node ./scripts/random.js",
-        "ten": "npx playwright test -c tests/ten-minutes",
         "open": "node ./scripts/open.js",
-        "merge": "node ./scripts/merge.js"
+        "test": "node ./scripts/test.js",
+        "merge": "node ./scripts/merge.js",
+        "ten": "npx playwright test -c tests/ten-minutes"
     },
     "license": "MIT",
     "repository": {
