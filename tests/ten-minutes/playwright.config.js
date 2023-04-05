@@ -16,6 +16,7 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `docs/${name}/index.html`,
+            trend: `docs/${name}/index.json`,
             tags: {
                 passed: {
                     background: 'green'

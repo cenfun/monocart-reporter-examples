@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 
-test.describe("describe", ()=> {
+test.describe('describe', () => {
 
     test('screenshot attachment', async ({ page }, testInfo) => {
         await page.setContent('<h3>Monocart Reporter Screenshot</h3>');
@@ -10,5 +10,5 @@ test.describe("describe", ()=> {
             contentType: 'image/png'
         });
     });
-    
-})
+
+});

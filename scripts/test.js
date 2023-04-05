@@ -24,7 +24,7 @@ const run = (dirname) => {
         });
 
         worker.on('close', function(code) {
-            resolve();
+            resolve(code);
         });
     });
 };
