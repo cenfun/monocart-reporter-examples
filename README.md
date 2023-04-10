@@ -12,7 +12,9 @@
 - [parallel-unknown](https://cenfun.github.io/monocart-reporter-test/parallel-unknown)
 - [fully-parallel](https://cenfun.github.io/monocart-reporter-test/fully-parallel)
 
-- [multiple projects](https://cenfun.github.io/monocart-reporter-test/projects)
+- multiple [projects](https://cenfun.github.io/monocart-reporter-test/projects)
+
+- [typescript](https://cenfun.github.io/monocart-reporter-test/typescript) comments
 
 - [ten-minutes](https://cenfun.github.io/monocart-reporter-test/ten-minutes/) Test more than 10 minutes with 1,000+ cases
 

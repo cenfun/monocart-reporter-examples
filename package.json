@@ -8,7 +8,7 @@
         "link": "sf link ../monocart-reporter -f",
         "radom": "node ./scripts/random.js",
         "open": "node ./scripts/open.js",
-        "test": "node ./scripts/test.js",
+        "test": "node ./scripts/test.js && npm run merge",
         "merge": "node ./scripts/merge.js",
         "ten": "npx playwright test -c tests/ten-minutes"
     },
