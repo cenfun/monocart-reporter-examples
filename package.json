@@ -2,8 +2,8 @@
     "name": "monocart-reporter-test",
     "version": "1.0.0",
     "description": "",
-    "main": "",
     "type": "module",
+    "main": "",
     "scripts": {
         "link": "sf link ../monocart-reporter -f",
         "radom": "node ./scripts/random.js",
@@ -18,13 +18,13 @@
         "url": "git+https://github.com/cenfun/monocart-reporter-test.git"
     },
     "dependencies": {
-        "@playwright/test": "^1.32.1",
-        "monocart-reporter": "^1.6.1",
-        "playwright": "^1.32.1"
+        "@playwright/test": "^1.32.3",
+        "monocart-reporter": "^1.6.12",
+        "playwright": "^1.32.3"
     },
     "devDependencies": {
         "eight-colors": "^1.0.3",
-        "eslint": "^8.37.0",
+        "eslint": "^8.38.0",
         "eslint-config-plus": "^1.0.6",
         "eslint-plugin-html": "^7.1.0",
         "open": "^9.1.0"
