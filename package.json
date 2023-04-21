@@ -10,7 +10,9 @@
         "open": "node ./scripts/open.js",
         "test": "node ./scripts/test.js && npm run merge",
         "merge": "node ./scripts/merge.js",
-        "ten": "npx playwright test -c tests/ten-minutes"
+        "ten": "npx playwright test -c tests/ten-minutes",
+        "build": "npx webpack --config packages/coverage/webpack.config.js",
+        "serve": "npx webpack serve --config packages/coverage/webpack.config.js"
     },
     "license": "MIT",
     "repository": {
@@ -19,14 +21,21 @@
     },
     "dependencies": {
         "@playwright/test": "^1.32.3",
-        "monocart-reporter": "^1.6.12",
+        "monocart-reporter": "^1.6.13",
         "playwright": "^1.32.3"
     },
     "devDependencies": {
+        "@babel/preset-env": "^7.21.4",
+        "babel-loader": "^9.1.2",
+        "babel-plugin-istanbul": "^6.1.1",
         "eight-colors": "^1.0.3",
         "eslint": "^8.38.0",
         "eslint-config-plus": "^1.0.6",
         "eslint-plugin-html": "^7.1.0",
-        "open": "^9.1.0"
+        "html-webpack-plugin": "^5.5.1",
+        "open": "^9.1.0",
+        "webpack": "^5.80.0",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.13.3"
     }
 }

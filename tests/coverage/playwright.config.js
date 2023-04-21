@@ -6,14 +6,14 @@ export default {
 
     retries: 1,
 
-    webServer: {
-        command: 'npm run serve',
-        url: 'http://localhost:8090/',
-        reuseExistingServer: true
-    },
-    use: {
-        baseURL: 'http://localhost:8090/'
-    },
+    // webServer: {
+    //     command: 'npm run serve',
+    //     url: 'http://localhost:9000/',
+    //     reuseExistingServer: true
+    // },
+    // use: {
+    //     baseURL: 'http://localhost:9000/'
+    // },
 
     reporter: [
         ['list'],

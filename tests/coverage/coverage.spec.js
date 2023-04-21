@@ -39,11 +39,16 @@ test.afterAll(async () => {
 });
 
 test('runs first', async () => {
-    // await singlePage.goto('./');
+    //  await singlePage.goto('./');
+    // await singlePage.goto('http://localhost:10353/');
+
     // await singlePage.goto('https://playwright.dev/');
     await singlePage.goto('https://www.ruanyifeng.com/blog/');
 });
 
 test('runs second', async () => {
+    await new Promise((resolve) => {
+        setTimeout(resolve, 1000);
+    });
     // await singlePage.getByText('Get Started').click();
 });
