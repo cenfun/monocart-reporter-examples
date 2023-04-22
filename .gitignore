@@ -2,4 +2,3 @@
 /package-lock.json
 /.temp
 /docs/**/index.json
-/packages/coverage/public/

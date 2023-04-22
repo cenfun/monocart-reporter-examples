@@ -103,6 +103,4 @@ list.forEach((color) => {
     };
 });
 
-console.log(EC);
-
-export default EC;
+export { EC };
