@@ -18,6 +18,7 @@
 
 - [ten-minutes](https://cenfun.github.io/monocart-reporter-test/ten-minutes/) Test more than 10 minutes with 1,000+ cases
 
+- [coverage](https://cenfun.github.io/monocart-reporter-test/coverage/) code coverage reports
 - [merged report](https://cenfun.github.io/monocart-reporter-test/merged) from [shard1](https://cenfun.github.io/monocart-reporter-test/shard1), [shard2](https://cenfun.github.io/monocart-reporter-test/shard2), [shard3](https://cenfun.github.io/monocart-reporter-test/shard3)
 
 ## Build

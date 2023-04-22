@@ -37,9 +37,8 @@ test.describe('take v8 coverage', () => {
         const jsCoverage = await singlePage.coverage.stopJSCoverage();
         // filter file list
         const coverageInput = jsCoverage.filter((item) => {
-            // only js file
             if (!item.url.endsWith('.js')) {
-            // return false;
+                // return false;
             }
             return true;
         });
@@ -48,7 +47,6 @@ test.describe('take v8 coverage', () => {
         const report = await takeCoverage(coverageInput, test.info());
         console.log(report.lines);
     });
-
 });
 
 test.describe('take istanbul coverage', () => {
@@ -70,7 +68,6 @@ test.describe('take istanbul coverage', () => {
         const report = await takeCoverage(coverageInput, test.info());
         console.log(report.lines);
     });
-
 });
 
 const list = ['https://github.com/cenfun', 'https://playwright.dev/', 'https://www.youtube.com/'];
