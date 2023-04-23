@@ -1,6 +1,6 @@
 import path from 'path';
 import { test, expect } from '@playwright/test';
-import { takeCoverage } from 'monocart-reporter';
+import { attachCoverageReport } from 'monocart-reporter';
 
 test.describe.configure({
     mode: 'serial'
@@ -44,7 +44,7 @@ test.describe('take v8 coverage', () => {
         });
         expect(coverageInput.length).toBeGreaterThan(0);
         // coverage report
-        const report = await takeCoverage(coverageInput, test.info());
+        const report = await attachCoverageReport(coverageInput, test.info());
         console.log(report.lines);
     });
 });
@@ -65,7 +65,7 @@ test.describe('take istanbul coverage', () => {
         const coverageInput = await page.evaluate(() => window.__coverage__);
         expect(coverageInput, 'expect found istanbul data: __coverage__').toBeTruthy();
         // coverage report
-        const report = await takeCoverage(coverageInput, test.info());
+        const report = await attachCoverageReport(coverageInput, test.info());
         console.log(report.lines);
     });
 });
@@ -102,7 +102,7 @@ list.forEach((url) => {
             });
             expect(coverageInput.length).toBeGreaterThan(0);
             // coverage report
-            const report = await takeCoverage(coverageInput, test.info());
+            const report = await attachCoverageReport(coverageInput, test.info());
             console.log(report.lines);
         });
 
