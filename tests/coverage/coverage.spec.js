@@ -6,24 +6,24 @@ test.describe.configure({
     mode: 'serial'
 });
 
-let singlePage;
+let page;
 
 // test v8 and istanbul
 const pageUrl = `file://${path.resolve('packages/coverage/public/index.html')}`;
 
 test.beforeAll(async ({ browser }) => {
     console.log('beforeAll new page');
-    singlePage = await browser.newPage();
+    page = await browser.newPage();
 });
 test.afterAll(async () => {
-    await singlePage.close();
+    await page.close();
     console.log('afterAll close page');
 });
 
 test.describe('take v8 coverage', () => {
     test('first, startJSCoverage and open page', async () => {
-        await singlePage.coverage.startJSCoverage();
-        await singlePage.goto(pageUrl);
+        await page.coverage.startJSCoverage();
+        await page.goto(pageUrl);
     });
 
     test('next, run test cases', async () => {
@@ -34,7 +34,7 @@ test.describe('take v8 coverage', () => {
 
     test('finally, stopJSCoverage and take coverage', async () => {
         // take v8 coverage
-        const jsCoverage = await singlePage.coverage.stopJSCoverage();
+        const jsCoverage = await page.coverage.stopJSCoverage();
         // filter file list
         const coverageInput = jsCoverage.filter((item) => {
             if (!item.url.endsWith('.js')) {
@@ -51,7 +51,7 @@ test.describe('take v8 coverage', () => {
 
 test.describe('take istanbul coverage', () => {
     test('first, open page', async () => {
-        await singlePage.goto(pageUrl);
+        await page.goto(pageUrl);
     });
 
     test('next, run test cases', async () => {
@@ -62,7 +62,7 @@ test.describe('take istanbul coverage', () => {
 
     test('finally, take coverage', async () => {
         // take istanbul coverage
-        const coverageInput = await singlePage.evaluate(() => window.__coverage__);
+        const coverageInput = await page.evaluate(() => window.__coverage__);
         expect(coverageInput, 'expect found istanbul data: __coverage__').toBeTruthy();
         // coverage report
         const report = await takeCoverage(coverageInput, test.info());
@@ -79,8 +79,8 @@ list.forEach((url) => {
 
     test.describe(`take coverage ${url}`, () => {
         test('first, startJSCoverage and open page', async () => {
-            await singlePage.coverage.startJSCoverage();
-            await singlePage.goto(url);
+            await page.coverage.startJSCoverage();
+            await page.goto(url);
         });
 
         test('next, run test cases', async () => {
@@ -91,7 +91,7 @@ list.forEach((url) => {
 
         test('finally, stopJSCoverage and take coverage', async () => {
         // take v8 coverage
-            const jsCoverage = await singlePage.coverage.stopJSCoverage();
+            const jsCoverage = await page.coverage.stopJSCoverage();
             // filter file list
             const coverageInput = jsCoverage.filter((item) => {
             // only js file
