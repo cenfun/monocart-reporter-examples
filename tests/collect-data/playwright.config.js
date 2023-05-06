@@ -30,7 +30,7 @@ export default {
             visitor: (data, metadata, collect) => {
 
                 // [MCR-123] collect data from title
-                const matchResult = data.title.match(/\[(.+)\]/);
+                const matchResult = metadata.title.match(/\[(.+)\]/);
                 if (matchResult && matchResult[1]) {
                     data.jira = matchResult[1];
                 }
