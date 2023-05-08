@@ -20,19 +20,19 @@
     },
     "dependencies": {
         "@playwright/test": "^1.33.0",
-        "monocart-reporter": "^1.6.18",
+        "monocart-reporter": "^1.6.20",
         "playwright": "^1.33.0"
     },
     "devDependencies": {
         "babel-loader": "^9.1.2",
         "babel-plugin-istanbul": "^6.1.1",
         "eight-colors": "^1.0.3",
-        "eslint": "^8.39.0",
+        "eslint": "^8.40.0",
         "eslint-config-plus": "^1.0.6",
         "eslint-plugin-html": "^7.1.0",
         "open": "^9.1.0",
         "playwright-har": "^0.1.1",
         "webpack": "^5.82.0",
-        "webpack-cli": "^5.0.2"
+        "webpack-cli": "^5.1.0"
     }
 }
