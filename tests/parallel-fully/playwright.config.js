@@ -1,4 +1,4 @@
-const name = 'fully-parallel';
+const name = 'parallel-fully';
 
 export default {
     testDir: '../../tests/parallel',
