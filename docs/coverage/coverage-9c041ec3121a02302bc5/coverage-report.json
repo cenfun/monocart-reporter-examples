@@ -1,0 +1,29 @@
+{
+    "type": "v8",
+    "summary": {
+        "total": 27086,
+        "covered": 25559,
+        "pct": 94.36,
+        "status": "high"
+    },
+    "files": [
+        {
+            "name": "coverage-demo.js",
+            "type": "js",
+            "url": "file:///H:/workspace/monocart-reporter-test/packages/coverage/public/coverage-demo.js",
+            "total": 27007,
+            "covered": 25480,
+            "pct": 94.35,
+            "status": "high"
+        },
+        {
+            "name": "index.html.js",
+            "type": "js",
+            "url": "file:///H:/workspace/monocart-reporter-test/packages/coverage/public/index.html",
+            "total": 79,
+            "covered": 79,
+            "pct": 100,
+            "status": "high"
+        }
+    ]
+}

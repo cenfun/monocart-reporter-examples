@@ -1,0 +1,63 @@
+{
+    "version": "1.2",
+    "creator": {
+        "name": "Playwright",
+        "version": "1.33.0"
+    },
+    "browser": {
+        "name": "chromium",
+        "version": "113.0.5672.53"
+    },
+    "pages": [
+        {
+            "startedDateTime": "2023-05-10T12:52:35.505Z",
+            "id": "page@5890db4762188fbe9b87401aa3e77a43",
+            "title": "coverage page",
+            "pageTimings": {
+                "onContentLoad": 27,
+                "onLoad": 27
+            }
+        }
+    ],
+    "summary": {
+        "requests": 2,
+        "size": 27945,
+        "status": {
+            "200": 2
+        },
+        "methods": {
+            "GET": 2
+        },
+        "waterfalls": {
+            "page@5890db4762188fbe9b87401aa3e77a43": {
+                "timestampStart": 1683723155505,
+                "start": 0,
+                "time": 131.47,
+                "onContentLoad": 27,
+                "onLoad": 27,
+                "entries": [
+                    {
+                        "start": 123,
+                        "time": 2.698,
+                        "dns": -1,
+                        "connect": -1,
+                        "ssl": -1,
+                        "send": 0,
+                        "wait": -1,
+                        "receive": 2.698
+                    },
+                    {
+                        "start": 128,
+                        "time": 3.47,
+                        "dns": -1,
+                        "connect": -1,
+                        "ssl": -1,
+                        "send": 0,
+                        "wait": -1,
+                        "receive": 3.47
+                    }
+                ]
+            }
+        }
+    }
+}
