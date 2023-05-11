@@ -11,17 +11,32 @@ let page;
 // test v8 and istanbul
 const pageUrl = `file://${path.resolve('packages/coverage/public/index.html')}`;
 
-test.beforeAll(async ({ browser }) => {
-    console.log('beforeAll new page');
-    page = await browser.newPage();
-});
-test.afterAll(async () => {
-    await page.close();
-    console.log('afterAll close page');
+test.describe('take istanbul coverage', () => {
+    test('first, open page', async ({ browser }) => {
+        page = await browser.newPage();
+        await page.goto(pageUrl);
+    });
+
+    test('next, run test cases', async () => {
+        await new Promise((resolve) => {
+            setTimeout(resolve, 500);
+        });
+    });
+
+    test('finally, take coverage', async () => {
+        // take istanbul coverage
+        const coverageInput = await page.evaluate(() => window.__coverage__);
+        await page.close();
+        expect(coverageInput, 'expect found istanbul data: __coverage__').toBeTruthy();
+        // coverage report
+        const report = await attachCoverageReport(coverageInput, test.info());
+        console.log(report.lines);
+    });
 });
 
 test.describe('take v8 coverage', () => {
-    test('first, startJSCoverage and open page', async () => {
+    test('first, startJSCoverage and open page', async ({ browser }) => {
+        page = await browser.newPage();
         await page.coverage.startJSCoverage();
         await page.goto(pageUrl);
     });
@@ -35,6 +50,7 @@ test.describe('take v8 coverage', () => {
     test('finally, stopJSCoverage and take coverage', async () => {
         // take v8 coverage
         const jsCoverage = await page.coverage.stopJSCoverage();
+        await page.close();
         // filter file list
         const coverageInput = jsCoverage.filter((item) => {
             if (!item.url.endsWith('.js')) {
@@ -49,37 +65,19 @@ test.describe('take v8 coverage', () => {
     });
 });
 
-test.describe('take istanbul coverage', () => {
-    test('first, open page', async () => {
-        await page.goto(pageUrl);
-    });
+// const list = ['https://github.com/cenfun', 'https://playwright.dev/', 'https://www.youtube.com/'];
 
-    test('next, run test cases', async () => {
-        await new Promise((resolve) => {
-            setTimeout(resolve, 500);
-        });
-    });
-
-    test('finally, take coverage', async () => {
-        // take istanbul coverage
-        const coverageInput = await page.evaluate(() => window.__coverage__);
-        expect(coverageInput, 'expect found istanbul data: __coverage__').toBeTruthy();
-        // coverage report
-        const report = await attachCoverageReport(coverageInput, test.info());
-        console.log(report.lines);
-    });
-});
-
-const list = ['https://github.com/cenfun', 'https://playwright.dev/', 'https://www.youtube.com/'];
-
-// for debug
-list.length = 0;
+const list = ['http://music.163.com'];
 
 list.forEach((url) => {
 
     test.describe(`take coverage ${url}`, () => {
-        test('first, startJSCoverage and open page', async () => {
-            await page.coverage.startJSCoverage();
+        test('first, startJSCoverage and open page', async ({ browser }) => {
+            page = await browser.newPage();
+            await Promise.all([
+                page.coverage.startJSCoverage(),
+                page.coverage.startCSSCoverage()
+            ]);
             await page.goto(url);
         });
 
@@ -90,19 +88,18 @@ list.forEach((url) => {
         });
 
         test('finally, stopJSCoverage and take coverage', async () => {
-        // take v8 coverage
-            const jsCoverage = await page.coverage.stopJSCoverage();
+            // take v8 coverage
+            const [jsCoverage, cssCoverage] = await Promise.all([
+                page.coverage.stopJSCoverage(),
+                page.coverage.stopCSSCoverage()
+            ]);
+
+            await page.close();
             // filter file list
-            const coverageInput = jsCoverage.filter((item) => {
-            // only js file
-                if (!item.url.endsWith('.js')) {
-                    // return false;
-                }
-                return true;
-            });
-            expect(coverageInput.length).toBeGreaterThan(0);
+            const coverageList = [... jsCoverage, ... cssCoverage];
+            expect(coverageList.length).toBeGreaterThan(0);
             // coverage report
-            const report = await attachCoverageReport(coverageInput, test.info());
+            const report = await attachCoverageReport(coverageList, test.info());
             console.log(report.lines);
         });
 
