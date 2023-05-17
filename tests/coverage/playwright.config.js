@@ -8,7 +8,10 @@ export default {
         ['list'],
         ['monocart-reporter', {
             name,
-            outputFile: `docs/${name}/index.html`
+            outputFile: `docs/${name}/index.html`,
+            coverage: {
+
+            }
         }]
     ]
 };

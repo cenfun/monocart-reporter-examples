@@ -1,6 +1,6 @@
 import path from 'path';
 import { test, expect } from '@playwright/test';
-import { attachCoverageReport } from 'monocart-reporter';
+import { attachCoverageReport, addCoverageReport } from 'monocart-reporter';
 
 test.describe.configure({
     mode: 'serial'
@@ -30,7 +30,7 @@ test.describe('take istanbul coverage', () => {
         expect(coverageInput, 'expect found istanbul data: __coverage__').toBeTruthy();
         // coverage report
         const report = await attachCoverageReport(coverageInput, test.info());
-        console.log(report.lines);
+        console.log(report.summary);
     });
 });
 
@@ -61,17 +61,17 @@ test.describe('take v8 coverage', () => {
         expect(coverageInput.length).toBeGreaterThan(0);
         // coverage report
         const report = await attachCoverageReport(coverageInput, test.info());
-        console.log(report.lines);
+        console.log(report.summary);
     });
 });
 
 // const list = ['https://github.com/cenfun', 'https://playwright.dev/', 'https://www.youtube.com/'];
 
-const list = ['http://music.163.com'];
+const list = ['http://juejin.cn/', 'http://juejin.cn/'];
 
-list.forEach((url) => {
+list.forEach((url, i) => {
 
-    test.describe(`take coverage ${url}`, () => {
+    test.describe(`take coverage ${i} ${url}`, () => {
         test('first, startJSCoverage and open page', async ({ browser }) => {
             page = await browser.newPage();
             await Promise.all([
@@ -100,7 +100,9 @@ list.forEach((url) => {
             expect(coverageList.length).toBeGreaterThan(0);
             // coverage report
             const report = await attachCoverageReport(coverageList, test.info());
-            console.log(report.lines);
+            console.log(report.summary);
+
+            await addCoverageReport(coverageList, test.info());
         });
 
     });
