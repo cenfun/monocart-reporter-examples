@@ -29,6 +29,11 @@ export default async (reportData, capability) => {
         height: 1060
     });
     await page.goto(path.resolve(htmlPath));
+
+    await new Promise((resolve) => {
+        setTimeout(resolve, 500);
+    });
+
     await page.evaluate(() => {
         location.hash = 'page=report';
         window.postMessage({

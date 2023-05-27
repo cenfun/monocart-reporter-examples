@@ -1,4 +1,9 @@
 import EC from 'eight-colors';
+import dotenv from 'dotenv';
+
+// https://github.com/motdotla/dotenv
+dotenv.config();
+
 export default async (reportData, capability) => {
     const emailOptions = {
         transport: {

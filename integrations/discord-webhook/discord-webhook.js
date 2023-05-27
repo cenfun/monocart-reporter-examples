@@ -3,6 +3,10 @@ import axios from 'axios';
 import FormData from 'form-data';
 import { chromium } from '@playwright/test';
 import EC from 'eight-colors';
+import dotenv from 'dotenv';
+
+// https://github.com/motdotla/dotenv
+dotenv.config();
 
 export default async (reportData, capability) => {
 
@@ -66,6 +70,11 @@ export default async (reportData, capability) => {
         height: 1060
     });
     await page.goto(path.resolve(htmlPath));
+
+    await new Promise((resolve) => {
+        setTimeout(resolve, 500);
+    });
+
     await page.evaluate(() => {
         location.hash = 'page=report';
         window.postMessage({

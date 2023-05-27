@@ -1,5 +1,10 @@
 import { IncomingWebhook } from '@slack/webhook';
 import EC from 'eight-colors';
+import dotenv from 'dotenv';
+
+// https://github.com/motdotla/dotenv
+dotenv.config();
+
 export default async (reportData, capability) => {
 
     // send notifications to a single channel which the user picks on installation

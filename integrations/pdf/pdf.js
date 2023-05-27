@@ -12,6 +12,11 @@ export default async (reportData) => {
 
     const url = path.resolve(htmlPath);
     await page.goto(url);
+
+    await new Promise((resolve) => {
+        setTimeout(resolve, 500);
+    });
+
     // change layout for pdf
     await page.evaluate(() => {
         location.hash = 'page=report';
@@ -30,8 +35,6 @@ export default async (reportData) => {
         width: 850,
         printBackground: true
     });
-
-    // await delay(1000 * 60 * 5);
 
     await page.close();
     await browser.close();

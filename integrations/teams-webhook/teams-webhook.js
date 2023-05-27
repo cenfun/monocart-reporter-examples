@@ -2,6 +2,10 @@ import path from 'path';
 import axios from 'axios';
 import { chromium } from '@playwright/test';
 import EC from 'eight-colors';
+import dotenv from 'dotenv';
+
+// https://github.com/motdotla/dotenv
+dotenv.config();
 
 export default async (reportData, capability) => {
 
@@ -30,6 +34,11 @@ export default async (reportData, capability) => {
 
     EC.logCyan(`open page ${htmlPath} ...`);
     await page.goto(path.resolve(htmlPath));
+
+    await new Promise((resolve) => {
+        setTimeout(resolve, 500);
+    });
+
     await page.evaluate(() => {
         location.hash = 'page=report';
         window.postMessage({

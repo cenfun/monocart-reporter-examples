@@ -1,6 +1,10 @@
 import axios from 'axios';
 import EC from 'eight-colors';
 import JiraClient from 'jira-client';
+import dotenv from 'dotenv';
+
+// https://github.com/motdotla/dotenv
+dotenv.config();
 
 export default async (reportData, capability) => {
 
