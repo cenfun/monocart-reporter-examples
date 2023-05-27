@@ -34,3 +34,7 @@ npm run test
 # for ten-minutes report
 npm run ten
 ```
+
+## Integrations
+
+[integrations](/integrations)
