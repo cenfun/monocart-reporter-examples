@@ -3,8 +3,8 @@ import sendEmail from './send-email.js';
 const name = 'send-email';
 
 export default {
-    testDir: `../../integrations/${name}`,
-    outputDir: `../../docs/${name}`,
+    testDir: './',
+    outputDir: `../../.temp/${name}`,
 
     metadata: {
         env: 'STG',
@@ -16,7 +16,7 @@ export default {
         ['list'],
         ['monocart-reporter', {
             name,
-            outputFile: `docs/${name}/index.html`,
+            outputFile: `.temp/${name}/index.html`,
             onEnd: async (reportData, capability) => {
 
                 await sendEmail(reportData, capability);
