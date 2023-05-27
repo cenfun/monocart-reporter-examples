@@ -25,6 +25,8 @@
         "playwright": "^1.33.0"
     },
     "devDependencies": {
+        "@slack/web-api": "^6.8.1",
+        "@slack/webhook": "^6.1.0",
         "axios": "^1.4.0",
         "babel-loader": "^9.1.2",
         "babel-plugin-istanbul": "^6.1.1",
