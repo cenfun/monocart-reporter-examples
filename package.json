@@ -11,6 +11,7 @@
         "test": "node ./scripts/test.js && npm run merge",
         "merge": "node ./scripts/merge.js",
         "ten": "npx playwright test -c tests/ten-minutes",
+        "cov": "npx playwright test -c tests/coverage",
         "build": "npx webpack --config packages/coverage/webpack.config.js"
     },
     "license": "MIT",
