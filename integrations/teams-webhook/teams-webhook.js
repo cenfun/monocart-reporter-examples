@@ -51,7 +51,14 @@ export default async (reportData, capability) => {
     });
 
     EC.logCyan('take screenshot ...');
-    const screenshot = await page.screenshot();
+
+    // const screenshot = await page.screenshot();
+
+    // Teams can NOT zoom in the image, just take a small screenshot
+    const pie = page.locator('.mcr-pie-chart svg');
+    const screenshot = await pie.screenshot();
+
+
     await page.close();
     await browser.close();
 
