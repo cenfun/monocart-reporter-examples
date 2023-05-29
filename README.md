@@ -1,4 +1,6 @@
-# Monocart Reporter Test Reports
+# Monocart Reporter Test Examples
+
+## Test Reports
 
 - [nothing](https://cenfun.github.io/monocart-reporter-test/nothing/)
 
@@ -27,14 +29,22 @@
 
 - [typescript](https://cenfun.github.io/monocart-reporter-test/typescript) comments
 
-## Build
-```sh
-npm run test
-
-# for ten-minutes report
-npm run ten
-```
-
 ## Integrations
 
-[integrations](/integrations)
+- [Send Email](/integrations/send-email)
+- [Testrail Integration](/integrations/testrail)
+
+- [Jira + Zephyr Scale Integration](/integrations/zephyr-scale)
+- [Jira + Xray Integration](/integrations/xray)
+
+- [Slack Integration - webhook](/integrations/slack-webhook)
+- [Slack Integration - web api (Recommended)](/integrations/slack-web-api)
+
+- [Discord Integration](/integrations/discord-webhook)
+- [Teams Integration](/integrations/teams-webhook)
+
+- [Dingtalk 钉钉](/integrations/dingtalk-webhook)
+- [Weixin 企业微信](/integrations/weixin-webhook)
+- [Feishu 飞书](/integrations/feishu-webhook)
+
+- [PDF](/integrations/pdf)
