@@ -1,4 +1,5 @@
 import path from 'path';
+import { pathToFileURL } from 'url';
 import axios from 'axios';
 import { chromium } from '@playwright/test';
 import EC from 'eight-colors';
@@ -32,8 +33,9 @@ export default async (reportData, capability) => {
         height: 1060
     });
 
-    EC.logCyan(`open page ${htmlPath} ...`);
-    await page.goto(path.resolve(htmlPath));
+    const htmlUrl = pathToFileURL(path.resolve(htmlPath)).toString();
+    EC.logCyan(`open ${htmlUrl} ...`);
+    await page.goto(htmlUrl);
 
     await new Promise((resolve) => {
         setTimeout(resolve, 500);

@@ -1,7 +1,7 @@
 const name = 'single-worker';
 
 export default {
-    testDir: `../../tests/${name}`,
+    testDir: '../../tests/parallel',
     outputDir: `../../docs/${name}`,
 
     retries: 1,

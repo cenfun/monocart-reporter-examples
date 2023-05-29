@@ -1,4 +1,5 @@
 import path from 'path';
+import { pathToFileURL } from 'url';
 import { chromium } from '@playwright/test';
 import FormData from 'form-data';
 import axios from 'axios';
@@ -45,7 +46,10 @@ export default async (reportData, capability) => {
         width: 860,
         height: 1060
     });
-    await page.goto(path.resolve(htmlPath));
+
+    const htmlUrl = pathToFileURL(path.resolve(htmlPath)).toString();
+    EC.logCyan(`open ${htmlUrl} ...`);
+    await page.goto(htmlUrl);
 
     await new Promise((resolve) => {
         setTimeout(resolve, 500);

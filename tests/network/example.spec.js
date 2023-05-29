@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { pathToFileURL } from 'url';
 import { test } from '@playwright/test';
 import { attachNetworkReport } from 'monocart-reporter';
 import { PlaywrightHar } from 'playwright-har';
@@ -9,7 +10,7 @@ test.describe.configure({
     mode: 'serial'
 });
 
-const pageUrl = `file://${path.resolve('packages/coverage/public/index.html')}`;
+const pageUrl = pathToFileURL(path.resolve('packages/coverage/public/index.html')).toString();
 
 let context;
 

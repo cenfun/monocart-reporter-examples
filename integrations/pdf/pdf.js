@@ -1,5 +1,7 @@
 import path from 'path';
+import { pathToFileURL } from 'url';
 import { chromium } from '@playwright/test';
+import EC from 'eight-colors';
 
 export default async (reportData) => {
 
@@ -10,8 +12,9 @@ export default async (reportData) => {
     });
     const page = await browser.newPage();
 
-    const url = path.resolve(htmlPath);
-    await page.goto(url);
+    const htmlUrl = pathToFileURL(path.resolve(htmlPath)).toString();
+    EC.logCyan(`open ${htmlUrl} ...`);
+    await page.goto(htmlUrl);
 
     await new Promise((resolve) => {
         setTimeout(resolve, 500);

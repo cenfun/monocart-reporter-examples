@@ -1,4 +1,5 @@
 import path from 'path';
+import { pathToFileURL } from 'url';
 import { test, expect } from '@playwright/test';
 import { attachCoverageReport, addCoverageReport } from 'monocart-reporter';
 
@@ -9,7 +10,7 @@ test.describe.configure({
 let page;
 
 // test v8 and istanbul
-const pageUrl = `file://${path.resolve('packages/coverage/public/index.html')}`;
+const pageUrl = pathToFileURL(path.resolve('packages/coverage/public/index.html')).toString();
 
 test.describe('take istanbul coverage', () => {
     test('first, open page', async ({ browser }) => {
