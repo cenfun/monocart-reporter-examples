@@ -20,8 +20,13 @@ test('my test', async ({ page }, testInfo) => {
     }, description);
 
     // take screenshot
-    await page.screenshot({
-        path: testInfo.outputPath('my-screenshot.png')
+    const screenshot = await page.screenshot({
+        //  path: testInfo.outputPath('my-screenshot.png')
+    });
+
+    await testInfo.attach('screenshot', {
+        body: screenshot,
+        contentType: 'image/png'
     });
 
     // after screenshot, remove the helper message
