@@ -15,13 +15,13 @@ export default {
                 defaultColumns.splice(3, 0, {
                     id: 'jira',
                     name: 'JIRA Key',
-                    width: 100,
+                    width: 150,
                     searchable: true,
-                    align: 'center',
                     styleMap: 'font-weight:normal;background:#f8f8f8;',
                     formatter: (v, rowItem, columnItem) => {
-                        const key = rowItem[columnItem.id];
-                        return `<a href="https://your-jira-url/${key}" target="_blank">${v}</a>`;
+                        if (v) {
+                            return v.split(',').map((key) => `<a href="https://your-jira-url/${key}" target="_blank">${key}</a>`).join(' ');
+                        }
                     }
                 });
 
@@ -30,9 +30,9 @@ export default {
             visitor: (data, metadata, collect) => {
 
                 // [MCR-123] collect data from title
-                const matchResult = metadata.title.match(/\[(.+)\]/);
-                if (matchResult && matchResult[1]) {
-                    data.jira = matchResult[1];
+                const matches = Array.from(metadata.title.matchAll(/\[([^\]]+)\]/g)).map((arr) => arr[1]);
+                if (matches.length) {
+                    data.jira = matches.join(',');
                 }
 
                 // collect data from annotations
