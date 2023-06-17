@@ -1,16 +1,16 @@
 import path from 'path';
 export default {
-    mode: 'development',
+    mode: 'production',
 
-    devtool: false,
+    devtool: 'source-map',
 
     entry: path.resolve('packages/coverage/src/index.js'),
 
     output: {
         path: path.resolve('packages/coverage/public/'),
-        filename: 'coverage-demo.js',
+        filename: 'coverage-v8.js',
         umdNamedDefine: true,
-        library: 'coverage-demo',
+        library: 'coverage-v8',
         libraryTarget: 'umd'
     },
 
@@ -18,10 +18,7 @@ export default {
         rules: [{
             test: /\.js$/,
             use: {
-                loader: 'babel-loader',
-                options: {
-                    plugins: ['babel-plugin-istanbul']
-                }
+                loader: 'babel-loader'
             }
         }]
     }
