@@ -9,6 +9,9 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `docs/${name}/index.html`,
+
+            logging: 'debug',
+
             coverage: {
 
             }
