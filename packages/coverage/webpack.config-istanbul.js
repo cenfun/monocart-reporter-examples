@@ -1,6 +1,6 @@
 import path from 'path';
 export default {
-    mode: 'production',
+    mode: 'development',
 
     devtool: 'source-map',
 

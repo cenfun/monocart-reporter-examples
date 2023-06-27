@@ -21,19 +21,24 @@ test('take istanbul coverage', async ({ page }) => {
 
 });
 
-const list = [{
-    title: 'take v8 coverage with instrumented dist',
-    url: pathToFileURL(path.resolve('packages/coverage/public/istanbul.html')).toString()
-}, {
-    title: 'take v8 coverage',
-    url: pathToFileURL(path.resolve('packages/coverage/public/v8.html')).toString()
-}, {
-    title: 'take coverage juejin.cn 1',
-    url: 'http://juejin.cn/'
-}, {
-    title: 'take coverage juejin.cn 2',
-    url: 'http://juejin.cn/'
-}];
+const list = [
+    {
+        title: 'take v8 coverage with instrumented dist',
+        url: pathToFileURL(path.resolve('packages/coverage/public/istanbul.html')).toString()
+    },
+    {
+        title: 'take v8 coverage',
+        url: pathToFileURL(path.resolve('packages/coverage/public/v8.html')).toString()
+    },
+    {
+        title: 'take coverage juejin.cn 1',
+        url: 'http://juejin.cn/'
+    },
+    {
+        title: 'take coverage juejin.cn 2',
+        url: 'http://juejin.cn/'
+    }
+];
 
 list.forEach((item, i) => {
 
