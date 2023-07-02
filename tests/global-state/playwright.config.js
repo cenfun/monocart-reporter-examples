@@ -39,8 +39,6 @@ export default {
         }
     ],
 
-    logging: 'debug',
-
     reporter: [
         ['dot'],
         ['monocart-reporter', {
