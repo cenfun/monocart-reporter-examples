@@ -1,0 +1,588 @@
+{
+    "title": "Coverage Report - take coverage juejin.cn 2",
+    "type": "v8",
+    "htmlPath": "docs/coverage/coverage-53fd8016ab77eb41dcdf/index.html",
+    "watermarks": [
+        50,
+        80
+    ],
+    "summary": {
+        "total": 5277217,
+        "covered": 1796988,
+        "uncovered": 3480229,
+        "pct": 34.05,
+        "status": "low"
+    },
+    "files": [
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/static/rc-client-security-web-glue/1.0.0.19/sdk-glue.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/rc-client-security-web-glue/1.0.0.19/sdk-glue.js",
+            "total": 87500,
+            "covered": 48748,
+            "uncovered": 38752,
+            "pct": 55.71,
+            "status": "medium"
+        },
+        {
+            "name": "juejin.cn",
+            "type": "js",
+            "url": "https://juejin.cn/",
+            "total": 1278,
+            "covered": 1278,
+            "uncovered": 0,
+            "pct": 100,
+            "status": "high"
+        },
+        {
+            "name": "juejin.cn",
+            "type": "js",
+            "url": "https://juejin.cn/",
+            "total": 1386,
+            "covered": 954,
+            "uncovered": 432,
+            "pct": 68.83,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/static/slardar-plugin/imageReport.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/slardar-plugin/imageReport.js",
+            "total": 15367,
+            "covered": 640,
+            "uncovered": 14727,
+            "pct": 4.16,
+            "status": "low"
+        },
+        {
+            "name": "juejin.cn",
+            "type": "js",
+            "url": "https://juejin.cn/",
+            "total": 1779,
+            "covered": 1322,
+            "uncovered": 457,
+            "pct": 74.31,
+            "status": "medium"
+        },
+        {
+            "name": "juejin.cn",
+            "type": "js",
+            "url": "https://juejin.cn/",
+            "total": 34715,
+            "covered": 34715,
+            "uncovered": 0,
+            "pct": 100,
+            "status": "high"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/static/cdn-retry/bundle-669b12.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/cdn-retry/bundle-669b12.js",
+            "total": 5158,
+            "covered": 683,
+            "uncovered": 4475,
+            "pct": 13.24,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/8e77b0d.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/8e77b0d.js",
+            "total": 19146,
+            "covered": 18279,
+            "uncovered": 867,
+            "pct": 95.47,
+            "status": "high"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e261c12.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e261c12.js",
+            "total": 22078,
+            "covered": 10509,
+            "uncovered": 11569,
+            "pct": 47.6,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/c136f4b.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/c136f4b.js",
+            "total": 104612,
+            "covered": 59367,
+            "uncovered": 45245,
+            "pct": 56.75,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/81f0d75.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/81f0d75.js",
+            "total": 233110,
+            "covered": 124868,
+            "uncovered": 108242,
+            "pct": 53.57,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/f8fa4c4.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/f8fa4c4.js",
+            "total": 1808704,
+            "covered": 440493,
+            "uncovered": 1368211,
+            "pct": 24.35,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/33ca9b8.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/33ca9b8.js",
+            "total": 673629,
+            "covered": 293379,
+            "uncovered": 380250,
+            "pct": 43.55,
+            "status": "low"
+        },
+        {
+            "name": "lf3-short.ibytedapm.com/slardar/fe/sdk-web/browser.cn.js/bid=2608&globalName=SlardarWeb",
+            "type": "js",
+            "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/browser.cn.js?bid=2608&globalName=SlardarWeb",
+            "total": 44413,
+            "covered": 7718,
+            "uncovered": 36695,
+            "pct": 17.38,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/49f5bfb.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/49f5bfb.js",
+            "total": 20257,
+            "covered": 7655,
+            "uncovered": 12602,
+            "pct": 37.79,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/d45e659.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/d45e659.js",
+            "total": 119,
+            "covered": 100,
+            "uncovered": 19,
+            "pct": 84.03,
+            "status": "high"
+        },
+        {
+            "name": "lf-headquarters-speed.yhgfb-cn-static.com/obj/rc-client-security/web/stable/1.0.0.33/bdms.js",
+            "type": "js",
+            "url": "https://lf-headquarters-speed.yhgfb-cn-static.com/obj/rc-client-security/web/stable/1.0.0.33/bdms.js",
+            "total": 237099,
+            "covered": 169628,
+            "uncovered": 67471,
+            "pct": 71.54,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/3e8177e.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/3e8177e.js",
+            "total": 14226,
+            "covered": 4704,
+            "uncovered": 9522,
+            "pct": 33.07,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/69707e5.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/69707e5.js",
+            "total": 16482,
+            "covered": 3860,
+            "uncovered": 12622,
+            "pct": 23.42,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/93c4eac.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/93c4eac.js",
+            "total": 22316,
+            "covered": 2672,
+            "uncovered": 19644,
+            "pct": 11.97,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/4dfa85e.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/4dfa85e.js",
+            "total": 2409,
+            "covered": 320,
+            "uncovered": 2089,
+            "pct": 13.28,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/0e330ec.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/0e330ec.js",
+            "total": 58992,
+            "covered": 5193,
+            "uncovered": 53799,
+            "pct": 8.8,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/d3eb99f.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/d3eb99f.js",
+            "total": 333688,
+            "covered": 104667,
+            "uncovered": 229021,
+            "pct": 31.37,
+            "status": "low"
+        },
+        {
+            "name": "lf-rc1.yhgfb-cn-static.com/obj/rc-client-security/secsdk-captcha/2.28.5/captcha.js",
+            "type": "js",
+            "url": "https://lf-rc1.yhgfb-cn-static.com/obj/rc-client-security/secsdk-captcha/2.28.5/captcha.js",
+            "total": 765837,
+            "covered": 307992,
+            "uncovered": 457845,
+            "pct": 40.22,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/c14ca3b.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/c14ca3b.js",
+            "total": 2541,
+            "covered": 1187,
+            "uncovered": 1354,
+            "pct": 46.71,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/6c63e8a.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/6c63e8a.js",
+            "total": 28159,
+            "covered": 20222,
+            "uncovered": 7937,
+            "pct": 71.81,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/bb0883f.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/bb0883f.js",
+            "total": 2015,
+            "covered": 1584,
+            "uncovered": 431,
+            "pct": 78.61,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/b92c3a1.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/b92c3a1.js",
+            "total": 3901,
+            "covered": 1443,
+            "uncovered": 2458,
+            "pct": 36.99,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e8c0ccf.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e8c0ccf.js",
+            "total": 3645,
+            "covered": 2733,
+            "uncovered": 912,
+            "pct": 74.98,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/9665113.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/9665113.js",
+            "total": 694,
+            "covered": 640,
+            "uncovered": 54,
+            "pct": 92.22,
+            "status": "high"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/598302d.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/598302d.js",
+            "total": 17128,
+            "covered": 6483,
+            "uncovered": 10645,
+            "pct": 37.85,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/c61e6bf.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/c61e6bf.js",
+            "total": 19394,
+            "covered": 8618,
+            "uncovered": 10776,
+            "pct": 44.44,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/4b2732f.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/4b2732f.js",
+            "total": 1069,
+            "covered": 694,
+            "uncovered": 375,
+            "pct": 64.92,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e826899.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e826899.js",
+            "total": 21594,
+            "covered": 14254,
+            "uncovered": 7340,
+            "pct": 66.01,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/932b437.js",
+            "type": "js",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/932b437.js",
+            "total": 8469,
+            "covered": 5028,
+            "uncovered": 3441,
+            "pct": 59.37,
+            "status": "medium"
+        },
+        {
+            "name": "lf-rc1.yhgfb-cn-static.com/obj/rc-client-security/secsdk-captcha/2.28.5/static/js/vendors~sld.js",
+            "type": "js",
+            "url": "https://lf-rc1.yhgfb-cn-static.com/obj/rc-client-security/secsdk-captcha/2.28.5/static/js/vendors~sld.js",
+            "total": 45381,
+            "covered": 25635,
+            "uncovered": 19746,
+            "pct": 56.49,
+            "status": "medium"
+        },
+        {
+            "name": "lf-rc1.yhgfb-cn-static.com/obj/rc-client-security/secsdk-captcha/2.28.5/static/js/vendors~t.js",
+            "type": "js",
+            "url": "https://lf-rc1.yhgfb-cn-static.com/obj/rc-client-security/secsdk-captcha/2.28.5/static/js/vendors~t.js",
+            "total": 121183,
+            "covered": 41070,
+            "uncovered": 80113,
+            "pct": 33.89,
+            "status": "low"
+        },
+        {
+            "name": "lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/common-monitors.1.1.0.js",
+            "type": "js",
+            "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/common-monitors.1.1.0.js",
+            "total": 18997,
+            "covered": 10313,
+            "uncovered": 8684,
+            "pct": 54.29,
+            "status": "medium"
+        },
+        {
+            "name": "lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/common-monitors.1.1.6.js",
+            "type": "js",
+            "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/common-monitors.1.1.6.js",
+            "total": 17607,
+            "covered": 4724,
+            "uncovered": 12883,
+            "pct": 26.83,
+            "status": "low"
+        },
+        {
+            "name": "lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/blank-screen.1.1.6.js",
+            "type": "js",
+            "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/blank-screen.1.1.6.js",
+            "total": 5895,
+            "covered": 2616,
+            "uncovered": 3279,
+            "pct": 44.38,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/layouts/default.c06839e.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/layouts/default.c06839e.css",
+            "total": 17198,
+            "covered": 0,
+            "uncovered": 17198,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/static/bytedesign.min.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/bytedesign.min.css",
+            "total": 208476,
+            "covered": 0,
+            "uncovered": 208476,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/app.5fa843b.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/app.5fa843b.css",
+            "total": 60371,
+            "covered": 0,
+            "uncovered": 60371,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/70.b71c74a.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/70.b71c74a.css",
+            "total": 37453,
+            "covered": 0,
+            "uncovered": 37453,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/70.b71c74a.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/70.b71c74a.css",
+            "total": 37453,
+            "covered": 0,
+            "uncovered": 37453,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/1.ff6755e.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/1.ff6755e.css",
+            "total": 15944,
+            "covered": 0,
+            "uncovered": 15944,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/11.105de5b.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/11.105de5b.css",
+            "total": 21624,
+            "covered": 0,
+            "uncovered": 21624,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/layouts/default.c06839e.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/layouts/default.c06839e.css",
+            "total": 17198,
+            "covered": 0,
+            "uncovered": 17198,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/139.9ccface.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/139.9ccface.css",
+            "total": 5612,
+            "covered": 0,
+            "uncovered": 5612,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/202.814dd70.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/202.814dd70.css",
+            "total": 1225,
+            "covered": 0,
+            "uncovered": 1225,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/186.f8225ef.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/186.f8225ef.css",
+            "total": 4447,
+            "covered": 0,
+            "uncovered": 4447,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/161.b433288.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/161.b433288.css",
+            "total": 3267,
+            "covered": 0,
+            "uncovered": 3267,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/190.f6517d5.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/190.f6517d5.css",
+            "total": 487,
+            "covered": 0,
+            "uncovered": 487,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/33.90f228b.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/33.90f228b.css",
+            "total": 1767,
+            "covered": 0,
+            "uncovered": 1767,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/211.adcadde.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/211.adcadde.css",
+            "total": 960,
+            "covered": 0,
+            "uncovered": 960,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/209.7990b43.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/209.7990b43.css",
+            "total": 552,
+            "covered": 0,
+            "uncovered": 552,
+            "pct": 0,
+            "status": "low"
+        },
+        {
+            "name": "lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/195.c096fbd.css",
+            "type": "css",
+            "url": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/195.c096fbd.css",
+            "total": 1211,
+            "covered": 0,
+            "uncovered": 1211,
+            "pct": 0,
+            "status": "low"
+        }
+    ]
+}

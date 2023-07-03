@@ -1,0 +1,88 @@
+{
+    "title": "Coverage Report - take v8 coverage with instrumented dist",
+    "type": "v8",
+    "htmlPath": "docs/coverage/coverage-d6f48201e8b9093c975b/index.html",
+    "watermarks": [
+        50,
+        80
+    ],
+    "summary": {
+        "total": 19572,
+        "covered": 17831,
+        "uncovered": 1741,
+        "pct": 91.1,
+        "status": "high"
+    },
+    "files": [
+        {
+            "name": "H/workspace/monocart-reporter-test/packages/coverage/public/coverage-istanbul.js",
+            "type": "js",
+            "url": "file:///H:/workspace/monocart-reporter-test/packages/coverage/public/coverage-istanbul.js",
+            "total": 17321,
+            "covered": 16142,
+            "uncovered": 1179,
+            "pct": 93.19,
+            "status": "high"
+        },
+        {
+            "name": "coverage-istanbul/webpack/universalModuleDefinition",
+            "type": "",
+            "url": "webpack://coverage-istanbul/webpack/universalModuleDefinition",
+            "total": 403,
+            "covered": 252,
+            "uncovered": 151,
+            "pct": 62.53,
+            "status": "medium"
+        },
+        {
+            "name": "coverage-istanbul/webpack/bootstrap",
+            "type": "",
+            "url": "webpack://coverage-istanbul/webpack/bootstrap",
+            "total": 52,
+            "covered": 52,
+            "uncovered": 0,
+            "pct": 100,
+            "status": "high"
+        },
+        {
+            "name": "coverage-istanbul/webpack/runtime/define-property-getters",
+            "type": "",
+            "url": "webpack://coverage-istanbul/webpack/runtime/define property getters",
+            "total": 308,
+            "covered": 308,
+            "uncovered": 0,
+            "pct": 100,
+            "status": "high"
+        },
+        {
+            "name": "coverage-istanbul/webpack/runtime/hasOwnProperty-shorthand",
+            "type": "",
+            "url": "webpack://coverage-istanbul/webpack/runtime/hasOwnProperty shorthand",
+            "total": 88,
+            "covered": 88,
+            "uncovered": 0,
+            "pct": 100,
+            "status": "high"
+        },
+        {
+            "name": "coverage-istanbul/webpack/runtime/make-namespace-object",
+            "type": "",
+            "url": "webpack://coverage-istanbul/webpack/runtime/make namespace object",
+            "total": 274,
+            "covered": 274,
+            "uncovered": 0,
+            "pct": 100,
+            "status": "high"
+        },
+        {
+            "name": "coverage-istanbul/packages/coverage/src/index.js",
+            "type": "js",
+            "url": "webpack://coverage-istanbul/./packages/coverage/src/index.js",
+            "total": 1126,
+            "covered": 715,
+            "uncovered": 411,
+            "pct": 63.5,
+            "status": "medium"
+        }
+    ]
+}

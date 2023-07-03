@@ -1,33 +1,35 @@
 {
+    "title": "Coverage Report - take istanbul coverage",
+    "htmlPath": "docs/coverage/coverage-0caf5f9c21afe7033814/index.html",
     "type": "istanbul",
     "summary": {
         "lines": {
-            "total": 55,
-            "covered": 41,
+            "total": 29,
+            "covered": 20,
             "skipped": 0,
-            "pct": 74.54,
+            "pct": 68.96,
             "status": "medium"
         },
         "statements": {
-            "total": 55,
-            "covered": 41,
+            "total": 29,
+            "covered": 20,
             "skipped": 0,
-            "pct": 74.54,
+            "pct": 68.96,
             "status": "medium"
         },
         "functions": {
-            "total": 22,
-            "covered": 10,
+            "total": 8,
+            "covered": 6,
             "skipped": 0,
-            "pct": 45.45,
-            "status": "low"
+            "pct": 75,
+            "status": "medium"
         },
         "branches": {
-            "total": 2,
-            "covered": 1,
+            "total": 10,
+            "covered": 4,
             "skipped": 0,
-            "pct": 50,
-            "status": "medium"
+            "pct": 40,
+            "status": "low"
         },
         "branchesTrue": {
             "total": 0,
@@ -40,32 +42,32 @@
     "files": [
         {
             "lines": {
-                "total": 55,
-                "covered": 41,
+                "total": 29,
+                "covered": 20,
                 "skipped": 0,
-                "pct": 74.54,
+                "pct": 68.96,
                 "status": "medium"
             },
             "functions": {
-                "total": 22,
-                "covered": 10,
+                "total": 8,
+                "covered": 6,
                 "skipped": 0,
-                "pct": 45.45,
-                "status": "low"
+                "pct": 75,
+                "status": "medium"
             },
             "statements": {
-                "total": 55,
-                "covered": 41,
+                "total": 29,
+                "covered": 20,
                 "skipped": 0,
-                "pct": 74.54,
+                "pct": 68.96,
                 "status": "medium"
             },
             "branches": {
-                "total": 2,
-                "covered": 1,
+                "total": 10,
+                "covered": 4,
                 "skipped": 0,
-                "pct": 50,
-                "status": "medium"
+                "pct": 40,
+                "status": "low"
             },
             "name": "index.js"
         }
