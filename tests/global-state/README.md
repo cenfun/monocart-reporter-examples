@@ -1,3 +1,16 @@
+## Global State Management
+Support specified test cases to run in sequence mode.
+
+![](global-state.png)
+
+### WebSocket server + lock/unlock state
+- [playwright.config.js](playwright.config.js)
+
+### Test case + useState
+- [example1.spec.js](example1.spec.js)
+- [example2.spec.js](example2.spec.js)
+
+### Logs
 ```
 [MCR] state websocket server listening on ws://localhost:8130
 
