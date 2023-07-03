@@ -1,5 +1,5 @@
 ## Global State Management
-Support specified test cases to run in sequence mode.
+Allows specified test cases to run in sequence mode with lock/unlock state.
 
 ![](global-state.png)
 
