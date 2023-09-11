@@ -13,6 +13,7 @@
         "serve": "npx monocart serve-report ./scripts/demo/",
         "ten": "npx playwright test -c tests/ten-minutes",
         "coverage": "npx playwright test -c tests/coverage",
+        "video": "npx playwright test -c tests/multiple-video",
         "global-state": "npx playwright test -c tests/global-state",
         "email": "npx playwright test -c integrations/email",
         "build": "npm run build-istanbul && npm run build-v8",
