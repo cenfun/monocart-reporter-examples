@@ -10,8 +10,6 @@ export default {
             name,
             outputFile: `docs/${name}/index.html`,
 
-            logging: 'debug',
-
             coverage: {
 
             }
