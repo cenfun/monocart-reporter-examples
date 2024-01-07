@@ -7,7 +7,7 @@ export default {
     entry: path.resolve('packages/coverage/src/index.js'),
 
     output: {
-        path: path.resolve('packages/coverage/public/'),
+        path: path.resolve('packages/coverage/public/dist'),
         filename: 'coverage-istanbul.js',
         umdNamedDefine: true,
         library: 'coverage-istanbul',

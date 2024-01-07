@@ -4,3 +4,4 @@
 /docs/**/index.json
 /.env
 /docs/
+/packages/coverage/public/dist/
