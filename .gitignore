@@ -3,3 +3,4 @@
 /.temp
 /docs/**/index.json
 /.env
+/docs/
