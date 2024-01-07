@@ -13,7 +13,7 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `docs/${name}/index.html`,
-            visitor: (data, metadata, collect) => {
+            visitor: (data, metadata) => {
                 const mySecrets = [process.env.PASSWORD, process.env.TOKEN];
                 mySecrets.forEach((secret) => {
                     // remove from title

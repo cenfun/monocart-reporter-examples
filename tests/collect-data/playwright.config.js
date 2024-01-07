@@ -27,7 +27,7 @@ export default {
 
             },
 
-            visitor: (data, metadata, collect) => {
+            visitor: (data, metadata) => {
 
                 // [MCR-123] collect data from title
                 const matches = Array.from(metadata.title.matchAll(/\[([^\]]+)\]/g)).map((arr) => arr[1]);
@@ -41,15 +41,6 @@ export default {
                     if (jiraItem && jiraItem.description) {
                         data.jira = jiraItem.description;
                     }
-                }
-
-                // collect data from comments
-                const parserOptions = {
-                    sourceType: 'module'
-                };
-                const comments = collect.comments(parserOptions);
-                if (comments) {
-                    Object.assign(data, comments);
                 }
             }
         }]
