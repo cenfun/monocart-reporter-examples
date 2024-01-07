@@ -1,10 +1,10 @@
-# Monocart Reporter Test Examples
+# Monocart Reporter Examples
 
-## Test Reports Examples
+## Test Report Examples
 
 see [tests](tests) folder
 
-## Integrations Examples
+## Integration Examples
 
 see [integrations](integrations) folder
 
