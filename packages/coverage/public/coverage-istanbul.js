@@ -54,13 +54,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   privateFunction: () => (/* binding */ privateFunction),
 /* harmony export */   start: () => (/* binding */ start)
 /* harmony export */ });
-function cov_15y6hsfnlz() {
-  var path = "H:\\workspace\\monocart-reporter-test\\packages\\coverage\\src\\index.js";
-  var hash = "ca118d1c1262cafe50c3685869429ad5c124f512";
+function cov_8bxjzggxq() {
+  var path = "F:\\workspace\\monocart-reporter-test\\packages\\coverage\\src\\index.js";
+  var hash = "0c6ef8ab7e1becaeba66c078333015d85f5ba375";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "H:\\workspace\\monocart-reporter-test\\packages\\coverage\\src\\index.js",
+    path: "F:\\workspace\\monocart-reporter-test\\packages\\coverage\\src\\index.js",
     statementMap: {
       "0": {
         start: {
@@ -763,7 +763,7 @@ function cov_15y6hsfnlz() {
       "4": [0, 0]
     },
     _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    hash: "ca118d1c1262cafe50c3685869429ad5c124f512"
+    hash: "0c6ef8ab7e1becaeba66c078333015d85f5ba375"
   };
   var coverage = global[gcv] || (global[gcv] = {});
   if (!coverage[path] || coverage[path].hash !== hash) {
@@ -772,110 +772,110 @@ function cov_15y6hsfnlz() {
   var actualCoverage = coverage[path];
   {
     // @ts-ignore
-    cov_15y6hsfnlz = function () {
+    cov_8bxjzggxq = function () {
       return actualCoverage;
     };
   }
   return actualCoverage;
 }
-cov_15y6hsfnlz();
+cov_8bxjzggxq();
 function foo(argument) {
-  cov_15y6hsfnlz().f[0]++;
-  cov_15y6hsfnlz().s[0]++;
+  cov_8bxjzggxq().f[0]++;
+  cov_8bxjzggxq().s[0]++;
   console.log('this is foo');
-  cov_15y6hsfnlz().s[1]++;
+  cov_8bxjzggxq().s[1]++;
   if (argument) {
-    cov_15y6hsfnlz().b[0][0]++;
-    cov_15y6hsfnlz().s[2]++;
+    cov_8bxjzggxq().b[0][0]++;
+    cov_8bxjzggxq().s[2]++;
     console.log('covered foo argument');
   } else {
-    cov_15y6hsfnlz().b[0][1]++;
+    cov_8bxjzggxq().b[0][1]++;
   }
 }
 function bar(argument) {
-  cov_15y6hsfnlz().f[1]++;
-  cov_15y6hsfnlz().s[3]++;
+  cov_8bxjzggxq().f[1]++;
+  cov_8bxjzggxq().s[3]++;
   console.log('this is bar');
-  cov_15y6hsfnlz().s[4]++;
+  cov_8bxjzggxq().s[4]++;
   if (argument) {
-    cov_15y6hsfnlz().b[1][0]++;
-    cov_15y6hsfnlz().s[5]++;
+    cov_8bxjzggxq().b[1][0]++;
+    cov_8bxjzggxq().s[5]++;
     console.log('covered bar argument');
   } else {
-    cov_15y6hsfnlz().b[1][1]++;
+    cov_8bxjzggxq().b[1][1]++;
   }
 }
 function start() {
-  cov_15y6hsfnlz().f[2]++;
-  cov_15y6hsfnlz().s[6]++;
+  cov_8bxjzggxq().f[2]++;
+  cov_8bxjzggxq().s[6]++;
   console.log('this is start');
-  cov_15y6hsfnlz().s[7]++;
+  cov_8bxjzggxq().s[7]++;
   foo(true);
 }
 function privateFunction() {
-  cov_15y6hsfnlz().f[3]++;
-  cov_15y6hsfnlz().s[8]++;
+  cov_8bxjzggxq().f[3]++;
+  cov_8bxjzggxq().s[8]++;
   console.log('this id privateFunction');
 }
 function init(stop) {
-  cov_15y6hsfnlz().f[4]++;
-  cov_15y6hsfnlz().s[9]++;
+  cov_8bxjzggxq().f[4]++;
+  cov_8bxjzggxq().s[9]++;
   console.log('this is init');
-  cov_15y6hsfnlz().s[10]++;
+  cov_8bxjzggxq().s[10]++;
   start();
-  cov_15y6hsfnlz().s[11]++;
+  cov_8bxjzggxq().s[11]++;
   if (stop) {
-    cov_15y6hsfnlz().b[2][0]++;
-    cov_15y6hsfnlz().s[12]++;
+    cov_8bxjzggxq().b[2][0]++;
+    cov_8bxjzggxq().s[12]++;
     console.log('stop in init');
-    cov_15y6hsfnlz().s[13]++;
+    cov_8bxjzggxq().s[13]++;
     return;
   } else {
-    cov_15y6hsfnlz().b[2][1]++;
+    cov_8bxjzggxq().b[2][1]++;
   }
-  cov_15y6hsfnlz().s[14]++;
+  cov_8bxjzggxq().s[14]++;
   const inline = a => {
-    cov_15y6hsfnlz().f[5]++;
-    cov_15y6hsfnlz().s[15]++;
+    cov_8bxjzggxq().f[5]++;
+    cov_8bxjzggxq().s[15]++;
     console.log('this is inline');
-    cov_15y6hsfnlz().s[16]++;
+    cov_8bxjzggxq().s[16]++;
     if (a) {
-      cov_15y6hsfnlz().b[3][0]++;
-      cov_15y6hsfnlz().s[17]++;
+      cov_8bxjzggxq().b[3][0]++;
+      cov_8bxjzggxq().s[17]++;
       console.log('covered inline argument');
     } else {
-      cov_15y6hsfnlz().b[3][1]++;
+      cov_8bxjzggxq().b[3][1]++;
     }
   };
-  const list = (cov_15y6hsfnlz().s[18]++, [inline]);
-  cov_15y6hsfnlz().s[19]++;
+  const list = (cov_8bxjzggxq().s[18]++, [inline]);
+  cov_8bxjzggxq().s[19]++;
   list.forEach(i => {
-    cov_15y6hsfnlz().f[6]++;
-    cov_15y6hsfnlz().s[20]++;
+    cov_8bxjzggxq().f[6]++;
+    cov_8bxjzggxq().s[20]++;
     i();
   });
 }
-cov_15y6hsfnlz().s[21]++;
+cov_8bxjzggxq().s[21]++;
 const onload = something => {
-  cov_15y6hsfnlz().f[7]++;
-  cov_15y6hsfnlz().s[22]++;
+  cov_8bxjzggxq().f[7]++;
+  cov_8bxjzggxq().s[22]++;
   console.log('this is onload');
-  cov_15y6hsfnlz().s[23]++;
+  cov_8bxjzggxq().s[23]++;
   if (something) {
-    cov_15y6hsfnlz().b[4][0]++;
-    cov_15y6hsfnlz().s[24]++;
+    cov_8bxjzggxq().b[4][0]++;
+    cov_8bxjzggxq().s[24]++;
     console.log('stop with something');
-    cov_15y6hsfnlz().s[25]++;
+    cov_8bxjzggxq().s[25]++;
     return;
   } else {
-    cov_15y6hsfnlz().b[4][1]++;
+    cov_8bxjzggxq().b[4][1]++;
   }
-  cov_15y6hsfnlz().s[26]++;
+  cov_8bxjzggxq().s[26]++;
   console.log('on loaded');
 };
-cov_15y6hsfnlz().s[27]++;
+cov_8bxjzggxq().s[27]++;
 init(window._my_stop_key);
-cov_15y6hsfnlz().s[28]++;
+cov_8bxjzggxq().s[28]++;
 onload(window._my_something);
 /******/ 	return __webpack_exports__;
 /******/ })()
