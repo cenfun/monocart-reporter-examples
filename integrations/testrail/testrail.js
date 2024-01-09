@@ -34,6 +34,7 @@ export default async (reportData, capability) => {
         // find project name
         if (item.type === 'suite' && item.suiteType === 'project') {
             currentProjectName = item.title;
+            return;
         }
 
         if (item.type === 'case' && item.testrail) {
