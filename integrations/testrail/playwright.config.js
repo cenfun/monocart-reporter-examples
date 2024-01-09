@@ -1,3 +1,4 @@
+import { devices } from '@playwright/test';
 import testrail from './testrail.js';
 
 const name = 'testrail';
@@ -11,6 +12,17 @@ export default {
         type: 'Regression',
         url: 'https://www.npmjs.org/package/monocart-reporter'
     },
+
+    projects: [
+        {
+            name: 'chromium',
+            use: devices['Desktop Chrome']
+        },
+        {
+            name: 'firefox',
+            use: devices['Desktop Firefox']
+        }
+    ],
 
     reporter: [
         ['list'],
