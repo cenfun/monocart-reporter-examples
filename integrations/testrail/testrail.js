@@ -25,7 +25,6 @@ export default async (reportData, capability) => {
      * @testrail 2126
      */
     // test('Test case', async () => { });
-    // 2. make sure the comments to be collected with visitor https://github.com/cenfun/monocart-reporter#collect-data-from-comments
 
     let currentProjectName = reportData.name;
 

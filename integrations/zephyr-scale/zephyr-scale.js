@@ -25,7 +25,6 @@ export default async (reportData, capability) => {
      * @zephyr MON-T1
      */
     // test('Test case', async () => { });
-    // 2. make sure the comments to be collected with visitor https://github.com/cenfun/monocart-reporter#collect-data-from-comments
 
     capability.forEach((item) => {
         if (item.type === 'case' && item.zephyr) {
