@@ -1,15 +1,23 @@
+/**
+ *@device File
+ */
+
 import { test, expect } from '@playwright/test';
 
 /**
- * @zephyr MON-T1
+ * @device Case
  */
 test('passed test', () => {
 
 });
 
 /**
- * @zephyr MON-T2
+ * @device Suite
  */
-test('failed test', () => {
-    expect(false).toBe(true);
+test.describe('suite title', () => {
+
+    test('failed test', () => {
+        expect(1).toBe(1);
+    });
+
 });
