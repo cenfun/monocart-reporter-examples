@@ -1,15 +1,15 @@
 import { test, expect } from '@playwright/test';
 
 /**
- * @azureId 10
+ * @zephyr MON-T1
  */
-test('passed test 1', () => {
+test('passed test', () => {
 
 });
 
 /**
- * @azureId 12
+ * @zephyr MON-T2
  */
-test('failed test 1', () => {
+test('failed test', () => {
     expect(false).toBe(true);
 });
