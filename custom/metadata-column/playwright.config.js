@@ -60,6 +60,22 @@ export default {
                 // add `device` for project data
                 if (data.type === 'suite' && data.suiteType === 'project') {
                     data.device = data.metadata && data.metadata.device;
+                    return;
+                }
+
+                // add `device` for case data
+                if (data.type === 'case') {
+                    let parent = pwData.parent;
+                    while (parent) {
+                        if (parent.project) {
+                            const project = parent.project();
+                            if (project.metadata) {
+                                data.device = project.metadata.device;
+                            }
+                            break;
+                        }
+                        parent = parent.parent;
+                    }
                 }
 
             }
