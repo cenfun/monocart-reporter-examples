@@ -39,7 +39,7 @@ export default {
 
             columns: (defaultColumns) => {
 
-                // add `device` column after `duration` column
+                // add `device` column before `duration` column
                 const index = defaultColumns.findIndex((column) => column.id === 'duration');
                 defaultColumns.splice(index, 0, {
                     id: 'device',
