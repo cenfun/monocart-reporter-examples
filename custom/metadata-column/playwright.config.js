@@ -1,8 +1,6 @@
-
-const name = 'metadata-column';
-
 import { devices } from '@playwright/test';
 
+const name = 'metadata-column';
 export default {
     testDir: './',
     outputDir: `../../docs/${name}`,
