@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 // https://github.com/motdotla/dotenv
 dotenv.config();
 
-export default async (reportData, capability) => {
+export default async (reportData, helper) => {
 
     // https://github.com/microsoft/azure-devops-node-api
 
@@ -36,7 +36,7 @@ export default async (reportData, capability) => {
 
     const results = [];
 
-    capability.forEach((item) => {
+    helper.forEach((item) => {
         if (item.type === 'case' && item.azureId) {
             // https://learn.microsoft.com/en-us/azure/devops/report/analytics/entity-reference-test-plans?view=azure-devops#testoutcome-enumerated-type-members
             // Passed 2 Passed Test executed successfully.

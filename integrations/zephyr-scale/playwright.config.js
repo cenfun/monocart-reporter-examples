@@ -17,10 +17,10 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `.temp/${name}/index.html`,
-            onEnd: async (reportData, capability) => {
+            onEnd: async (reportData, helper) => {
 
                 // jira + zephyr scale integration
-                await zephyrScale(reportData, capability);
+                await zephyrScale(reportData, helper);
 
             }
         }]

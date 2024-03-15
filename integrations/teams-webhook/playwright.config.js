@@ -17,10 +17,10 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `.temp/${name}/index.html`,
-            onEnd: async (reportData, capability) => {
+            onEnd: async (reportData, helper) => {
 
                 // teams integration with webhook
-                await teamsWebhook(reportData, capability);
+                await teamsWebhook(reportData, helper);
 
 
             }

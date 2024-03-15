@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 // https://github.com/motdotla/dotenv
 dotenv.config();
 
-export default async (reportData, capability) => {
+export default async (reportData, helper) => {
 
     // Step 1. Collect case keys
     EC.logCyan('[xray] collect test results ...');
@@ -36,7 +36,7 @@ export default async (reportData, capability) => {
      */
     // test('Test case', async () => { });
 
-    capability.forEach((item) => {
+    helper.forEach((item) => {
         if (item.type === 'case' && item.xray) {
 
             // [Xray] How to create another Test Status

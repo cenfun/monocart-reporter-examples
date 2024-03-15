@@ -9,7 +9,7 @@ import dotenv from 'dotenv';
 // https://github.com/motdotla/dotenv
 dotenv.config();
 
-export default async (reportData, capability) => {
+export default async (reportData, helper) => {
 
     // send message to a discord channel which webhook
     // https://discord.com/developers/docs/resources/webhook

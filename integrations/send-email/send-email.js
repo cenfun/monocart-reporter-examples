@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 // https://github.com/motdotla/dotenv
 dotenv.config();
 
-export default async (reportData, capability) => {
+export default async (reportData, helper) => {
     const emailOptions = {
         transport: {
             // change to your email service, or use SMTP host and port: https://nodemailer.com/smtp/
@@ -53,7 +53,7 @@ export default async (reportData, capability) => {
         return;
     }
 
-    const info = await capability.sendEmail(emailOptions).catch((e) => {
+    const info = await helper.sendEmail(emailOptions).catch((e) => {
         console.error(e);
     });
     if (info) {

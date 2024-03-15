@@ -17,10 +17,10 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `.temp/${name}/index.html`,
-            onEnd: async (reportData, capability) => {
+            onEnd: async (reportData, helper) => {
 
                 // slack integration with web api
-                await slackWebApi(reportData, capability);
+                await slackWebApi(reportData, helper);
 
 
             }

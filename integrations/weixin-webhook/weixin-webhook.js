@@ -11,7 +11,7 @@ import dotenv from 'dotenv';
 // https://github.com/motdotla/dotenv
 dotenv.config();
 
-export default async (reportData, capability) => {
+export default async (reportData, helper) => {
 
     // do not store your webhook url in the source code, but pass your webhook url from environment variables
     const url = `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${process.env.WEIXIN_WEBHOOK_KEY}`;
@@ -128,7 +128,7 @@ export default async (reportData, capability) => {
     } else if (summary.failed.value > 0) {
         // @owners of all failed cases
         const owners = [];
-        capability.forEach((item) => {
+        helper.forEach((item) => {
             if (item.type === 'case' && item.caseType === 'failed' && item.owner) {
                 owners.push(`@${item.owner}`);
             }

@@ -17,10 +17,10 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `.temp/${name}/index.html`,
-            onEnd: async (reportData, capability) => {
+            onEnd: async (reportData, helper) => {
 
                 // slack integration with webhook
-                await slackWebhook(reportData, capability);
+                await slackWebhook(reportData, helper);
 
 
             }

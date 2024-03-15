@@ -17,10 +17,10 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `.temp/${name}/index.html`,
-            onEnd: async (reportData, capability) => {
+            onEnd: async (reportData, helper) => {
 
                 // weixin integration with webhook
-                await weixinWebhook(reportData, capability);
+                await weixinWebhook(reportData, helper);
 
 
             }

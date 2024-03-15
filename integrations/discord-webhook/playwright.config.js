@@ -17,10 +17,10 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `.temp/${name}/index.html`,
-            onEnd: async (reportData, capability) => {
+            onEnd: async (reportData, helper) => {
 
                 // discord integration with webhook
-                await discordWebhook(reportData, capability);
+                await discordWebhook(reportData, helper);
 
 
             }

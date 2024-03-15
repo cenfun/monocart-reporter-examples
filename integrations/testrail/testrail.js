@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 // https://github.com/motdotla/dotenv
 dotenv.config();
 
-export default async (reportData, capability) => {
+export default async (reportData, helper) => {
 
     const options = {
         // change to your testrail host
@@ -28,7 +28,7 @@ export default async (reportData, capability) => {
 
     let currentProjectName = reportData.name;
 
-    capability.forEach((item) => {
+    helper.forEach((item) => {
 
         // find project name
         if (item.type === 'suite' && item.suiteType === 'project') {

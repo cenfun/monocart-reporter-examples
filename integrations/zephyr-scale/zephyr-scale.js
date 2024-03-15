@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 // https://github.com/motdotla/dotenv
 dotenv.config();
 
-export default async (reportData, capability) => {
+export default async (reportData, helper) => {
 
     // https://support.smartbear.com/zephyr-scale-cloud/api-docs/
 
@@ -26,7 +26,7 @@ export default async (reportData, capability) => {
      */
     // test('Test case', async () => { });
 
-    capability.forEach((item) => {
+    helper.forEach((item) => {
         if (item.type === 'case' && item.zephyr) {
 
             // The default execution status does not match between Zephyr Scale and Playwright

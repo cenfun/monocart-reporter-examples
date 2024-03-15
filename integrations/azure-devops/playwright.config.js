@@ -17,9 +17,9 @@ export default {
         ['monocart-reporter', {
             name,
             outputFile: `.temp/${name}/index.html`,
-            onEnd: async (reportData, capability) => {
+            onEnd: async (reportData, helper) => {
 
-                await azureDevops(reportData, capability);
+                await azureDevops(reportData, helper);
 
             }
         }]

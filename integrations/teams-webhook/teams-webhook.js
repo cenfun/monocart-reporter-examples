@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 // https://github.com/motdotla/dotenv
 dotenv.config();
 
-export default async (reportData, capability) => {
+export default async (reportData, helper) => {
 
     // https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet
 
@@ -87,7 +87,7 @@ export default async (reportData, capability) => {
     } else if (summary.failed.value > 0) {
         // @owners of all failed cases
         const owners = [];
-        capability.forEach((item) => {
+        helper.forEach((item) => {
             if (item.type === 'case' && item.caseType === 'failed' && item.owner) {
                 owners.push(`@${item.owner}`);
             }
