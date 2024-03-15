@@ -20,6 +20,8 @@ see [integrations](integrations) folder
 - [Discord Integration](/integrations/discord-webhook)
 - [Teams Integration](/integrations/teams-webhook)
 
+- [BrowserStack Integration](/integrations/browserstack)
+
 - [Dingtalk 钉钉](/integrations/dingtalk-webhook)
 - [Weixin 企业微信](/integrations/weixin-webhook)
 - [Feishu 飞书](/integrations/feishu-webhook)
