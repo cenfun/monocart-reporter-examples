@@ -37,9 +37,26 @@ export default async (reportData, helper) => {
         }
 
         if (item.type === 'case' && item.testrail) {
+
+            // For TestRail: https://support.testrail.com/hc/en-us/articles/7077935129364-Statuses
+            // The following system statuses are available by default.
             // 1 Passed
+            // 2 Blocked
+            // 3 Untested
+            // 4 Retest
             // 5 Failed
+
+            // For Playwright: https://playwright.dev/docs/api/class-testcase
+            // We can match statuses 1 (Passed) and 5 (Failed) by default
+
             const status_id = item.ok ? 1 : 5;
+
+            // In order to match more status in Playwright, such as "skipped", "flaky"
+            // You can add additional custom statuses under Administration > Customizations in TestRail.
+            // if (item.caseType === 'skipped') {
+            //     status_id = 6;
+            // }
+
             results.push({
                 case_id: item.testrail,
                 status_id: status_id,
