@@ -1,9 +1,8 @@
 import { devices } from '@playwright/test';
 
-const name = 'metadata-column';
 export default {
     testDir: './',
-    outputDir: `../../docs/${name}`,
+    outputDir: '../../docs/metadata-column',
 
     projects: [
         {
@@ -32,8 +31,8 @@ export default {
     reporter: [
         ['list'],
         ['monocart-reporter', {
-            name,
-            outputFile: `docs/${name}/index.html`,
+            name: 'metadata-column',
+            outputFile: 'docs/metadata-column/index.html',
 
             columns: (defaultColumns) => {
 

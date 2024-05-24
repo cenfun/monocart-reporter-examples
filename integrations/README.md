@@ -4,19 +4,14 @@
 |   |Examples||
 |:-:|:---|:------|
 |![](assets/email.png)|[Send Email](send-email)||
-|![](assets/testrail.png)|[Testrail](testrail)||
-
-- [Jira + Zephyr Scale Integration](/integrations/zephyr-scale)
-- [Jira + Xray Integration](/integrations/xray)
-
-- [Slack Integration - webhook](/integrations/slack-webhook)
-- [Slack Integration - web api (Recommended)](/integrations/slack-web-api)
-
-- [Discord Integration](/integrations/discord-webhook)
-- [Teams Integration](/integrations/teams-webhook)
-
-- [BrowserStack Integration](/integrations/browserstack)
-
-- [Dingtalk 钉钉](/integrations/dingtalk-webhook)
-- [Weixin 企业微信](/integrations/weixin-webhook)
-- [Feishu 飞书](/integrations/feishu-webhook)
+|![](assets/testrail.png)|[Testrail Integration](testrail)||
+|![](assets/jira.png) ![](assets/zephyr.png)|[Jira + Zephyr Scale Integration](zephyr-scale)||
+|![](assets/jira.png) ![](assets/xray.png)|[Jira + Xray Integration](xray)||
+|![](assets/slack.png)|[Slack Integration - webhook](slack-webhook)||
+|![](assets/slack.png)|[Slack Integration - web api (Recommended)](slack-web-api)||
+|![](assets/discord.png)|[Discord Integration](discord-webhook)||
+|![](assets/teams.png)|[Teams Integration](teams-webhook)||
+|![](assets/browserstack.png)|[BrowserStack Integration](browserstack)||
+|![](assets/dingtalk.png)|[Dingtalk 钉钉](dingtalk-webhook)||
+|![](assets/weixin.png)|[Weixin 企业微信](weixin-webhook)||
+|![](assets/feishu.png)|[Feishu 飞书](feishu-webhook)||
