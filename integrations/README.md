@@ -1,7 +1,10 @@
 # Playwright + Monocart Reporter Integration Examples
 
-- [Send Email](/integrations/send-email)
-- [Testrail Integration](/integrations/testrail)
+
+|   |Examples||
+|:-:|:---|:------|
+|![](assets/email.png)|[Send Email](send-email)||
+|![](assets/testrail.png)|[Testrail](testrail)||
 
 - [Jira + Zephyr Scale Integration](/integrations/zephyr-scale)
 - [Jira + Xray Integration](/integrations/xray)
@@ -17,5 +20,3 @@
 - [Dingtalk 钉钉](/integrations/dingtalk-webhook)
 - [Weixin 企业微信](/integrations/weixin-webhook)
 - [Feishu 飞书](/integrations/feishu-webhook)
-
-- [PDF](/integrations/pdf)
