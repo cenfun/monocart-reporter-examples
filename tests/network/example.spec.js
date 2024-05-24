@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import { pathToFileURL } from 'url';
 import { test } from '@playwright/test';
 import { attachNetworkReport } from 'monocart-reporter';
 import { PlaywrightHar } from 'playwright-har';
@@ -10,7 +9,6 @@ test.describe.configure({
     mode: 'serial'
 });
 
-const pageUrl = pathToFileURL(path.resolve('packages/coverage/public/index.html')).toString();
 
 let context;
 
@@ -29,7 +27,7 @@ test.describe('attach network report 1', () => {
             }
         });
         const page = await context.newPage();
-        await page.goto(pageUrl);
+        await page.goto('https://playwright.dev/');
     });
 
     test('next, run test cases', async () => {
