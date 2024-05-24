@@ -1,7 +1,6 @@
-# Playwright + Monocart Reporter Integration Examples
+# Playwright + Monocart Reporter
 
-
-|   |Examples||
+|![](assets/playwright.png)|Integration Examples||
 |:-:|:---|:------|
 |![](assets/email.png)|[Send Email](send-email)||
 |![](assets/testrail.png)|[Testrail Integration](testrail)||
