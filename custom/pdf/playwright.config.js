@@ -1,10 +1,8 @@
 import pdf from './pdf.js';
 
-const name = 'pdf';
-
 export default {
     testDir: './',
-    outputDir: `../../.temp/${name}`,
+    outputDir: '../../.temp/pdf',
 
     metadata: {
         env: 'STG',
@@ -15,8 +13,8 @@ export default {
     reporter: [
         ['list'],
         ['monocart-reporter', {
-            name,
-            outputFile: `.temp/${name}/index.html`,
+            name: 'pdf',
+            outputFile: '.temp/pdf/index.html',
             onEnd: async (reportData, helper) => {
 
                 await pdf(reportData, helper);
