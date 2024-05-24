@@ -22,11 +22,12 @@
         "type": "git",
         "url": "git+https://github.com/cenfun/monocart-reporter-test.git"
     },
+    "dependencies": {},
     "devDependencies": {
-        "@playwright/test": "^1.44.0",
+        "@playwright/test": "^1.44.1",
         "@slack/web-api": "^7.0.4",
         "@slack/webhook": "^7.0.2",
-        "axios": "^1.6.8",
+        "axios": "^1.7.2",
         "azure-devops-node-api": "^13.0.0",
         "babel-loader": "^9.1.3",
         "babel-plugin-istanbul": "^6.1.1",
@@ -41,6 +42,7 @@
         "monocart-reporter": "^2.4.7",
         "open": "^10.1.0",
         "playwright-har": "^0.2.0",
+        "qaseio": "^2.1.0",
         "testrail-api": "^1.3.6"
     }
 }

@@ -4,6 +4,7 @@
 |:-:|:---|
 |![](assets/email.png)|[Send Email](send-email)|
 |![](assets/testrail.png)|[Testrail Integration](testrail)|
+|![](assets/qase.png)|[Qase Integration](qase)|
 |![](assets/jira.png) ![](assets/zephyr.png)|[Jira + Zephyr Scale Integration](zephyr-scale)|
 |![](assets/jira.png) ![](assets/xray.png)|[Jira + Xray Integration](xray)|
 |![](assets/slack.png)|[Slack Integration - webhook](slack-webhook)|
