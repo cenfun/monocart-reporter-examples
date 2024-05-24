@@ -1,6 +1,6 @@
 # Playwright + Monocart Reporter
 
-|![](assets/playwright.png)|Integration Examples|
+|![](assets/playwright.png) ![](assets/monocart.png)|Integration Examples|
 |:-:|:---|
 |![](assets/email.png)|[Send Email](send-email)|
 |![](assets/testrail.png)|[Testrail Integration](testrail)|
