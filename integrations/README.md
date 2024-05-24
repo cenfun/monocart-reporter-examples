@@ -1,4 +1,4 @@
-# Playwright + Monocart Reporter
+# Playwright + Monocart Reporter Integration Examples
 
 |![](assets/playwright.png) ![](assets/monocart.png)|Integration Examples|
 |:-:|:---|
