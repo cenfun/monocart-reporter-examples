@@ -1,9 +1,10 @@
-## Send Email
+![](assets/icon.png)
+# Send Email
 Simply send email with [nodemailer](https://nodemailer.com)
 
-### Dependencies
+## Dependencies
 - USERNAME
 - PASSWORD
 - dotenv
 
-![](email.png)
+![](assets/screenshot.png)

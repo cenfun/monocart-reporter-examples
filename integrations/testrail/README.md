@@ -1,10 +1,11 @@
-## Testrail Integration
+![](assets/icon.png)
+# Testrail Integration
 Send test results to your [Testrail](https://www.testrail.com/)
 
-### Dependencies
+## Dependencies
 - USERNAME
 - PASSWORD
 - dotenv
 - testrail-api
 
-![](testrail.png)
+![](assets/screenshot.png)
