@@ -34,6 +34,7 @@ export default async (reportData, helper) => {
         return {
             status,
             case_id: item.qase,
+            comment: item.qase_comment,
             time_ms: item.duration
         };
     });
