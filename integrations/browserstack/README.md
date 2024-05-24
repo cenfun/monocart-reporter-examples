@@ -5,4 +5,4 @@ Send test results to your [BrowserStack](https://www.browserstack.com/) Test Man
 - BROWSERSTACK_API_KEY
 - dotenv
 
-![](browserstack.png)
+![](screenshot.png)

@@ -5,4 +5,4 @@ Create test cycle and executions with [zephyr-scale-api](https://support.smartbe
 - ZEPHYR_SCALE_TOKEN
 - dotenv
 
-![](zephyr.png)
+![](screenshot.png)

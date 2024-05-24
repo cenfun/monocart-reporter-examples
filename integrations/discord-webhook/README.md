@@ -6,4 +6,4 @@ Using [Discord webhooks](https://discord.com/developers/docs/resources/webhook) 
 - dotenv
 - form-data
 
-![](discord.png)
+![](screenshot.png)

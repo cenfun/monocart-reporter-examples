@@ -1,4 +1,3 @@
-![](assets/icon.png)
 # Send Email
 Simply send email with [nodemailer](https://nodemailer.com)
 
@@ -7,4 +6,4 @@ Simply send email with [nodemailer](https://nodemailer.com)
 - PASSWORD
 - dotenv
 
-![](assets/screenshot.png)
+![](screenshot.png)

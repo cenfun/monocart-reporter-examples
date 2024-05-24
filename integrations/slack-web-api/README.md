@@ -6,4 +6,4 @@ Post chat message and upload image with [@slack/web-api](https://github.com/slac
 - dotenv
 - @slack/web-api
 
-![](slack.png)
+![](screenshot.png)

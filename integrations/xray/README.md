@@ -9,4 +9,4 @@
 - dotenv
 - jira-client
 
-![](xray.png)
+![](screenshot.png)

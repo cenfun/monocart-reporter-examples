@@ -5,4 +5,4 @@ Please create an [Incoming Webhooks](https://learn.microsoft.com/en-us/microsoft
 - TEAMS_WEBHOOK
 - dotenv
 
-![](teams.png)
+![](screenshot.png)
