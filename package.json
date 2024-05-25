@@ -10,10 +10,10 @@
         "open": "node ./scripts/open.js",
         "test": "node ./scripts/test.js && npm run merge",
         "merge": "node ./scripts/merge.js",
-        "serve": "npx monocart serve-report ./scripts/demo/",
+        "serve": "npx monocart serve-report ./docs/all-failed/",
         "ten": "npx playwright test -c tests/ten-minutes",
         "video": "npx playwright test -c tests/multiple-video",
-        "global-state": "npx playwright test -c tests/global-state"
+        "state": "npx playwright test -c tests/global-state"
     },
     "license": "MIT",
     "repository": {
