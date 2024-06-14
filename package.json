@@ -25,11 +25,11 @@
         "@playwright/test": "^1.44.1",
         "dotenv": "^16.4.5",
         "eight-colors": "^1.3.0",
-        "eslint": "^9.3.0",
-        "eslint-config-plus": "^2.0.0",
+        "eslint": "^9.4.0",
+        "eslint-config-plus": "^2.0.2",
         "eslint-plugin-html": "^8.1.1",
         "lighthouse": "^12.0.0",
-        "monocart-reporter": "^2.4.7",
+        "monocart-reporter": "^2.4.9",
         "open": "^10.1.0",
         "playwright-har": "^0.2.0"
     }
