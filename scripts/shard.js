@@ -3,6 +3,9 @@ import path from 'path';
 import child_process from 'child_process';
 import EC from 'eight-colors';
 
+// process.env.NODE_OPTIONS = '--trace-warnings';
+process.env.NODE_OPTIONS = '--no-warnings';
+
 const run = (dirname) => {
 
     const command = `npx playwright test -c tests/${dirname}`;
@@ -36,17 +39,11 @@ const test = () => {
     });
     for (const item of list) {
         if (item.isDirectory()) {
-
-            if (item.name === 'ten-minutes') {
-                continue;
-            }
             if (item.name.startsWith('shard')) {
-                continue;
+                setTimeout(() => {
+                    run(item.name);
+                });
             }
-
-            setTimeout(() => {
-                run(item.name);
-            });
         }
     }
 };
