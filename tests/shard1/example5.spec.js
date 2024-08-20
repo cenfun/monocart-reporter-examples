@@ -1,15 +1,22 @@
-import { test, expect } from './fixtures.js';
+import fs from 'fs';
+import path from 'path';
+import { test } from './fixtures.js';
 
-test('@passed or @failed or @flaky', () => {
-    expect(Math.random()).toBeLessThan(0.5);
-});
+test('app coverage', async ({ page }) => {
 
-test('@passed or @flaky', () => {
-    expect(test.info().retry).toBe(Math.random() > 0.5 ? 1 : 0);
-});
+    const filePath = path.resolve(import.meta.dirname, 'app.js');
+    const content = fs.readFileSync(filePath).toString('utf-8');
 
-test('@passed or @skipped', () => {
-    if (Math.random() > 0.5) {
-        test.skip();
-    }
+    await page.addScriptTag({
+        content: `${content}\n//# sourceURL=${filePath}`
+    });
+
+    await new Promise((resolve) => {
+        setTimeout(resolve, 500);
+    });
+
+    await page.evaluate(() => {
+        window.app();
+    });
+
 });

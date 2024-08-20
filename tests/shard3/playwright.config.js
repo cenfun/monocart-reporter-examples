@@ -17,10 +17,6 @@ export default {
         {
             name: 'chromium',
             use: devices['Desktop Chrome']
-        },
-        {
-            name: 'firefox',
-            use: devices['Desktop Firefox']
         }
     ],
 
@@ -32,6 +28,8 @@ export default {
             // global coverage
             coverage: {
                 reports: [
+                    'console-details',
+                    'v8',
                     'raw'
                 ]
             },
