@@ -4,7 +4,6 @@ import MonocartReporter from 'monocart-reporter';
 
 const main = async () => {
 
-
     const reportDataList = [
         // json file path
         'docs/shard1/index.json',
@@ -18,14 +17,14 @@ const main = async () => {
     await MonocartReporter.merge(reportDataList, {
         name: 'My Merged Report',
         outputFile: 'docs/merged/index.html',
-        attachmentPath: (currentPath, extras) => {
-            const prevPath = path.resolve(extras.cwd, extras.outputDir, currentPath);
-            const newDir = path.resolve('docs/merged');
-            // console.log(prevPath, newDir);
-            const newPath = path.relative(newDir, prevPath);
-            // console.log(newPath);
-            return newPath;
-        },
+        // attachmentPath: (currentPath, extras) => {
+        //     const prevPath = path.resolve(extras.cwd, extras.outputDir, currentPath);
+        //     const newDir = path.resolve('docs/merged');
+        //     // console.log(prevPath, newDir);
+        //     const newPath = path.relative(newDir, prevPath);
+        //     // console.log(newPath);
+        //     return newPath;
+        // },
         onEnd: async (reportData, capacity) => {
 
         }

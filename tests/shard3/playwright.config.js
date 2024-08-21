@@ -13,6 +13,13 @@ export default {
         current: 3
     },
 
+    use: {
+        // test attachments
+        trace: 'on-first-retry',
+        screenshot: 'only-on-failure',
+        video: 'on-first-retry'
+    },
+
     projects: [
         {
             name: 'chromium',
