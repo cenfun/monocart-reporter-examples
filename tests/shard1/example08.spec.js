@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import { test } from './fixtures.js';
+import { test } from '@playwright/test';
 
-import { attachNetworkReport } from 'monocart-reporter';
+import { attachNetworkReport, attachCoverageReport } from 'monocart-reporter';
 
 let context;
 test.describe('attach network report', () => {
@@ -20,6 +20,7 @@ test.describe('attach network report', () => {
             }
         });
         const page = await context.newPage();
+
         await page.goto('http://localhost:8090/');
     });
 
@@ -37,5 +38,28 @@ test.describe('attach network report', () => {
         });
 
     });
+
+});
+
+test('attach coverage report', async ({ page }) => {
+    // coverage API is chromium only
+    await Promise.all([
+        page.coverage.startJSCoverage({
+            resetOnNavigation: false
+        }),
+        page.coverage.startCSSCoverage({
+            resetOnNavigation: false
+        })
+    ]);
+
+    await page.goto('http://localhost:8090/');
+
+    const [jsCoverage, cssCoverage] = await Promise.all([
+        page.coverage.stopJSCoverage(),
+        page.coverage.stopCSSCoverage()
+    ]);
+    const coverageList = [... jsCoverage, ... cssCoverage];
+    // console.log(coverageList.map((item) => item.url));
+    await attachCoverageReport(coverageList, test.info());
 
 });
