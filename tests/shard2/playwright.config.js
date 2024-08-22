@@ -27,6 +27,11 @@ export default {
         }
     ],
 
+    webServer: {
+        command: 'npm run serve',
+        url: 'http://localhost:8090/'
+    },
+
     reporter: [
         ['list'],
         ['monocart-reporter', {
