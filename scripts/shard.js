@@ -1,5 +1,3 @@
-import fs from 'fs';
-import path from 'path';
 import child_process from 'child_process';
 import EC from 'eight-colors';
 
@@ -32,20 +30,12 @@ const run = (dirname) => {
     });
 };
 
-const test = () => {
-    const dir = path.resolve('tests');
-    const list = fs.readdirSync(dir, {
-        withFileTypes: true
-    });
-    for (const item of list) {
-        if (item.isDirectory()) {
-            if (item.name.startsWith('shard')) {
-                setTimeout(() => {
-                    run(item.name);
-                });
-            }
-        }
-    }
+const test = async () => {
+
+    await run('shard1');
+    await run('shard2');
+    await run('shard3');
+
 };
 
 test();

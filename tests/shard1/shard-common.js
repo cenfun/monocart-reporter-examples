@@ -42,8 +42,8 @@ export default (current) => {
                     name: 'My Code Coverage Report',
                     outputDir: `docs/shard${current}/code-coverage`,
                     reports: [
-                        // 'console-details',
-                        // 'v8',
+                        'console-details',
+                        'v8',
                         'raw'
                     ]
                 }
