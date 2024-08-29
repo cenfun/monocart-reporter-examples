@@ -21,8 +21,8 @@ test('foo coverage', async ({ page }) => {
 
 });
 
-test('@passed or @skipped', () => {
-    if (Math.random() > 0.5) {
-        test.skip();
-    }
+test('skipped', () => {
+
+    test.skip();
+
 });

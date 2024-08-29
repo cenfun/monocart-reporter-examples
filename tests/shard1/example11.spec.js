@@ -1,9 +1,4 @@
 import { test, expect } from './fixtures.js';
-
-test('@passed or @failed or @flaky', () => {
-    expect(Math.random()).toBeLessThan(0.5);
-});
-
 test.describe('describe', () => {
 
     test('screenshot attachment', async ({ page }, testInfo) => {
@@ -17,8 +12,6 @@ test.describe('describe', () => {
 
 });
 
-test('@passed or @skipped', () => {
-    if (Math.random() > 0.5) {
-        test.skip();
-    }
+test('failed', () => {
+    expect(1).toBe(1);
 });
