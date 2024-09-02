@@ -15,6 +15,7 @@
         "serve": "npx monocart serve-report ./scripts/serve/",
         "audit": "npx playwright test -c tests/audit",
         "merge": "node ./scripts/merge.js",
+        "merge-cli": "npx monocart merge ./docs/shard*/index.json -o docs/merged-cli -n Merged",
         "shard1": "npx playwright test -c tests/shard1",
         "shard2": "npx playwright test -c tests/shard2",
         "shard3": "npx playwright test -c tests/shard3",

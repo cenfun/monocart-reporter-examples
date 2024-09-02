@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+// import fs from 'fs';
+// import path from 'path';
 import MonocartReporter from 'monocart-reporter';
 
 const main = async () => {
@@ -8,8 +8,9 @@ const main = async () => {
         // json file path
         'docs/shard1/index.json',
         'docs/shard2/index.json',
+        'docs/shard3/index.json'
         // or JSON data
-        JSON.parse(fs.readFileSync(path.resolve('docs/shard3/index.json')))
+        // JSON.parse(fs.readFileSync(path.resolve('docs/shard3/index.json')))
     ];
 
     //  console.log(reportDataList);
