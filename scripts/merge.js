@@ -26,6 +26,13 @@ const main = async () => {
         //     // console.log(newPath);
         //     return newPath;
         // },
+
+        onData: (reportData, dataList) => {
+            dataList.forEach((data) => {
+                console.log(data.name);
+            });
+        },
+
         onEnd: async (reportData, capacity) => {
 
         }
