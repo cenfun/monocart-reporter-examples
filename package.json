@@ -16,7 +16,7 @@
         "audit": "npx playwright test -c tests/audit",
         "merge": "node ./scripts/merge.js",
         "merge-cli": "npx monocart merge ./docs/shard*/index.json -o docs/merged-cli -n Merged",
-        "merge-ts": "cross-env NODE_OPTIONS=\"--loader ts-node/esm --no-warnings\" monocart merge ./docs/shard*/index.json",
+        "merge-ts": "monocart merge ./docs/shard*/index.json",
         "shard1": "npx playwright test -c tests/shard1",
         "shard2": "npx playwright test -c tests/shard2",
         "shard3": "npx playwright test -c tests/shard3",
@@ -39,7 +39,6 @@
         "monocart-reporter": "^2.8.1",
         "open": "^10.1.0",
         "playwright-har": "^0.2.0",
-        "ts-node": "^10.9.2",
         "typescript": "^5.6.2"
     }
 }
