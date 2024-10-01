@@ -1,3 +1,4 @@
+// shard1, 2 times
 function foo(argument) {
     console.log('this is foo');
 
@@ -6,6 +7,7 @@ function foo(argument) {
     }
 }
 
+// shard3
 function bar(argument) {
     console.log('this is bar');
 
@@ -18,6 +20,7 @@ const a = () => {};
 
 (function() {})();
 
+// shard1
 function app() {
     console.log('this is app');
 }

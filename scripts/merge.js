@@ -18,6 +18,8 @@ const main = async () => {
     await MonocartReporter.merge(reportDataList, {
         name: 'My Merged Report',
         outputFile: 'docs/merged/index.html',
+
+        durationStrategy: 'exclude-idle',
         // attachmentPath: (currentPath, extras) => {
         //     const prevPath = path.resolve(extras.cwd, extras.outputDir, currentPath);
         //     const newDir = path.resolve('docs/merged');

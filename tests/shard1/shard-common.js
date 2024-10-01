@@ -44,7 +44,10 @@ export default (current) => {
                     reports: [
                         'console-details',
                         'v8',
-                        'raw'
+                        ['raw', {
+                            // outputDir: 'sub/raw-dir',
+                            zip: true
+                        }]
                     ]
                 }
             }]
