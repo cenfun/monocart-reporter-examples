@@ -37,6 +37,8 @@ export default (current) => {
             ['monocart-reporter', {
                 name: `Shard ${current} Report`,
                 outputFile: `docs/shard${current}/index.html`,
+
+                zip: true,
                 // global coverage
                 coverage: {
                     name: 'My Code Coverage Report',

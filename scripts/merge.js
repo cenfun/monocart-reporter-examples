@@ -6,9 +6,9 @@ const main = async () => {
 
     const reportDataList = [
         // json file path
-        'docs/shard1/index.json',
-        'docs/shard2/index.json',
-        'docs/shard3/index.json'
+        'docs/shard1/index.zip',
+        'docs/shard2/index.zip',
+        'docs/shard3/index.zip'
         // or JSON data
         // JSON.parse(fs.readFileSync(path.resolve('docs/shard3/index.json')))
     ];
@@ -31,7 +31,7 @@ const main = async () => {
 
         onData: (reportData, dataList) => {
             dataList.forEach((data) => {
-                console.log(data.name);
+                console.log('data item name =========== ', data.name);
             });
         },
 
