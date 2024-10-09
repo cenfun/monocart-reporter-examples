@@ -4,7 +4,7 @@ export default (current) => {
 
     return {
         testDir: '../../tests/shard1',
-        outputDir: `../../docs/shard${current}`,
+        outputDir: `../../.temp/shard${current}`,
 
         retries: 1,
 
@@ -36,9 +36,17 @@ export default (current) => {
             ['list'],
             ['monocart-reporter', {
                 name: `Shard ${current} Report`,
-                outputFile: `docs/shard${current}/index.html`,
+                outputFile: `docs/shard${current}/custom.html`,
 
-                zip: true,
+                // zip: true,
+                // zip: `docs/shard${current}-zip/my.zip`,
+
+                zip: {
+                    // outputFile: `docs/shard${current}-zip/my.zip`,
+                    clean: true
+                },
+
+
                 // global coverage
                 coverage: {
                     name: 'My Code Coverage Report',

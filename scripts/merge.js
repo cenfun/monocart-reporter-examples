@@ -6,9 +6,9 @@ const main = async () => {
 
     const reportDataList = [
         // json file path
-        'docs/shard1/index.zip',
-        'docs/shard2/index.zip',
-        'docs/shard3/index.zip'
+        'docs/shard1/custom.zip',
+        'docs/shard2/custom.zip',
+        'docs/shard3/custom.zip'
         // or JSON data
         // JSON.parse(fs.readFileSync(path.resolve('docs/shard3/index.json')))
     ];
@@ -16,6 +16,7 @@ const main = async () => {
     //  console.log(reportDataList);
 
     await MonocartReporter.merge(reportDataList, {
+        // logging: 'debug',
         name: 'My Merged Report',
         outputFile: 'docs/merged/index.html',
 
