@@ -15,7 +15,7 @@
         "serve": "npx monocart serve-report ./scripts/serve/",
         "audit": "npx playwright test -c tests/audit",
         "merge": "node ./scripts/merge.js",
-        "merge-cli": "npx monocart merge ./docs/shard*/index.json -o docs/merged-cli -n Merged",
+        "merge-cli": "npx monocart merge docs/shard*/*.zip -o docs/merged-cli -n Merged --import tsx",
         "merge-ts": "monocart merge ./docs/shard*/index.json",
         "shard1": "npx playwright test -c tests/shard1",
         "shard2": "npx playwright test -c tests/shard2",
@@ -27,7 +27,6 @@
         "type": "git",
         "url": "git+https://github.com/cenfun/monocart-reporter-examples.git"
     },
-    "dependencies": {},
     "devDependencies": {
         "@playwright/test": "^1.47.2",
         "cross-env": "^7.0.3",
@@ -40,6 +39,7 @@
         "monocart-reporter": "^2.8.4",
         "open": "^10.1.0",
         "playwright-har": "^0.2.0",
+        "tsx": "^4.19.1",
         "typescript": "^5.6.2"
     }
 }

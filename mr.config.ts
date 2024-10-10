@@ -1,6 +1,7 @@
 import type { MonocartReporterOptions } from "monocart-reporter"
 
 const options: MonocartReporterOptions = {
+    // logging: "debug",
     name: 'My Merged Report',
     outputFile: 'docs/merged-ts/index.html',
 
